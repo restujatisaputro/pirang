@@ -1,10 +1,11 @@
+
 import React, { useState, useEffect, useMemo } from 'react';
 import { HashRouter, Routes, Route, Link, useLocation, useNavigate, Navigate } from 'react-router-dom';
 import { 
   Search, Calendar, User as UserIcon, MapPin, Settings, Plus, Trash2, Clock, 
   Menu, Loader2, AlertCircle, BookOpen, LogOut, LogIn, Lock, ShieldCheck, 
   Globe, ChevronRight, GraduationCap, WifiOff, Filter, X, ChevronDown, 
-  Book, Users, Award, ClipboardList, Send, Package, Box, Tag, Camera, Check, XCircle, UserPlus, RotateCcw, Info, Coffee, Flag, KeyRound
+  Book, Users, Award, ClipboardList, Send, Package, Box, Tag, Camera, Check, XCircle, UserPlus, RotateCcw, Info, Coffee, Flag, KeyRound, Database as DatabaseIcon
 } from 'lucide-react';
 import { Database, DayOfWeek, Schedule, Room, Lecturer, Course, User, UserRole, Booking, Item, ItemBorrowing, getDayFromDate } from './types';
 import { api } from './api';
@@ -974,6 +975,7 @@ const ScheduleCard: React.FC<ScheduleCardProps> = ({ s, conflicts, db, globalSea
 const ScheduleView = ({ db }: { db: Database }) => {
   const [selectedDate, setSelectedDate] = useState<string>(new Date().toISOString().split('T')[0]);
   const [globalSearch, setGlobalSearch] = useState(false);
+  const [searchText, setSearchText] = useState(''); // New Search Text State
   const [filters, setFilters] = useState({
     course: '',
     lecturer: '',
@@ -1069,9 +1071,28 @@ const ScheduleView = ({ db }: { db: Database }) => {
       const matchClass = filters.classGroup === '' || s.classGroup === filters.classGroup;
       const matchStudyProgram = filters.studyProgram === '' || s.studyProgram === filters.studyProgram;
       
-      return matchDay && matchCourse && matchLecturer && matchRoom && matchClass && matchStudyProgram;
+      // Text Search Logic (Matches any field, including Day and Time)
+      let matchText = true;
+      if (searchText) {
+         const lowerText = searchText.toLowerCase();
+         const courseName = db.courses.find(c => c.id === s.courseId)?.name.toLowerCase() || '';
+         const lecturerName = db.lecturers.find(l => l.id === s.lecturerId)?.nama.toLowerCase() || '';
+         const roomName = db.rooms.find(r => r.id === s.roomId)?.name.toLowerCase() || '';
+         const purpose = s.bookingPurpose?.toLowerCase() || '';
+         const dayName = s.day.toLowerCase();
+         const timeRange = `${s.startTime} - ${s.endTime}`;
+         
+         matchText = courseName.includes(lowerText) || 
+                     lecturerName.includes(lowerText) || 
+                     roomName.includes(lowerText) || 
+                     purpose.includes(lowerText) ||
+                     dayName.includes(lowerText) ||
+                     timeRange.includes(lowerText);
+      }
+      
+      return matchDay && matchCourse && matchLecturer && matchRoom && matchClass && matchStudyProgram && matchText;
     });
-  }, [mergedSchedules, selectedDate, activeDay, filters, globalSearch, currentWeekNumber, weekDateRange]);
+  }, [mergedSchedules, selectedDate, activeDay, filters, globalSearch, currentWeekNumber, weekDateRange, searchText, db]);
 
   const conflicts = useMemo(() => {
     const conflictIds = new Set<string>();
@@ -1094,9 +1115,10 @@ const ScheduleView = ({ db }: { db: Database }) => {
     setFilters({ course: '', lecturer: '', room: '', classGroup: '', studyProgram: '' });
     setSelectedDate(new Date().toISOString().split('T')[0]);
     setGlobalSearch(false);
+    setSearchText('');
   };
 
-  const hasActiveFilters = filters.course || filters.lecturer || filters.room || filters.classGroup || filters.studyProgram || globalSearch;
+  const hasActiveFilters = filters.course || filters.lecturer || filters.room || filters.classGroup || filters.studyProgram || globalSearch || searchText;
 
   return (
     <div className="space-y-8 md:space-y-10 animate-academic">
@@ -1112,7 +1134,8 @@ const ScheduleView = ({ db }: { db: Database }) => {
           </div>
         </div>
 
-        <div className="mb-6 md:mb-8">
+        <div className="mb-6 md:mb-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+           {/* Date Picker */}
            <div className="bg-white p-6 rounded-[2.5rem] border border-slate-100 luxury-shadow flex flex-col justify-center">
               <label className="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest mb-3 ml-2">Pilih Tanggal Pantauan</label>
               <div className="relative">
@@ -1120,8 +1143,24 @@ const ScheduleView = ({ db }: { db: Database }) => {
                 <input type="date" className="w-full pl-12 pr-6 py-4 rounded-2xl border border-slate-100 bg-slate-50/30 outline-none focus:border-[#008787] font-bold text-slate-700" value={selectedDate} onChange={(e) => { setSelectedDate(e.target.value); setGlobalSearch(false); }} />
               </div>
            </div>
+
+           {/* Global Search Box (New Feature) */}
+           <div className="bg-white p-6 rounded-[2.5rem] border border-slate-100 luxury-shadow flex flex-col justify-center">
+              <label className="text-[10px] font-extrabold text-[#008787] uppercase tracking-widest mb-3 ml-2">Cari Cepat (Dosen / Matkul / Ruang / Hari)</label>
+              <div className="relative">
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-[#008787]" size={20} />
+                <input 
+                    type="text" 
+                    placeholder="Ketik nama dosen, mata kuliah, ruangan, atau hari..." 
+                    className="w-full pl-12 pr-6 py-4 rounded-2xl border border-slate-100 bg-slate-50/30 outline-none focus:border-[#008787] font-bold text-slate-700" 
+                    value={searchText} 
+                    onChange={(e) => setSearchText(e.target.value)} 
+                />
+              </div>
+           </div>
         </div>
 
+        {/* Detailed Filters Dropdowns */}
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 bg-white p-6 rounded-[2rem] md:rounded-[2.5rem] border border-slate-100 luxury-shadow mb-8">
            <div className="relative">
              <Book className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-300" size={16} />
@@ -1214,7 +1253,9 @@ const ScheduleView = ({ db }: { db: Database }) => {
             {filteredSchedules.length === 0 && (
             <div className="py-20 md:py-32 text-center border-2 border-dashed rounded-[3rem] md:rounded-[4rem] border-slate-100 bg-white/50 backdrop-blur-sm px-4">
                 <div className="w-24 h-24 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-6"><Search className="text-slate-200" size={48} strokeWidth={1} /></div>
-                <p className="font-serif font-bold text-slate-400 text-2xl md:text-3xl italic">Tidak ada aktivitas pada tanggal ({selectedDate}).</p>
+                <p className="font-serif font-bold text-slate-400 text-2xl md:text-3xl italic">
+                   {searchText ? `Tidak ditemukan jadwal untuk "${searchText}"` : `Tidak ada aktivitas pada tanggal (${selectedDate}).`}
+                </p>
                 <button onClick={resetFilters} className="mt-8 text-[#008787] font-bold text-sm uppercase tracking-widest hover:underline flex items-center justify-center gap-2 mx-auto"><RotateCcw size={16}/> Reset Timeline</button>
             </div>
             )}
@@ -1226,423 +1267,220 @@ const ScheduleView = ({ db }: { db: Database }) => {
 
 // --- Empty Room View ---
 const EmptyRoomView = ({ db, user, refresh }: { db: Database, user: User | null, refresh: () => void }) => {
-  const [searchDate, setSearchDate] = useState<string>(new Date().toISOString().split('T')[0]);
-  const [searchTime, setSearchTime] = useState('09:00');
+  const [date, setDate] = useState(new Date().toISOString().split('T')[0]);
+  const [time, setTime] = useState(new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' }));
+  const [duration, setDuration] = useState(60); // minutes
   const [bookingModal, setBookingModal] = useState<Room | null>(null);
-  const [bookingForm, setBookingForm] = useState({ date: new Date().toISOString().split('T')[0], startTime: '09:00', endTime: '11:00', purpose: '' });
+  const [purpose, setPurpose] = useState('');
 
-  const activeDay = useMemo(() => getDayFromDate(searchDate), [searchDate]);
+  const availableRooms = useMemo(() => {
+    const checkStart = time;
+    const [h, m] = time.split(':').map(Number);
+    const endMinutes = h * 60 + m + duration;
+    const endH = Math.floor(endMinutes / 60) % 24;
+    const endM = endMinutes % 60;
+    const checkEnd = `${String(endH).padStart(2, '0')}:${String(endM).padStart(2, '0')}`;
 
-  // Default to week 1 implicitly since we removed the semester start config
-  const currentWeekNumber = 1;
+    const day = getDayFromDate(date);
+    if (!day) return [];
 
-  // Cek jam operasional (07:00 - 17:00)
-  const isWithinOperationalHours = useMemo(() => {
-    return searchTime >= '07:00' && searchTime <= '17:00';
-  }, [searchTime]);
-
-  const roomStatuses = useMemo(() => {
-    // Jika di luar jam operasional atau hari libur, semua dianggap tutup/unavailable
-    if (!activeDay || !isWithinOperationalHours) return [];
-
-    return db.rooms.map(room => {
-      let status: 'Tersedia' | 'Digunakan' = 'Tersedia';
-      let usageDetails = '';
-
-      // 1. Cek jadwal rutin mingguan (Recurring)
-      const recurringSchedule = db.schedules.find(s => {
-        const isRoom = s.roomId === room.id;
-        const isDay = !s.date && s.day === activeDay;
-        const isWeek = s.weeks ? s.weeks.includes(currentWeekNumber) : true;
-        const isTime = searchTime >= s.startTime && searchTime < s.endTime;
-        return isRoom && isDay && isWeek && isTime;
+    return db.rooms.filter(room => {
+      // Check schedules
+      const hasSchedule = db.schedules.some(s => {
+        if (s.roomId !== room.id) return false;
+        // Check day/date
+        const isDayMatch = s.date === date || (!s.date && s.day === day);
+        if (!isDayMatch) return false;
+        // Check time overlap
+        return (s.startTime < checkEnd && s.endTime > checkStart);
       });
 
-      if (recurringSchedule) {
-        status = 'Digunakan';
-        const course = db.courses.find(c => c.id === recurringSchedule.courseId);
-        usageDetails = course ? `Kelas: ${course.name}` : 'Jadwal Rutin';
-      }
+      // Check bookings
+      const hasBooking = db.bookings.some(b => {
+        if (b.roomId !== room.id) return false;
+        if (b.status === 'REJECTED') return false;
+        if (b.date !== date) return false;
+        return (b.startTime < checkEnd && b.endTime > checkStart);
+      });
 
-      // 2. Cek jadwal khusus tanggal tersebut (Specific Date)
-      const specificSchedule = db.schedules.find(s => 
-        s.roomId === room.id && 
-        s.date === searchDate && 
-        searchTime >= s.startTime && searchTime < s.endTime
-      );
-
-      if (specificSchedule) {
-        status = 'Digunakan';
-        const course = db.courses.find(c => c.id === specificSchedule.courseId);
-        usageDetails = course ? `Kelas Pengganti: ${course.name}` : 'Jadwal Khusus';
-      }
-
-      // 3. Cek reservasi yang sudah disetujui (Bookings)
-      const activeBooking = db.bookings.find(b => 
-        b.roomId === room.id && 
-        b.status === 'APPROVED' && 
-        b.date === searchDate && 
-        searchTime >= b.startTime && searchTime < b.endTime
-      );
-
-      if (activeBooking) {
-        status = 'Digunakan';
-        usageDetails = `Reservasi: ${activeBooking.purpose}`;
-      }
-
-      return { ...room, status, usageDetails };
+      return !hasSchedule && !hasBooking;
     });
-  }, [db, searchDate, searchTime, activeDay, isWithinOperationalHours, currentWeekNumber]);
+  }, [db, date, time, duration]);
 
-  const handleTimeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const val = e.target.value;
-    setSearchTime(val);
-  };
-
-  const handleBookingRequest = async () => {
-    if (!user) return alert('Silakan login terlebih dahulu untuk memesan ruangan.');
-    if (!bookingForm.purpose || !bookingForm.startTime || !bookingForm.endTime) return alert('Mohon lengkapi formulir.');
+  const handleBooking = async () => {
+    if (!user) return alert("Login diperlukan");
+    if (!bookingModal) return;
     
-    // Validasi Waktu: Jam selesai tidak boleh lebih awal atau sama dengan jam mulai
-    if (bookingForm.endTime <= bookingForm.startTime) {
-        return alert('Waktu selesai tidak boleh lebih awal atau sama dengan waktu mulai.');
-    }
+    // Calculate End Time
+    const [h, m] = time.split(':').map(Number);
+    const endMinutes = h * 60 + m + duration;
+    const endH = Math.floor(endMinutes / 60) % 24;
+    const endM = endMinutes % 60;
+    const checkEnd = `${String(endH).padStart(2, '0')}:${String(endM).padStart(2, '0')}`;
 
     try {
-      await api.createBooking({
-        userId: user.id,
-        roomId: bookingModal?.id,
-        date: bookingForm.date,
-        startTime: bookingForm.startTime,
-        endTime: bookingForm.endTime,
-        purpose: bookingForm.purpose
-      });
-      alert('Pemesanan ruangan berhasil dikirim! Menunggu persetujuan admin.');
-      setBookingModal(null);
-      refresh();
-    } catch (e) {
-      alert('Gagal mengirim pemesanan.');
+        await api.createBooking({
+            userId: user.id,
+            roomId: bookingModal.id,
+            date,
+            startTime: time,
+            endTime: checkEnd,
+            purpose
+        });
+        alert("Booking berhasil diajukan!");
+        setBookingModal(null);
+        refresh();
+    } catch(e) {
+        alert("Gagal booking");
     }
   };
 
   return (
-    <div className="space-y-8 md:space-y-10 animate-academic">
-      <header className="border-b border-slate-200 pb-6 md:pb-10">
-        <h2 className="text-3xl md:text-5xl font-serif font-bold text-slate-900 tracking-tight">Cek Status Ruangan</h2>
-        <p className="text-slate-500 mt-3 text-base md:text-lg italic font-serif">Pantauan real-time ketersediaan ruangan berdasarkan jadwal akademik dan reservasi.</p>
-      </header>
-      
-      <div className="bg-white p-6 md:p-10 rounded-[2rem] md:rounded-[3rem] border border-slate-100 luxury-shadow">
-        <div className="grid gap-6 md:gap-10 grid-cols-1 md:grid-cols-2 items-end">
-          <div className="space-y-4">
-            <div className="flex items-center gap-2 ml-2">
-              <div className="p-2 bg-teal-50 rounded-lg"><Calendar className="text-[#008787]" size={16}/></div>
-              <label className="text-[10px] font-extrabold text-slate-500 uppercase tracking-[0.2em]">Pilih Tanggal</label>
+    <div className="space-y-8 animate-academic">
+        <header className="border-b border-slate-200 pb-10">
+            <h2 className="text-3xl md:text-5xl font-serif font-bold text-slate-900 tracking-tight">Cek Ruang Kosong</h2>
+            <p className="text-slate-500 mt-3 italic font-serif">Temukan ruangan yang tersedia untuk penggunaan insidental.</p>
+        </header>
+
+        <div className="bg-white p-6 rounded-[2.5rem] border border-slate-100 luxury-shadow grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="space-y-2">
+                <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1">Tanggal</label>
+                <input type="date" className="w-full p-4 rounded-2xl border border-slate-100 bg-slate-50 font-bold text-slate-700" value={date} onChange={e => setDate(e.target.value)} />
             </div>
-            <div className="relative">
-              <input 
-                type="date" 
-                className="w-full pl-6 pr-6 py-5 rounded-2xl border-2 border-slate-100 bg-slate-50/50 outline-none focus:border-[#008787] focus:bg-white transition-all font-bold text-slate-700" 
-                value={searchDate} 
-                onChange={e => setSearchDate(e.target.value)}
-              />
+            <div className="space-y-2">
+                <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1">Jam Mulai</label>
+                <input type="time" className="w-full p-4 rounded-2xl border border-slate-100 bg-slate-50 font-bold text-slate-700" value={time} onChange={e => setTime(e.target.value)} />
             </div>
-          </div>
-          
-          <div className="space-y-4">
-            <div className="flex items-center gap-2 ml-2">
-              <div className="p-2 bg-teal-50 rounded-lg"><Clock className="text-[#008787]" size={16}/></div>
-              <label className="text-[10px] font-extrabold text-slate-500 uppercase tracking-[0.2em]">Waktu Pantauan</label>
+             <div className="space-y-2">
+                <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1">Durasi (Menit)</label>
+                <select className="w-full p-4 rounded-2xl border border-slate-100 bg-slate-50 font-bold text-slate-700" value={duration} onChange={e => setDuration(Number(e.target.value))}>
+                    <option value={30}>30 Menit</option>
+                    <option value={60}>60 Menit</option>
+                    <option value={90}>90 Menit</option>
+                    <option value={120}>120 Menit</option>
+                </select>
             </div>
-            <div className="relative">
-              <input 
-                type="time" 
-                min="07:00"
-                max="17:00"
-                className={`w-full pl-6 pr-6 py-5 rounded-2xl border-2 outline-none transition-all font-bold text-slate-700 ${!isWithinOperationalHours ? 'border-rose-100 bg-rose-50 focus:border-rose-500' : 'border-slate-100 bg-slate-50/50 focus:border-[#008787] focus:bg-white'}`}
-                value={searchTime} 
-                onChange={handleTimeChange} 
-              />
-            </div>
-          </div>
         </div>
 
-        <div className="mt-8 flex flex-col md:flex-row gap-6 items-start">
-           <div className="p-6 bg-[#008787]/5 rounded-[2rem] border border-[#008787]/10 flex-1 w-full">
-              <div className="flex items-center gap-3 text-[#008787] mb-2">
-                 <Info size={16}/>
-                 <span className="text-[10px] font-extrabold uppercase tracking-widest">Informasi Sistem</span>
-              </div>
-              <p className="text-[10px] text-teal-700/60 leading-relaxed">
-                Menampilkan status seluruh ruangan pada <b>Tanggal {searchDate}</b>. Ruangan berwarna merah sedang digunakan untuk kegiatan akademik atau reservasi.
-              </p>
-           </div>
-           
-           {!isWithinOperationalHours && (
-             <div className="p-4 bg-rose-50 border border-rose-100 rounded-2xl flex items-center gap-4 text-rose-600 animate-academic flex-1 w-full">
-               <AlertCircle size={20}/>
-               <p className="text-sm font-bold">Waktu pencarian di luar jam operasional (07:00 - 17:00).</p>
-             </div>
-           )}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {availableRooms.map(room => (
+                <div key={room.id} className="bg-white p-6 rounded-[2rem] border border-emerald-100 shadow-sm hover:shadow-md transition-all group relative overflow-hidden">
+                    <div className="absolute top-0 right-0 bg-emerald-500 text-white px-4 py-1 rounded-bl-2xl text-[10px] font-bold uppercase tracking-widest">
+                        Available
+                    </div>
+                    <h4 className="font-bold text-slate-800 text-lg mb-1">{room.name}</h4>
+                    <p className="text-xs text-slate-400 mb-4">{room.building} • Kapasitas {room.capacity}</p>
+                    
+                    {user ? (
+                        <button onClick={() => setBookingModal(room)} className="w-full py-3 bg-[#008787] text-white rounded-xl text-[10px] font-bold uppercase tracking-widest hover:bg-[#006d6d] transition-colors">
+                            Booking Ruangan Ini
+                        </button>
+                    ) : (
+                        <div className="text-center py-2 bg-slate-50 rounded-xl text-[10px] font-bold text-slate-400 uppercase">
+                            Login untuk Booking
+                        </div>
+                    )}
+                </div>
+            ))}
+            {availableRooms.length === 0 && (
+                <div className="col-span-full py-12 text-center text-slate-400 italic">
+                    Tidak ada ruangan kosong pada waktu yang dipilih.
+                </div>
+            )}
         </div>
-      </div>
 
-      <div className="grid gap-6 md:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {activeDay && isWithinOperationalHours && roomStatuses.map(r => (
-          <div key={r.id} className={`bg-white border rounded-[2.5rem] overflow-hidden luxury-shadow group flex flex-col transition-all hover:-translate-y-2 ${r.status === 'Digunakan' ? 'border-rose-100' : 'border-slate-100 hover:border-teal-200'}`}>
-            <div className={`h-40 flex items-center justify-center relative border-b ${r.status === 'Digunakan' ? 'bg-rose-50 border-rose-100' : 'bg-slate-50 border-slate-100'}`}>
-               <div className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity ${r.status === 'Digunakan' ? 'bg-rose-500' : 'academic-gradient'}`}></div>
-               <div className={`w-20 h-20 bg-white rounded-3xl flex items-center justify-center shadow-sm border ${r.status === 'Digunakan' ? 'border-rose-100 text-rose-300 group-hover:text-rose-500' : 'border-slate-100 text-slate-300 group-hover:text-[#008787]'} transition-colors`}>
-                  <MapPin size={32} strokeWidth={1.5} />
-               </div>
-               <div className={`absolute top-4 right-4 text-white text-[9px] font-bold px-3 py-1 rounded-full uppercase tracking-widest shadow-lg ${r.status === 'Digunakan' ? 'bg-rose-500' : 'bg-emerald-500'}`}>
-                 {r.status}
-               </div>
-            </div>
-            <div className="p-8 flex-1 flex flex-col">
-              <h4 className="font-serif font-bold text-2xl text-slate-900 mb-1">{r.name}</h4>
-              <p className="text-slate-400 text-sm mb-6 flex items-center gap-2"><MapPin size={12}/> {r.building} • Lt. 1</p>
-              
-              {r.status === 'Digunakan' ? (
-                <div className="mb-8 p-4 bg-rose-50 rounded-2xl border border-rose-100">
-                  <p className="text-[9px] font-bold text-rose-400 uppercase tracking-widest mb-1">Sedang Digunakan Untuk</p>
-                  <p className="text-sm font-bold text-rose-700 line-clamp-2">{r.usageDetails}</p>
+        {bookingModal && (
+            <div className="fixed inset-0 bg-slate-900/80 backdrop-blur-sm z-[100] flex items-center justify-center p-4">
+                <div className="bg-white w-full max-w-md p-8 rounded-[2.5rem] animate-academic">
+                    <div className="flex justify-between items-center mb-6">
+                        <h3 className="text-xl font-bold text-slate-900">Booking {bookingModal.name}</h3>
+                        <button onClick={() => setBookingModal(null)} className="p-2 hover:bg-slate-100 rounded-full"><X size={20}/></button>
+                    </div>
+                    <div className="space-y-4">
+                        <div className="p-4 bg-slate-50 rounded-xl text-sm">
+                            <p className="flex justify-between"><span>Tanggal:</span> <span className="font-bold">{date}</span></p>
+                            <p className="flex justify-between"><span>Jam:</span> <span className="font-bold">{time} ({duration} menit)</span></p>
+                        </div>
+                        <textarea 
+                            className="w-full p-4 rounded-xl border border-slate-200 text-sm" 
+                            placeholder="Tujuan penggunaan ruangan..." 
+                            value={purpose}
+                            onChange={e => setPurpose(e.target.value)}
+                        />
+                        <button onClick={handleBooking} className="w-full py-4 bg-[#008787] text-white rounded-2xl font-bold uppercase text-[10px] tracking-widest">
+                            Konfirmasi Booking
+                        </button>
+                    </div>
                 </div>
-              ) : (
-                <div className="grid grid-cols-2 gap-4 mb-8">
-                  <div className="p-3 bg-slate-50 rounded-2xl border border-slate-100 text-center">
-                      <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-1">Kapasitas</p>
-                      <p className="text-sm font-bold text-slate-700">{r.capacity} Orang</p>
-                  </div>
-                  <div className="p-3 bg-slate-50 rounded-2xl border border-slate-100 text-center">
-                      <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-1">Tipe</p>
-                      <p className="text-sm font-bold text-slate-700">{r.type}</p>
-                  </div>
-                </div>
-              )}
-
-              <button 
-                disabled={r.status === 'Digunakan'}
-                onClick={() => {
-                  if(!user) {
-                    alert("Silakan login terlebih dahulu untuk memesan ruangan.");
-                  } else {
-                    setBookingModal(r);
-                    setBookingForm({...bookingForm, date: searchDate, startTime: searchTime, endTime: searchTime});
-                  }
-                }}
-                className={`w-full py-4 rounded-2xl text-[10px] font-bold uppercase tracking-widest transition-all mt-auto ${
-                  r.status === 'Digunakan' 
-                    ? 'bg-slate-100 text-slate-300 cursor-not-allowed border border-slate-200' 
-                    : user 
-                      ? 'bg-[#008787] text-white shadow-xl shadow-teal-900/10 hover:shadow-teal-900/20' 
-                      : 'bg-slate-100 text-slate-400 hover:bg-slate-200'
-                }`}
-              >
-                {r.status === 'Digunakan' ? 'Tidak Tersedia' : user ? 'Buat Reservasi' : 'Login Untuk Pesan'}
-              </button>
             </div>
-          </div>
-        ))}
-
-        {(!activeDay || !isWithinOperationalHours) && (
-          <div className="col-span-full py-20 md:py-32 text-center border-2 border-dashed rounded-[3rem] md:rounded-[4rem] border-slate-100 bg-white/50 backdrop-blur-sm px-4">
-             <div className="w-24 h-24 bg-rose-50 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Coffee className="text-rose-200" size={48} strokeWidth={1} />
-             </div>
-             <h4 className="font-serif font-bold text-slate-900 text-2xl md:text-3xl mb-2">Universitas Sedang Istirahat</h4>
-             <p className="text-slate-400 font-serif italic text-base md:text-lg px-4">Layanan peminjaman ruang hanya aktif di hari kerja (Senin-Jumat) dan jam operasional.</p>
-             <div className="mt-8 flex justify-center gap-4">
-                <div className="px-4 py-2 bg-white rounded-xl border border-slate-100 shadow-sm text-[10px] font-bold uppercase tracking-widest text-slate-400">Senin - Jumat</div>
-                <div className="px-4 py-2 bg-white rounded-xl border border-slate-100 shadow-sm text-[10px] font-bold uppercase tracking-widest text-slate-400">07:00 - 17:00</div>
-             </div>
-          </div>
         )}
-      </div>
-
-      {bookingModal && (
-        <div className="fixed inset-0 bg-slate-900/80 backdrop-blur-sm z-[100] flex items-center justify-center p-4">
-          <div className="bg-white w-full max-w-lg p-6 md:p-10 rounded-[2rem] md:rounded-[3rem] animate-academic border border-white/20 shadow-2xl max-h-[90vh] overflow-y-auto">
-             <div className="flex justify-between items-center mb-8">
-               <h3 className="text-2xl font-serif font-bold text-slate-900">Reservasi Ruangan</h3>
-               <button onClick={() => setBookingModal(null)} className="p-2 hover:bg-slate-100 rounded-full text-slate-400 transition-colors"><X size={20}/></button>
-             </div>
-             
-             <div className="space-y-6">
-                <div className="p-5 bg-[#008787]/5 rounded-[2rem] border border-[#008787]/10 flex gap-4 items-center">
-                  <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-sm border border-slate-50 shrink-0">
-                    <MapPin className="text-[#008787]" size={24}/>
-                  </div>
-                  <div>
-                    <p className="text-[10px] font-bold text-[#008787] uppercase tracking-widest">Lokasi Terpilih</p>
-                    <p className="text-lg font-bold text-slate-800">{bookingModal.name}</p>
-                    <p className="text-[10px] text-slate-400 font-medium">{bookingModal.building}</p>
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                    <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-2">Tanggal Pemakaian</label>
-                    <input type="date" className="w-full p-4 rounded-2xl border border-slate-100 bg-slate-50 text-sm font-bold text-slate-700 focus:bg-white focus:border-[#008787] outline-none transition-all" value={bookingForm.date} onChange={e => setBookingForm({...bookingForm, date: e.target.value})} />
-                </div>
-
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-2">Mulai</label>
-                    <input type="time" min="07:00" max="17:00" className="w-full p-4 rounded-2xl border border-slate-100 bg-slate-50 text-sm font-bold text-slate-700 focus:bg-white focus:border-[#008787] outline-none transition-all" value={bookingForm.startTime} onChange={e => setBookingForm({...bookingForm, startTime: e.target.value})} />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-2">Selesai</label>
-                    <input type="time" min="07:00" max="17:00" className="w-full p-4 rounded-2xl border border-slate-100 bg-slate-50 text-sm font-bold text-slate-700 focus:bg-white focus:border-[#008787] outline-none transition-all" value={bookingForm.endTime} onChange={e => setBookingForm({...bookingForm, endTime: e.target.value})} />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-2">Keperluan Penggunaan</label>
-                  <textarea 
-                    className="w-full p-4 rounded-2xl border border-slate-100 bg-slate-50 text-sm min-h-[120px] focus:bg-white focus:border-[#008787] outline-none transition-all" 
-                    placeholder="Sebutkan detail kegiatan (contoh: Rapat Organisasi, Seminar, dll)..."
-                    value={bookingForm.purpose}
-                    onChange={e => setBookingForm({...bookingForm, purpose: e.target.value})}
-                  />
-                </div>
-
-                <button 
-                  onClick={handleBookingRequest}
-                  className="w-full py-5 bg-[#008787] text-white rounded-[2rem] font-bold uppercase text-[11px] tracking-widest shadow-2xl shadow-teal-900/20 flex items-center justify-center gap-3 hover:-translate-y-1 transition-all"
-                >
-                  <Send size={18}/> Kirim Permintaan Reservasi
-                </button>
-             </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
 
 // --- Auth Page ---
-const AuthPage = ({ onLoginSuccess }: { onLoginSuccess: (u: User) => void }) => {
+const AuthPage = ({ onLoginSuccess }: { onLoginSuccess: (user: User) => void }) => {
   const [isRegister, setIsRegister] = useState(false);
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [fullName, setFullName] = useState('');
-  const [successMsg, setSuccessMsg] = useState('');
-  const [errorMsg, setErrorMsg] = useState('');
+  const [formData, setFormData] = useState({ username: '', password: '', fullName: '' });
   const navigate = useNavigate();
 
-  const handleLogin = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setErrorMsg('');
+  const handleSubmit = async () => {
     try {
-      const res = await api.login(username, password);
-      if (res.success && res.user) {
-        onLoginSuccess(res.user);
-        navigate(res.user.role === UserRole.ADMIN ? '/admin' : '/');
-      }
-    } catch (err: any) {
-      setErrorMsg(err.message);
-    }
-  };
-
-  const handleRegister = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setErrorMsg('');
-    setSuccessMsg('');
-    try {
-      const res = await api.register({ username, password, fullName });
-      if (res.success) {
-        setSuccessMsg(res.message);
-        setIsRegister(false);
-        setPassword('');
-      }
-    } catch (err: any) {
-      setErrorMsg(err.message);
+        if (isRegister) {
+            await api.register(formData);
+            alert("Registrasi berhasil, silakan login.");
+            setIsRegister(false);
+        } else {
+            const res = await api.login(formData.username, formData.password);
+            if (res.success && res.user) {
+                onLoginSuccess(res.user);
+                navigate('/');
+            } else {
+                alert(res.message);
+            }
+        }
+    } catch (e: any) {
+        alert(e.message || "Terjadi kesalahan");
     }
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10 md:mt-20 animate-academic px-4">
-      <div className="bg-white p-6 md:p-10 rounded-[2rem] md:rounded-[3rem] border border-slate-100 luxury-shadow">
-        <div className="text-center mb-10">
-          <div className="w-16 h-16 bg-teal-50 rounded-3xl flex items-center justify-center mx-auto mb-4 border border-teal-100 shadow-sm">
-            {isRegister ? <UserPlus className="text-[#008787]" size={28}/> : <Lock className="text-[#008787]" size={28}/>}
-          </div>
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900">
-            {isRegister ? 'Buat Akun Baru' : 'Masuk Portal'}
-          </h2>
-          <p className="text-xs text-slate-400 mt-2 italic">Akses layanan akademik terpadu</p>
-        </div>
-
-        {successMsg && (
-          <div className="mb-6 p-4 bg-emerald-50 text-emerald-600 rounded-2xl border border-emerald-100 flex items-center gap-3 animate-academic">
-            <Check size={18}/>
-            <p className="text-xs font-bold">{successMsg}</p>
-          </div>
-        )}
-
-        {errorMsg && (
-          <div className="mb-6 p-4 bg-rose-50 text-rose-600 rounded-2xl border border-rose-100 flex items-center gap-3 animate-academic">
-            <AlertCircle size={18}/>
-            <p className="text-xs font-bold">{errorMsg}</p>
-          </div>
-        )}
-
-        <form onSubmit={isRegister ? handleRegister : handleLogin} className="space-y-4">
-          {isRegister && (
-            <div className="space-y-1">
-              <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1">Nama Lengkap</label>
-              <input 
-                type="text" 
-                placeholder="John Doe" 
-                required 
-                className="w-full p-4 bg-slate-50 border border-slate-100 rounded-2xl outline-none focus:border-[#008787] transition-all" 
-                value={fullName} 
-                onChange={e => setFullName(e.target.value)} 
-              />
+    <div className="min-h-[80vh] flex items-center justify-center">
+        <div className="bg-white p-8 md:p-12 rounded-[3rem] border border-slate-100 luxury-shadow w-full max-w-lg relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#008787] to-teal-400"></div>
+            <div className="text-center mb-10">
+                <div className="w-16 h-16 bg-[#008787]/10 rounded-2xl flex items-center justify-center mx-auto mb-4 text-[#008787]">
+                    <GraduationCap size={32} />
+                </div>
+                <h2 className="text-3xl font-serif font-bold text-slate-900">{isRegister ? 'Daftar Akun' : 'Selamat Datang'}</h2>
+                <p className="text-slate-500 mt-2 text-sm">Sistem Informasi Akademik & Fasilitas</p>
             </div>
-          )}
-          
-          <div className="space-y-1">
-            <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1">Username</label>
-            <input 
-              type="text" 
-              placeholder="Username" 
-              required 
-              className="w-full p-4 bg-slate-50 border border-slate-100 rounded-2xl outline-none focus:border-[#008787] transition-all" 
-              value={username} 
-              onChange={e => setUsername(e.target.value)} 
-            />
-          </div>
 
-          <div className="space-y-1">
-            <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1">Password</label>
-            <input 
-              type="password" 
-              placeholder="••••••••" 
-              required 
-              className="w-full p-4 bg-slate-50 border border-slate-100 rounded-2xl outline-none focus:border-[#008787] transition-all" 
-              value={password} 
-              onChange={e => setPassword(e.target.value)} 
-            />
-          </div>
+            <div className="space-y-4">
+                {isRegister && (
+                    <div className="space-y-2">
+                        <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1">Nama Lengkap</label>
+                        <input type="text" className="w-full p-4 rounded-2xl border border-slate-200 bg-slate-50 outline-none focus:border-[#008787]" placeholder="Nama Lengkap" value={formData.fullName} onChange={e => setFormData({...formData, fullName: e.target.value})} />
+                    </div>
+                )}
+                <div className="space-y-2">
+                    <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1">Username</label>
+                    <input type="text" className="w-full p-4 rounded-2xl border border-slate-200 bg-slate-50 outline-none focus:border-[#008787]" placeholder="Username" value={formData.username} onChange={e => setFormData({...formData, username: e.target.value})} />
+                </div>
+                <div className="space-y-2">
+                    <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1">Password</label>
+                    <input type="password" className="w-full p-4 rounded-2xl border border-slate-200 bg-slate-50 outline-none focus:border-[#008787]" placeholder="Password" value={formData.password} onChange={e => setFormData({...formData, password: e.target.value})} />
+                </div>
 
-          <button className="w-full bg-[#008787] text-white font-bold py-4 rounded-3xl shadow-xl uppercase text-[10px] tracking-widest hover:-translate-y-1 transition-all mt-4">
-            {isRegister ? 'Daftar Sekarang' : 'Masuk Ke Portal'}
-          </button>
-        </form>
+                <button onClick={handleSubmit} className="w-full py-4 bg-[#008787] text-white rounded-2xl font-bold uppercase text-[10px] tracking-widest shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all mt-6">
+                    {isRegister ? 'Daftar Sekarang' : 'Masuk Aplikasi'}
+                </button>
 
-        <div className="mt-8 pt-8 border-t border-slate-50 text-center">
-          <p className="text-sm text-slate-500">
-            {isRegister ? 'Sudah punya akun?' : 'Belum punya akun?'}
-            <button 
-              onClick={() => { setIsRegister(!isRegister); setErrorMsg(''); setSuccessMsg(''); }}
-              className="ml-2 font-bold text-[#008787] hover:underline"
-            >
-              {isRegister ? 'Masuk di sini' : 'Daftar gratis'}
-            </button>
-          </p>
+                <p className="text-center text-xs text-slate-400 mt-6 cursor-pointer hover:text-[#008787]" onClick={() => setIsRegister(!isRegister)}>
+                    {isRegister ? 'Sudah punya akun? Login' : 'Belum punya akun? Daftar'}
+                </p>
+            </div>
         </div>
-      </div>
     </div>
   );
 };
@@ -1651,6 +1489,7 @@ const AuthPage = ({ onLoginSuccess }: { onLoginSuccess: (u: User) => void }) => 
 export default function App() {
   const [db, setDb] = useState<Database | null>(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [currentUser, setCurrentUser] = useState<User | null>(() => {
     const saved = localStorage.getItem('user');
@@ -1659,9 +1498,15 @@ export default function App() {
 
   const loadData = async () => {
     setLoading(true);
-    const data = await api.getDatabase();
-    setDb(data);
-    setLoading(false);
+    setError(null);
+    try {
+      const data = await api.getDatabase();
+      setDb(data);
+    } catch (err: any) {
+      setError(err.message || "Gagal memuat database.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleLoginSuccess = (user: User) => {

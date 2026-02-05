@@ -1,338 +1,202 @@
 
-import { Database, Room, Lecturer, Course, Schedule, DayOfWeek, User, UserRole, Booking, Item, ItemBorrowing } from './types';
+import { Database, Booking, ItemBorrowing, User, UserRole, DayOfWeek } from './types';
 
-const API_BASE_URL = 'http://localhost:3001/api';
-const STORAGE_KEY = 'pija_local_db';
-const USER_STORAGE_KEY = 'pija_users'; // Key khusus untuk user di offline mode
+const DB_KEY = 'eduschedule_db';
 
-// --- Local Storage Helper for Offline Mode ---
-const getLocalDb = (): Database => {
-  const saved = localStorage.getItem(STORAGE_KEY);
-  if (saved) {
-    return JSON.parse(saved);
-  }
-  const initial: Database = {
-    rooms: [
-      { id: '1', name: 'R. 101', capacity: 40, building: 'Gedung A', type: 'Ruang Kelas' },
-      { id: '2', name: 'Lab Komputer', capacity: 30, building: 'Gedung C', type: 'Laboratorium' },
-      { id: '3', name: 'Aula Utama', capacity: 200, building: 'Gedung B', type: 'Aula' }
-    ],
-    lecturers: [
-      { 
-        id: '1', 
-        nip: '198001012005011001',
-        nama: 'Dr. Budi Santoso, M.Kom', 
-        prodi: 'Teknik Informatika',
-        status_kepegawaian: 'PNS',
-        foto: '',
-        tanggallahir: '1980-01-01',
-        nidn: '0401018001',
-        nuptk: '1234567890123456',
-        hp: '081234567890',
-        email: 'budi@university.ac.id',
-        alamat: 'Jl. Pendidikan No. 1',
-        golongan: 'IV/a',
-        pangkat: 'Pembina',
-        pendidikan: 'S3'
-      },
-      { 
-        id: '2', 
-        nip: '199002022015012001',
-        nama: 'Siti Aminah, M.T', 
-        prodi: 'Sistem Informasi',
-        status_kepegawaian: 'Tetap Yayasan',
-        foto: '',
-        tanggallahir: '1990-02-02',
-        nidn: '0402029001',
-        nuptk: '9876543210987654',
-        hp: '081987654321',
-        email: 'siti@university.ac.id',
-        alamat: 'Jl. Kampus No. 5',
-        golongan: '-',
-        pangkat: 'Lektor',
-        pendidikan: 'S2'
-      }
-    ],
-    courses: [
-      { id: '1', name: 'Pemrograman Web', credits: 3 },
-      { id: '2', name: 'Basis Data', credits: 4 }
-    ],
-    schedules: [],
-    bookings: [],
-    items: [
-      { id: '1', nama_barang: 'Proyektor Epson', merek: 'Epson', tahun_perolehan: '2023', serial_number: 'EPS-001', kondisi: 'Baik', keterangan: 'Inventaris Lab', ruang: 'Lab Komputer', status_pinjam: 'Tersedia' },
-      { id: '2', nama_barang: 'Kamera DSLR', merek: 'Canon', tahun_perolehan: '2022', serial_number: 'CAM-99', kondisi: 'Baik', keterangan: 'Inventaris UKM', ruang: 'Gedung C', status_pinjam: 'Tersedia' }
-    ],
-    itemBorrowings: []
-  };
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(initial));
-  return initial;
+// --- DATA DUMMY AWAL (Jika LocalStorage kosong) ---
+const INITIAL_DATA: Database = {
+  rooms: [
+    { id: '1', name: 'R. Teori 1 (Gd. A)', capacity: 40, building: 'Gedung A', type: 'Kelas Teori' },
+    { id: '2', name: 'R. Teori 2 (Gd. A)', capacity: 40, building: 'Gedung A', type: 'Kelas Teori' },
+    { id: '3', name: 'Lab Komputer 1', capacity: 30, building: 'Gedung B', type: 'Laboratorium' },
+    { id: '4', name: 'Auditorium Mini', capacity: 100, building: 'Gedung C', type: 'Auditorium' },
+  ],
+  lecturers: [
+    { 
+      id: '1', nip: '198001012005011001', nama: 'Dr. Budi Santoso, M.M.', prodi: 'Administrasi Bisnis', 
+      status_kepegawaian: 'PNS', golongan: 'IV/a', pangkat: 'Pembina', pendidikan: 'S3', 
+      nidn: '001018001', nuptk: '123456789', hp: '08123456789', email: 'budi@pija.ac.id', alamat: 'Depok', foto: '', tanggallahir: '1980-01-01' 
+    },
+    { 
+      id: '2', nip: '198502022008012002', nama: 'Siti Aminah, S.E., M.Ak.', prodi: 'Akuntansi', 
+      status_kepegawaian: 'Tetap', golongan: 'III/c', pangkat: 'Penata', pendidikan: 'S2', 
+      nidn: '002028502', nuptk: '987654321', hp: '08987654321', email: 'siti@pija.ac.id', alamat: 'Jakarta', foto: '', tanggallahir: '1985-02-02' 
+    }
+  ],
+  courses: [
+    { id: '1', name: 'Pengantar Bisnis', credits: 3 },
+    { id: '2', name: 'Akuntansi Dasar', credits: 3 },
+    { id: '3', name: 'Manajemen Pemasaran', credits: 2 },
+    { id: '4', name: 'Hukum Dagang', credits: 2 }
+  ],
+  schedules: [
+    { 
+      id: '1', courseId: '1', lecturerId: '1', roomId: '1', day: DayOfWeek.Senin, 
+      startTime: '08:00', endTime: '10:30', studyProgram: 'AB Terapan', classGroup: 'AB-1A', 
+      semester: 1, jpm: 150, weeks: [1,2,3,4,5,6,7,8] 
+    },
+    { 
+      id: '2', courseId: '2', lecturerId: '2', roomId: '2', day: DayOfWeek.Selasa, 
+      startTime: '10:00', endTime: '12:30', studyProgram: 'Manajemen Keuangan', classGroup: 'MK-3B', 
+      semester: 3, jpm: 150, weeks: [1,2,3,4,5,6,7,8] 
+    }
+  ],
+  bookings: [],
+  items: [
+    { 
+      id: '1', nama_barang: 'Proyektor Epson EB-X500', merek: 'Epson', tahun_perolehan: '2023', 
+      serial_number: 'EPS-23-001', kondisi: 'Baik', keterangan: 'Aset Prodi AB', ruang: 'Gedung A', status_pinjam: 'Tersedia' 
+    },
+    { 
+      id: '2', nama_barang: 'Kamera DSLR Canon', merek: 'Canon', tahun_perolehan: '2022', 
+      serial_number: 'CN-22-555', kondisi: 'Baik', keterangan: 'Dokumentasi', ruang: 'Lab Media', status_pinjam: 'Tersedia' 
+    }
+  ],
+  itemBorrowings: []
 };
 
-// Helper for Users in Offline Mode
-const getLocalUsers = (): any[] => {
-    const saved = localStorage.getItem(USER_STORAGE_KEY);
-    if (saved) return JSON.parse(saved);
-    const initialUsers = [
-        { id: '1', username: 'admin', password: 'admin', role: UserRole.ADMIN, fullName: 'Administrator' },
-        { id: '2', username: 'user', password: 'user', role: UserRole.USER, fullName: 'Mahasiswa' }
-    ];
-    localStorage.setItem(USER_STORAGE_KEY, JSON.stringify(initialUsers));
-    return initialUsers;
-}
+// Users Dummy (Disimpan terpisah atau digabung, disini kita gabung logika sederhana)
+const USERS_KEY = 'eduschedule_users';
+const INITIAL_USERS: User[] = [
+  { id: '1', username: 'admin', role: UserRole.ADMIN, fullName: 'Administrator' },
+  { id: '2', username: 'user', role: UserRole.USER, fullName: 'Mahasiswa Umum' }
+];
 
-const saveLocalUsers = (users: any[]) => {
-    localStorage.setItem(USER_STORAGE_KEY, JSON.stringify(users));
-}
-
-const saveLocalDb = (db: Database) => {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(db));
-};
-
-const mapIdToString = (item: any) => ({ ...item, id: String(item.id) });
-
-let isOffline = false;
+// Helper untuk simulasi delay network
+const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 export const api = {
+  // Load Database dari LocalStorage
   async getDatabase(): Promise<Database> {
-    try {
-      const [rooms, lecturers, courses, schedules, bookings, items, itemBorrowings] = await Promise.all([
-        fetch(`${API_BASE_URL}/rooms`).then(r => r.json()),
-        fetch(`${API_BASE_URL}/lecturers`).then(r => r.json()),
-        fetch(`${API_BASE_URL}/courses`).then(r => r.json()),
-        fetch(`${API_BASE_URL}/schedules`).then(r => r.json()),
-        fetch(`${API_BASE_URL}/bookings`).then(r => r.json()),
-        fetch(`${API_BASE_URL}/items`).then(r => r.json()),
-        fetch(`${API_BASE_URL}/item-borrowings`).then(r => r.json())
-      ]);
-
-      isOffline = false;
-
-      return {
-        rooms: rooms.map(mapIdToString),
-        lecturers: lecturers.map(mapIdToString),
-        courses: courses.map(mapIdToString),
-        schedules: schedules.map((s: any) => ({
-            ...mapIdToString(s),
-            courseId: String(s.courseId),
-            lecturerId: String(s.lecturerId),
-            roomId: String(s.roomId),
-            weeks: typeof s.weeks === 'string' ? JSON.parse(s.weeks) : s.weeks
-        })),
-        bookings: bookings.map((b: any) => ({
-            ...mapIdToString(b),
-            userId: String(b.userId),
-            roomId: String(b.roomId)
-        })),
-        items: items.map(mapIdToString),
-        itemBorrowings: itemBorrowings.map((b: any) => ({
-            ...mapIdToString(b),
-            userId: String(b.userId),
-            itemId: String(b.itemId)
-        }))
-      };
-    } catch (error) {
-      console.warn("Backend unavailable, switching to local storage mode.");
-      isOffline = true;
-      return getLocalDb();
+    await delay(300); // Simulasi loading
+    const stored = localStorage.getItem(DB_KEY);
+    if (!stored) {
+      localStorage.setItem(DB_KEY, JSON.stringify(INITIAL_DATA));
+      return INITIAL_DATA;
     }
+    return JSON.parse(stored);
   },
 
-  async login(username: string, password: string): Promise<{ success: boolean; user?: User; message?: string }> {
-    if (isOffline) {
-        const users = getLocalUsers();
-        const found = users.find(u => u.username === username && u.password === password);
-        if (found) {
-            return { success: true, user: { id: found.id, username: found.username, role: found.role, fullName: found.fullName } };
-        }
-        return { success: false, message: 'Offline Mode: Username atau password salah' };
-    }
+  // Simpan seluruh state DB
+  async saveDatabase(db: Database) {
+    localStorage.setItem(DB_KEY, JSON.stringify(db));
+  },
 
-    const res = await fetch(`${API_BASE_URL}/login`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ username, password })
-    });
-    const data = await res.json();
-    if (data.success && data.user) {
-        return { success: true, user: { ...data.user, id: String(data.user.id) } };
+  // Login Mock
+  async login(username: string, password: string): Promise<{ success: boolean; user?: User; message?: string }> {
+    await delay(500);
+    // Hardcoded password check untuk demo
+    // Password default: admin/admin atau user/user
+    const storedUsers = JSON.parse(localStorage.getItem(USERS_KEY) || JSON.stringify(INITIAL_USERS));
+    const user = storedUsers.find((u: any) => u.username === username);
+
+    if (user && password === username) { // Simple logic: password sama dengan username
+      return { success: true, user };
     }
-    throw new Error(data.message || 'Login failed');
+    return { success: false, message: 'Username atau password salah (Coba: admin/admin)' };
   },
 
   async register(data: any): Promise<{ success: boolean; message: string }> {
-    if (isOffline) {
-        const users = getLocalUsers();
-        if (users.find(u => u.username === data.username)) {
-            throw new Error('Username sudah digunakan');
-        }
-        users.push({ id: String(Date.now()), ...data, role: UserRole.USER });
-        saveLocalUsers(users);
-        return { success: true, message: 'Registrasi berhasil (Offline)' };
+    await delay(500);
+    const storedUsers = JSON.parse(localStorage.getItem(USERS_KEY) || JSON.stringify(INITIAL_USERS));
+    if (storedUsers.find((u: any) => u.username === data.username)) {
+      throw new Error('Username sudah digunakan');
     }
-    const res = await fetch(`${API_BASE_URL}/register`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-    });
-    const result = await res.json();
-    if (result.success) return result;
-    throw new Error(result.message || 'Registration failed');
+    const newUser = {
+      id: String(Date.now()),
+      username: data.username,
+      role: UserRole.USER,
+      fullName: data.fullName
+    };
+    storedUsers.push(newUser);
+    localStorage.setItem(USERS_KEY, JSON.stringify(storedUsers));
+    return { success: true, message: 'Registrasi berhasil' };
   },
 
-  // User Management
+  // --- CRUD GENERIC ---
+  
+  async add<T>(type: keyof Database, data: any): Promise<T> {
+    await delay(200);
+    const db = await this.getDatabase();
+    const newItem = { ...data, id: String(Date.now()) };
+    
+    // Type assertion karena TypeScript butuh kepastian tipe array
+    (db[type] as any[]).push(newItem);
+    
+    await this.saveDatabase(db);
+    return newItem as T;
+  },
+
+  async delete(type: keyof Database, id: string): Promise<void> {
+    await delay(200);
+    const db = await this.getDatabase();
+    // Filter array
+    (db[type] as any[]) = (db[type] as any[]).filter((item: any) => item.id !== id);
+    await this.saveDatabase(db);
+  },
+
+  // --- SPECIFIC METHODS ---
+
   async getUsers(): Promise<User[]> {
-    if (isOffline) {
-        const users = getLocalUsers();
-        // Remove password before returning
-        return users.map(({ password, ...u }) => ({ ...u }));
-    }
-    const res = await fetch(`${API_BASE_URL}/users`);
-    const data = await res.json();
-    return data.map(mapIdToString);
+    const stored = localStorage.getItem(USERS_KEY);
+    return stored ? JSON.parse(stored) : INITIAL_USERS;
   },
 
-  async updateUser(id: string, data: { password?: string, fullName?: string }): Promise<void> {
-    if (isOffline) {
-        const users = getLocalUsers();
-        const idx = users.findIndex(u => u.id === id);
-        if (idx > -1) {
-            users[idx] = { ...users[idx], ...data };
-            saveLocalUsers(users);
-        }
-        return;
+  async updateUser(id: string, data: any): Promise<void> {
+    const users = await this.getUsers();
+    const idx = users.findIndex(u => u.id === id);
+    if (idx !== -1) {
+      users[idx] = { ...users[idx], ...data };
+      localStorage.setItem(USERS_KEY, JSON.stringify(users));
     }
-    await fetch(`${API_BASE_URL}/users/${id}`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-    });
   },
 
   async deleteUser(id: string): Promise<void> {
-    if (isOffline) {
-        let users = getLocalUsers();
-        users = users.filter(u => u.id !== id);
-        saveLocalUsers(users);
-        return;
-    }
-    await fetch(`${API_BASE_URL}/users/${id}`, { method: 'DELETE' });
+    let users = await this.getUsers();
+    users = users.filter(u => u.id !== id);
+    localStorage.setItem(USERS_KEY, JSON.stringify(users));
   },
 
   async createBooking(bookingData: any): Promise<Booking> {
-    if (isOffline) {
-        const db = getLocalDb();
-        const newBooking = { id: String(Date.now()), status: 'PENDING', ...bookingData };
-        db.bookings.push(newBooking);
-        saveLocalDb(db);
-        return newBooking as Booking;
-    }
-    const res = await fetch(`${API_BASE_URL}/bookings`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(bookingData)
-    });
-    const data = await res.json();
-    return { ...mapIdToString(data), userId: String(data.userId), roomId: String(data.roomId) };
+    return this.add('bookings', { ...bookingData, status: 'PENDING' }) as Promise<Booking>;
   },
 
   async updateBookingStatus(id: string, status: 'APPROVED' | 'REJECTED'): Promise<void> {
-    if (isOffline) {
-        const db = getLocalDb();
-        const booking = db.bookings.find(b => b.id === id);
-        if (booking) {
-            booking.status = status;
-            saveLocalDb(db);
-        }
-        return;
+    const db = await this.getDatabase();
+    const booking = db.bookings.find(b => b.id === id);
+    if (booking) {
+      booking.status = status;
+      await this.saveDatabase(db);
     }
-    await fetch(`${API_BASE_URL}/bookings/${id}/status`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ status })
-    });
   },
 
   async createItemBorrowing(data: any): Promise<ItemBorrowing> {
-    if (isOffline) {
-        const db = getLocalDb();
-        const newBorrowing = { id: String(Date.now()), status: 'PENDING', ...data };
-        db.itemBorrowings.push(newBorrowing);
-        saveLocalDb(db);
-        return newBorrowing as ItemBorrowing;
-    }
-    const res = await fetch(`${API_BASE_URL}/item-borrowings`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-    });
-    const result = await res.json();
-    return { ...mapIdToString(result), userId: String(result.userId), itemId: String(result.itemId) };
+    return this.add('itemBorrowings', { ...data, status: 'PENDING' }) as Promise<ItemBorrowing>;
   },
 
-  async updateItemBorrowingStatus(id: string, status: 'APPROVED' | 'REJECTED' | 'RETURNED', adminUser?: string): Promise<void> {
-    if (isOffline) {
-        const db = getLocalDb();
-        const borrowing = db.itemBorrowings.find(b => b.id === id);
-        if (borrowing) {
-            borrowing.status = status;
-            
-            // Update item status in offline mode
-            const item = db.items.find(i => i.id === borrowing.itemId);
-            if (item) {
-                if (status === 'APPROVED') {
-                    item.status_pinjam = 'Dipinjam';
-                    item.user_peminjam = 'Member';
-                } else if (status === 'RETURNED' || status === 'REJECTED') {
-                    item.status_pinjam = 'Tersedia';
-                    item.user_peminjam = undefined;
-                }
-            }
-            saveLocalDb(db);
+  async updateItemBorrowingStatus(id: string, status: 'APPROVED' | 'REJECTED' | 'RETURNED'): Promise<void> {
+    const db = await this.getDatabase();
+    const borrowing = db.itemBorrowings.find(b => b.id === id);
+    
+    if (borrowing) {
+      borrowing.status = status;
+      
+      // Update status item juga
+      const item = db.items.find(i => i.id === borrowing.itemId);
+      if (item) {
+        if (status === 'APPROVED') {
+          item.status_pinjam = 'Dipinjam';
+          // Cari nama user peminjam (simplified)
+          const users = await this.getUsers();
+          const user = users.find(u => u.id === borrowing.userId);
+          item.user_peminjam = user ? user.fullName : 'Unknown';
+        } else if (status === 'RETURNED' || status === 'REJECTED') {
+          item.status_pinjam = 'Tersedia';
+          item.user_peminjam = undefined;
         }
-        return;
+      }
+      
+      await this.saveDatabase(db);
     }
-    await fetch(`${API_BASE_URL}/item-borrowings/${id}/status`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ status, adminUser })
-    });
-  },
-
-  async add<T>(type: string, data: any): Promise<T> {
-    if (isOffline) {
-        const db = getLocalDb();
-        const newId = String(Date.now());
-        const newItem = { id: newId, ...data };
-        
-        // Ensure the type exists on the database object
-        if ((db as any)[type] && Array.isArray((db as any)[type])) {
-            (db as any)[type].push(newItem);
-            saveLocalDb(db);
-            return newItem as T;
-        }
-        throw new Error(`Offline storage error: Unknown table ${type}`);
-    }
-
-    const res = await fetch(`${API_BASE_URL}/${type}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-    });
-    const result = await res.json();
-    return mapIdToString(result) as T;
-  },
-
-  async delete(type: string, id: string): Promise<void> {
-    if (isOffline) {
-        const db = getLocalDb();
-        if ((db as any)[type] && Array.isArray((db as any)[type])) {
-            (db as any)[type] = (db as any)[type].filter((item: any) => item.id !== id);
-            saveLocalDb(db);
-            return;
-        }
-        return;
-    }
-    await fetch(`${API_BASE_URL}/${type}/${id}`, { method: 'DELETE' });
   }
 };
