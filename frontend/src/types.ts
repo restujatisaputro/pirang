@@ -65,12 +65,25 @@ export interface ItemBorrowing {
 
 export interface Lecturer {
   id: string;
-  name: string;
-  code: string;
+  nip: string;
+  nama: string;
+  prodi: string;
+  status_kepegawaian: string;
+  foto?: string;
+  tanggallahir: string;
+  nidn: string;
+  nuptk: string;
+  hp: string;
+  email: string;
+  alamat: string;
+  golongan: string;
+  pangkat: string;
+  pendidikan: string;
 }
 
 export interface Course {
   id: string;
+  code: string;
   name: string;
   credits: number;
 }
@@ -87,6 +100,7 @@ export interface Schedule {
   classGroup: string;
   semester: number;
   jpm: number;
+  weeks?: number[]; // Array minggu aktif, misal [1, 2, ... 16]
   date?: string; 
   isBooking?: boolean;
   bookingPurpose?: string;
@@ -112,4 +126,5 @@ export interface Database {
   bookings: Booking[];
   items: Item[];
   itemBorrowings: ItemBorrowing[];
+  users: User[];
 }
