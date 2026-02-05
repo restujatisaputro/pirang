@@ -5,6 +5,10 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3000,
+    allowedHosts: [
+      "admniaga.com",
+      ".admniaga.com",   // subdomain (aman)
+    ],
     proxy: {
       "/api": {
         target: "http://backend:3001",
