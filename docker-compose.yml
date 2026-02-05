@@ -1,33 +1,10 @@
-
-version: '3.8'
-
+version: "3.9"
 services:
   app:
     build: .
+    container_name: myapp
     ports:
-      - "3001:3001"
-    environment:
-      - DB_HOST=db
-      - DB_USER=root
-      - DB_PASSWORD=rootpassword
-      - DB_NAME=pija
-    depends_on:
-      - db
-    restart: always
-
-  db:
-    image: mysql:8.0
-    command: --default-authentication-plugin=mysql_native_password
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: pija
-    ports:
-      - "3306:3306"
-    volumes:
-      - db_data:/var/lib/mysql
-      # Mount schema.sql untuk inisialisasi tabel otomatis saat pertama kali dijalankan
-      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
-
-volumes:
-  db_data:
+      - "3000:3000"
+    restart: unless-stopped
+    env_file:
+      - .env.local
