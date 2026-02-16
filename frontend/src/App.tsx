@@ -139,9 +139,9 @@ interface ScheduleCardProps {
 
 const ScheduleCard: React.FC<ScheduleCardProps> = ({ s, conflicts, db, globalSearch }) => {
     const isConflicting = conflicts.has(s.id);
-    const course = db.courses.find(c => c.id === s.courseId);
-    const lecturer = db.lecturers.find(l => l.id === s.lecturerId);
-    const room = db.rooms.find(r => r.id === s.roomId);
+    const course = db.courses.find(c => String(c.id) === String(s.courseId));
+    const lecturer = db.lecturers.find(l => String(l.id) === String(s.lecturerId));
+    const room = db.rooms.find(r => String(r.id) === String(s.roomId));
 
     return (
       <div className={`bg-white p-6 md:p-8 rounded-[2rem] border luxury-shadow flex flex-col gap-4 group transition-all duration-300 relative overflow-hidden h-full hover:-translate-y-1 ${isConflicting ? 'border-rose-500 bg-rose-50/50' : s.isBooking ? 'border-indigo-100 bg-indigo-50/10' : 'border-slate-100 hover:border-teal-200'}`}>
@@ -197,7 +197,13 @@ const ScheduleView = ({ db }: { db: Database }) => {
   const activeDay = useMemo(() => getDayFromDate(selectedDate), [selectedDate]);
 
   const mergedSchedules = useMemo(() => {
-    const regularSchedules = db.schedules.map(s => ({ ...s, isBooking: false }));
+    const regularSchedules = db.schedules.map(s => ({
+      ...s,
+      isBooking: false,
+      courseId: String((s as any).courseId),
+      lecturerId: String((s as any).lecturerId),
+      roomId: String((s as any).roomId),
+    }));
     const bookingSchedules = db.bookings
       .filter(b => b.status === 'APPROVED')
       .map(b => {
@@ -243,17 +249,20 @@ const ScheduleView = ({ db }: { db: Database }) => {
       if (!matchesDate) return false;
 
       // 2. Specific Filters (Overlapping / AND Logic)
-      if (filterLecturer && s.lecturerId !== filterLecturer) return false;
-      if (filterRoom && s.roomId !== filterRoom) return false;
-      if (filterCourse && s.courseId !== filterCourse) return false;
-      if (filterClass && s.classGroup !== filterClass) return false;
+      if (filterLecturer && String(s.lecturerId) !== String(filterLecturer)) return false;
+      if (filterRoom && String(s.roomId) !== String(filterRoom)) return false;
+      if (filterCourse && String(s.courseId) !== String(filterCourse)) return false;
+      if (filterClass && String(s.classGroup) !== String(filterClass)) return false;
 
       // 3. Global Search (Optional Overlay)
       if (globalSearch.trim()) {
          const lowerText = globalSearch.toLowerCase();
-         const courseName = db.courses.find(c => c.id === s.courseId)?.name.toLowerCase() || '';
-         const lecturerName = db.lecturers.find(l => l.id === s.lecturerId)?.nama.toLowerCase() || '';
-         const roomName = db.rooms.find(r => r.id === s.roomId)?.name.toLowerCase() || '';
+         const courseName =
+          db.courses.find(c => String(c.id) === String(s.courseId))?.name?.toLowerCase() || '';
+        const lecturerName =
+          db.lecturers.find(l => String(l.id) === String(s.lecturerId))?.nama?.toLowerCase() || '';
+        const roomName =
+          db.rooms.find(r => String(r.id) === String(s.roomId))?.name?.toLowerCase() || '';
          const purpose = s.bookingPurpose?.toLowerCase() || '';
          const className = s.classGroup.toLowerCase();
          
