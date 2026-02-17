@@ -200,7 +200,6 @@ const ScheduleView = ({ db }: { db: Database }) => {
     const regularSchedules = db.schedules.map(s => ({
       ...s,
       isBooking: false,
-      // Normalize IDs to string so <select value> matches even if API returns numbers
       courseId: String((s as any).courseId),
       lecturerId: String((s as any).lecturerId),
       roomId: String((s as any).roomId),
@@ -250,7 +249,6 @@ const ScheduleView = ({ db }: { db: Database }) => {
       if (!matchesDate) return false;
 
       // 2. Specific Filters (Overlapping / AND Logic)
-      // NOTE: normalize to string to avoid number-vs-string mismatches from API
       if (filterLecturer && String(s.lecturerId) !== String(filterLecturer)) return false;
       if (filterRoom && String(s.roomId) !== String(filterRoom)) return false;
       if (filterCourse && String(s.courseId) !== String(filterCourse)) return false;
@@ -259,9 +257,12 @@ const ScheduleView = ({ db }: { db: Database }) => {
       // 3. Global Search (Optional Overlay)
       if (globalSearch.trim()) {
          const lowerText = globalSearch.toLowerCase();
-         const courseName = db.courses.find(c => String(c.id) === String(s.courseId))?.name?.toLowerCase() || '';
-         const lecturerName = db.lecturers.find(l => String(l.id) === String(s.lecturerId))?.nama?.toLowerCase() || '';
-         const roomName = db.rooms.find(r => String(r.id) === String(s.roomId))?.name?.toLowerCase() || '';
+         const courseName =
+          db.courses.find(c => String(c.id) === String(s.courseId))?.name?.toLowerCase() || '';
+        const lecturerName =
+          db.lecturers.find(l => String(l.id) === String(s.lecturerId))?.nama?.toLowerCase() || '';
+        const roomName =
+          db.rooms.find(r => String(r.id) === String(s.roomId))?.name?.toLowerCase() || '';
          const purpose = s.bookingPurpose?.toLowerCase() || '';
          const className = s.classGroup.toLowerCase();
          
@@ -351,7 +352,7 @@ const ScheduleView = ({ db }: { db: Database }) => {
                     >
                         <option value="">Semua Dosen</option>
                         {db.lecturers.map(l => (
-                            <option key={l.id} value={String(l.id)}>{l.nama}</option>
+                            <option key={l.id} value={l.id}>{l.nama}</option>
                         ))}
                     </select>
 
@@ -362,7 +363,7 @@ const ScheduleView = ({ db }: { db: Database }) => {
                     >
                         <option value="">Semua Mata Kuliah</option>
                         {db.courses.map(c => (
-                            <option key={c.id} value={String(c.id)}>{c.name}</option>
+                            <option key={c.id} value={c.id}>{c.name}</option>
                         ))}
                     </select>
 
@@ -373,7 +374,7 @@ const ScheduleView = ({ db }: { db: Database }) => {
                     >
                         <option value="">Semua Ruangan</option>
                         {db.rooms.map(r => (
-                            <option key={r.id} value={String(r.id)}>{r.name}</option>
+                            <option key={r.id} value={r.id}>{r.name}</option>
                         ))}
                     </select>
 
@@ -1174,29 +1175,6 @@ const MyRequestsView = ({ db, user }: { db: Database, user: User }) => {
 // --- Admin View ---
 const AdminView = ({ db, onDataChange }: { db: Database, onDataChange: () => void }) => {
   const [activeTab, setActiveTab] = useState<'users' | 'schedules' | 'rooms' | 'courses' | 'items' | 'bookings' | 'borrowings' | 'lecturers'>('users');
-
-  // Pagination (untuk tab data besar agar load & edit lebih ringan)
-  const [pageByTab, setPageByTab] = useState<Record<string, number>>({
-    lecturers: 1,
-    courses: 1,
-    items: 1,
-    schedules: 1,
-    rooms: 1,
-    users: 1,
-    bookings: 1,
-    borrowings: 1,
-  });
-
-  const [perPageByTab, setPerPageByTab] = useState<Record<string, number>>({
-    lecturers: 10,
-    courses: 10,
-    items: 10,
-    schedules: 25,
-    rooms: 10,
-    users: 6,
-    bookings: 10,
-    borrowings: 10,
-  });
   
   // State untuk Modal Tambah Data
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
@@ -1419,21 +1397,21 @@ const AdminView = ({ db, onDataChange }: { db: Database, onDataChange: () => voi
                           <label className="block text-xs font-bold text-slate-500 uppercase mb-2">Mata Kuliah ID</label>
                           <select required className="w-full p-3 rounded-xl bg-slate-50 border border-slate-200" value={newItemData.courseId || ''} onChange={(e) => handleInputChange('courseId', e.target.value)}>
                               <option value="">Pilih Mata Kuliah</option>
-                              {db.courses.map(c => <option key={c.id} value={String(c.id)}>{c.name}</option>)}
+                              {db.courses.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}
                           </select>
                       </div>
                       <div className="mb-4">
                           <label className="block text-xs font-bold text-slate-500 uppercase mb-2">Dosen ID</label>
                           <select required className="w-full p-3 rounded-xl bg-slate-50 border border-slate-200" value={newItemData.lecturerId || ''} onChange={(e) => handleInputChange('lecturerId', e.target.value)}>
                                <option value="">Pilih Dosen</option>
-                               {db.lecturers.map(l => <option key={l.id} value={String(l.id)}>{l.nama}</option>)}
+                               {db.lecturers.map(l => <option key={l.id} value={l.id}>{l.nama}</option>)}
                           </select>
                       </div>
                       <div className="mb-4">
                           <label className="block text-xs font-bold text-slate-500 uppercase mb-2">Ruangan ID</label>
                           <select required className="w-full p-3 rounded-xl bg-slate-50 border border-slate-200" value={newItemData.roomId || ''} onChange={(e) => handleInputChange('roomId', e.target.value)}>
                                 <option value="">Pilih Ruangan</option>
-                                {db.rooms.map(r => <option key={r.id} value={String(r.id)}>{r.name}</option>)}
+                                {db.rooms.map(r => <option key={r.id} value={r.id}>{r.name}</option>)}
                           </select>
                       </div>
                       <div className="grid grid-cols-2 gap-4 mb-4">
@@ -1473,11 +1451,7 @@ const AdminView = ({ db, onDataChange }: { db: Database, onDataChange: () => voi
 
   const TabButton = ({ id, icon: Icon, label }: { id: typeof activeTab, icon: any, label: string }) => (
     <button 
-      onClick={() => {
-        setActiveTab(id);
-        // Reset ke page 1 saat pindah tab (biar tidak "nyangkut" di page tinggi)
-        setPageByTab(prev => ({ ...prev, [id]: 1 }));
-      }}
+      onClick={() => setActiveTab(id)}
       className={`flex items-center gap-2 px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider transition-all whitespace-nowrap ${
         activeTab === id 
           ? 'bg-[#008787] text-white shadow-lg scale-105' 
@@ -1488,88 +1462,6 @@ const AdminView = ({ db, onDataChange }: { db: Database, onDataChange: () => voi
       {label}
     </button>
   );
-
-
-  // --- Pagination Helpers ---
-  const clamp = (n: number, min: number, max: number) => Math.max(min, Math.min(max, n));
-
-  const getPage = (tab: string) => pageByTab[tab] ?? 1;
-  const getPerPage = (tab: string) => perPageByTab[tab] ?? 10;
-
-  const setPage = (tab: string, p: number, totalPages: number) => {
-    const next = clamp(p, 1, totalPages);
-    setPageByTab(prev => ({ ...prev, [tab]: next }));
-  };
-
-  const paginate = <T,>(items: T[], tab: string) => {
-    const perPage = getPerPage(tab);
-    const totalItems = items.length;
-    const totalPages = Math.max(1, Math.ceil(totalItems / perPage));
-    const page = clamp(getPage(tab), 1, totalPages);
-    const start = (page - 1) * perPage;
-    const paged = items.slice(start, start + perPage);
-    return { paged, page, perPage, totalItems, totalPages };
-  };
-
-  const PaginationBar = ({ tab, totalItems, page, totalPages }: { tab: string; totalItems: number; page: number; totalPages: number }) => {
-    if (totalItems === 0) return null;
-    return (
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mt-6">
-        <div className="text-xs text-slate-500">
-          Total: <b>{totalItems}</b> data • Page <b>{page}</b> / <b>{totalPages}</b>
-        </div>
-
-        <div className="flex items-center gap-2 flex-wrap">
-          <button
-            type="button"
-            onClick={() => setPage(tab, 1, totalPages)}
-            disabled={page <= 1}
-            className="px-3 py-2 rounded-xl text-xs font-bold border border-slate-200 disabled:opacity-40 hover:bg-slate-50"
-          >
-            First
-          </button>
-          <button
-            type="button"
-            onClick={() => setPage(tab, page - 1, totalPages)}
-            disabled={page <= 1}
-            className="px-3 py-2 rounded-xl text-xs font-bold border border-slate-200 disabled:opacity-40 hover:bg-slate-50"
-          >
-            Prev
-          </button>
-          <button
-            type="button"
-            onClick={() => setPage(tab, page + 1, totalPages)}
-            disabled={page >= totalPages}
-            className="px-3 py-2 rounded-xl text-xs font-bold border border-slate-200 disabled:opacity-40 hover:bg-slate-50"
-          >
-            Next
-          </button>
-          <button
-            type="button"
-            onClick={() => setPage(tab, totalPages, totalPages)}
-            disabled={page >= totalPages}
-            className="px-3 py-2 rounded-xl text-xs font-bold border border-slate-200 disabled:opacity-40 hover:bg-slate-50"
-          >
-            Last
-          </button>
-
-          <select
-            className="ml-2 px-3 py-2 rounded-xl text-xs font-bold border border-slate-200 bg-white"
-            value={getPerPage(tab)}
-            onChange={(e) => {
-              const next = Number(e.target.value) || 10;
-              setPerPageByTab(prev => ({ ...prev, [tab]: next }));
-              setPageByTab(prev => ({ ...prev, [tab]: 1 }));
-            }}
-          >
-            {[5, 10, 15, 25, 50].map(n => (
-              <option key={n} value={n}>{n}/page</option>
-            ))}
-          </select>
-        </div>
-      </div>
-    );
-  };
 
   return (
     <div className="space-y-8 animate-academic">
@@ -1609,55 +1501,47 @@ const AdminView = ({ db, onDataChange }: { db: Database, onDataChange: () => voi
                  <button onClick={handleAddClick} className="flex items-center gap-2 px-5 py-2.5 bg-[#008787] text-white rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-[#006e6e] shadow-lg shadow-teal-500/20"><Plus size={16}/> Tambah User</button>
                </div>
                
-               {(() => {
-                  const pg = paginate(db.users, 'users');
-                  return (
-                    <>
-                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {pg.paged.map(u => (
-                          <div key={u.id} className="p-6 rounded-3xl border border-slate-100 hover:border-teal-200 hover:shadow-xl transition-all group bg-white flex flex-col justify-between">
-                             <div className="flex items-start gap-4 mb-6">
-                                <div className={`w-14 h-14 rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg ${u.role === 'ADMIN' ? 'bg-rose-500' : 'bg-[#008787]'}`}>
-                                   {u.username[0].toUpperCase()}
-                                </div>
-                                <div>
-                                  <h3 className="font-bold text-lg text-slate-800 leading-tight mb-1">{u.fullName || u.username}</h3>
-                                  <div className="flex items-center gap-2">
-                                     <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">{u.role}</span>
-                                     <select 
-                                       className="text-[10px] bg-slate-100 border-none rounded px-2 py-0.5 outline-none cursor-pointer hover:bg-slate-200"
-                                       value={u.role}
-                                       onChange={(e) => handleRoleChange(u.id, e.target.value as UserRole)}
-                                     >
-                                       <option value="ADMIN">ADMIN</option>
-                                       <option value="USER">USER</option>
-                                     </select>
-                                  </div>
-                                </div>
-                             </div>
-
-                             <div className="flex gap-3 mt-auto">
-                                <button 
-                                  onClick={() => handleResetPassword(u.id)}
-                                  className="flex-1 py-3 rounded-xl bg-indigo-50 text-indigo-600 font-bold text-xs uppercase tracking-wide hover:bg-indigo-100 transition-colors flex items-center justify-center gap-2"
-                                >
-                                  <KeyRound size={14} /> Reset Pass
-                                </button>
-                                <button 
-                                  onClick={() => handleDeleteUser(u.id)}
-                                  className="flex-1 py-3 rounded-xl bg-rose-50 text-rose-500 font-bold text-xs uppercase tracking-wide hover:bg-rose-100 transition-colors flex items-center justify-center gap-2"
-                                >
-                                  <Trash2 size={14} /> Hapus
-                                </button>
-                             </div>
+               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {db.users.map(u => (
+                    <div key={u.id} className="p-6 rounded-3xl border border-slate-100 hover:border-teal-200 hover:shadow-xl transition-all group bg-white flex flex-col justify-between">
+                       <div className="flex items-start gap-4 mb-6">
+                          <div className={`w-14 h-14 rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg ${u.role === 'ADMIN' ? 'bg-rose-500' : 'bg-[#008787]'}`}>
+                             {u.username[0].toUpperCase()}
                           </div>
-                        ))}
-                      </div>
-
-                      <PaginationBar tab="users" totalItems={pg.totalItems} page={pg.page} totalPages={pg.totalPages} />
-                    </>
-                  );
-               })()}
+                          <div>
+                            <h3 className="font-bold text-lg text-slate-800 leading-tight mb-1">{u.fullName || u.username}</h3>
+                            <div className="flex items-center gap-2">
+                               <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">{u.role}</span>
+                               {/* Role Switcher */}
+                               <select 
+                                 className="text-[10px] bg-slate-100 border-none rounded px-2 py-0.5 outline-none cursor-pointer hover:bg-slate-200"
+                                 value={u.role}
+                                 onChange={(e) => handleRoleChange(u.id, e.target.value as UserRole)}
+                               >
+                                 <option value="ADMIN">ADMIN</option>
+                                 <option value="USER">USER</option>
+                               </select>
+                            </div>
+                          </div>
+                       </div>
+                       
+                       <div className="flex gap-3 mt-auto">
+                          <button 
+                            onClick={() => handleResetPassword(u.id)}
+                            className="flex-1 py-3 rounded-xl bg-indigo-50 text-indigo-600 font-bold text-xs uppercase tracking-wide hover:bg-indigo-100 transition-colors flex items-center justify-center gap-2"
+                          >
+                            <KeyRound size={14} /> Reset Pass
+                          </button>
+                          <button 
+                            onClick={() => handleDeleteUser(u.id)}
+                            className="flex-1 py-3 rounded-xl bg-rose-50 text-rose-500 font-bold text-xs uppercase tracking-wide hover:bg-rose-100 transition-colors flex items-center justify-center gap-2"
+                          >
+                            <Trash2 size={14} /> Hapus
+                          </button>
+                       </div>
+                    </div>
+                  ))}
+               </div>
             </div>
           )}
 
@@ -1683,9 +1567,7 @@ const AdminView = ({ db, onDataChange }: { db: Database, onDataChange: () => voi
                      </tr>
                    </thead>
                    <tbody>
-                     {(() => {
-                     const pg = paginate(db.bookings.slice().reverse(), 'bookings');
-                     return pg.paged.map((booking) => {
+                     {db.bookings.slice().reverse().map((booking) => {
                        const user = db.users.find(u => u.id === booking.userId);
                        const room = db.rooms.find(r => r.id === booking.roomId);
                        return (
@@ -1740,17 +1622,12 @@ const AdminView = ({ db, onDataChange }: { db: Database, onDataChange: () => voi
                           </td>
                         </tr>
                        );
-                     });
-                     })()}
+                     })}
                      {db.bookings.length === 0 && (
                         <tr><td colSpan={5} className="p-8 text-center text-slate-400 italic">Belum ada data booking.</td></tr>
                      )}
                    </tbody>
                  </table>
-                 {(() => {
-                   const pg = paginate(db.bookings.slice().reverse(), 'bookings');
-                   return <PaginationBar tab="bookings" totalItems={pg.totalItems} page={pg.page} totalPages={pg.totalPages} />;
-                 })()}
                </div>
              </div>
           )}
@@ -1777,9 +1654,7 @@ const AdminView = ({ db, onDataChange }: { db: Database, onDataChange: () => voi
                      </tr>
                    </thead>
                    <tbody>
-                     {(() => {
-                       const pg = paginate(db.itemBorrowings.slice().reverse(), 'borrowings');
-                       return pg.paged.map((borrow) => {
+                     {db.itemBorrowings.slice().reverse().map((borrow) => {
                        const user = db.users.find(u => u.id === borrow.userId);
                        const item = db.items.find(i => i.id === borrow.itemId);
                        return (
@@ -1837,17 +1712,12 @@ const AdminView = ({ db, onDataChange }: { db: Database, onDataChange: () => voi
                           </td>
                         </tr>
                        );
-                     });
-                     })()}
+                     })}
                      {db.itemBorrowings.length === 0 && (
                         <tr><td colSpan={5} className="p-8 text-center text-slate-400 italic">Belum ada data peminjaman.</td></tr>
                      )}
                    </tbody>
                  </table>
-                 {(() => {
-                   const pg = paginate(db.itemBorrowings.slice().reverse(), 'borrowings');
-                   return <PaginationBar tab="borrowings" totalItems={pg.totalItems} page={pg.page} totalPages={pg.totalPages} />;
-                 })()}
                </div>
              </div>
           )}
@@ -1873,242 +1743,7 @@ const AdminView = ({ db, onDataChange }: { db: Database, onDataChange: () => voi
                      </tr>
                    </thead>
                    <tbody>
-                    {(() => {
-                      // SCHEDULING TAB: tampilkan detail jadwal + pagination agar tidak berat dan mudah edit
-                      if (activeTab === 'schedules') {
-                        const page = pageByTab.schedules || 1;
-                        const perPage = perPageByTab.schedules || 25;
-
-                        // data mentah
-                        const allSchedules = (db.schedules || []).slice();
-                        // urutkan biar enak dibaca
-                        allSchedules.sort((a: any, b: any) => {
-                          const dayOrder: Record<string, number> = { Senin: 1, Selasa: 2, Rabu: 3, Kamis: 4, Jumat: 5, Sabtu: 6, Minggu: 7 };
-                          const da = dayOrder[String(a.day)] ?? 99;
-                          const dbb = dayOrder[String(b.day)] ?? 99;
-                          if (da !== dbb) return da - dbb;
-                          return String(a.startTime).localeCompare(String(b.startTime));
-                        });
-
-                        const totalRows = allSchedules.length;
-                        const totalPages = Math.max(1, Math.ceil(totalRows / perPage));
-                        const safePage = Math.min(Math.max(1, page), totalPages);
-                        const start = (safePage - 1) * perPage;
-                        const paged = allSchedules.slice(start, start + perPage);
-
-                        const setPage = (p: number) => setPageByTab(prev => ({ ...prev, schedules: p }));
-                        const setPerPage = (pp: number) => setPerPageByTab(prev => ({ ...prev, schedules: pp }));
-
-                        return (
-                          <>
-                            {paged.map((item: any) => {
-                              const course = db.courses.find(c => String(c.id) === String(item.courseId));
-                              const lecturer = db.lecturers.find(l => String(l.id) === String(item.lecturerId));
-                              const room = db.rooms.find(r => String(r.id) === String(item.roomId));
-
-                              const title = course?.name || `Mata Kuliah #${item.courseId}`;
-                              const subtitleParts = [
-                                String(item.day || '').toUpperCase(),
-                                `${item.startTime || ''} - ${item.endTime || ''}`,
-                                room?.name || `Ruang #${item.roomId}`,
-                                item.classGroup,
-                                item.studyProgram,
-                              ].filter(Boolean);
-
-                              const metaParts = [
-                                lecturer?.nama ? `Dosen: ${lecturer.nama}` : null,
-                                item.semester != null ? `Semester: ${item.semester}` : null,
-                                item.jpm != null ? `JPM: ${item.jpm}` : null,
-                                item.weeks ? `Minggu: ${Array.isArray(item.weeks) ? item.weeks.length : String(item.weeks).length}` : null,
-                              ].filter(Boolean);
-
-                              return (
-                                <tr key={item.id} className="border-t border-slate-50 hover:bg-slate-50 transition-colors text-sm font-semibold text-slate-700">
-                                  <td className="p-4 text-slate-400 font-mono text-xs">#{item.id}</td>
-                                  <td className="p-4">
-                                    <div className="flex items-center gap-4">
-                                      <div>
-                                        <div className="font-bold text-lg">{title}</div>
-                                        <div className="text-xs text-slate-400 font-normal uppercase tracking-wide">
-                                          {subtitleParts.join(' • ')}
-                                        </div>
-                                        {metaParts.length > 0 && (
-                                          <div className="text-xs text-slate-500 font-normal mt-1">
-                                            {metaParts.join(' • ')}
-                                          </div>
-                                        )}
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td className="p-4 text-right">
-                                    <div className="flex justify-end gap-2">
-                                      <button onClick={() => handleEditClick(item)} className="p-2 hover:bg-teal-50 text-slate-300 hover:text-[#008787] rounded-lg transition-colors" title="Edit"><Edit size={16}/></button>
-                                      <button onClick={() => handleDeleteGeneral(item.id)} className="p-2 hover:bg-rose-50 text-slate-300 hover:text-rose-500 rounded-lg transition-colors" title="Hapus"><Trash2 size={16}/></button>
-                                    </div>
-                                  </td>
-                                </tr>
-                              );
-                            })}
-
-                            {/* Pagination Controls */}
-                            <tr className="border-t border-slate-100 bg-white">
-                              <td colSpan={3} className="p-4">
-                                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-                                  <div className="text-xs text-slate-500">
-                                    Total: <b>{totalRows}</b> data • Page <b>{safePage}</b> / <b>{totalPages}</b>
-                                  </div>
-                                  <div className="flex items-center gap-2 flex-wrap justify-end">
-                                    <select
-                                      className="text-xs bg-slate-50 border border-slate-200 rounded-lg px-2 py-1"
-                                      value={perPage}
-                                      onChange={(e) => setPerPage(parseInt(e.target.value, 10) || 25)}
-                                    >
-                                      {[10, 25, 50, 100].map(n => (
-                                        <option key={n} value={n}>{n}/hal</option>
-                                      ))}
-                                    </select>
-                                    <button
-                                      className="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 disabled:opacity-50"
-                                      onClick={() => setPage(1)}
-                                      disabled={safePage <= 1}
-                                    >
-                                      First
-                                    </button>
-                                    <button
-                                      className="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 disabled:opacity-50"
-                                      onClick={() => setPage(safePage - 1)}
-                                      disabled={safePage <= 1}
-                                    >
-                                      Prev
-                                    </button>
-                                    <button
-                                      className="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 disabled:opacity-50"
-                                      onClick={() => setPage(safePage + 1)}
-                                      disabled={safePage >= totalPages}
-                                    >
-                                      Next
-                                    </button>
-                                    <button
-                                      className="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 disabled:opacity-50"
-                                      onClick={() => setPage(totalPages)}
-                                      disabled={safePage >= totalPages}
-                                    >
-                                      Last
-                                    </button>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                          </>
-                        );
-                      }
-
-                      // LECTURERS TAB: pagination agar loading lebih ringan
-                      if (activeTab === 'lecturers') {
-                        const page = pageByTab.lecturers || 1;
-                        const perPage = perPageByTab.lecturers || 25;
-
-                        const allLecturers = (db.lecturers || []).slice();
-                        allLecturers.sort((a: any, b: any) => String(a.nama || a.name || '').localeCompare(String(b.nama || b.name || ''), 'id'));
-
-                        const totalRows = allLecturers.length;
-                        const totalPages = Math.max(1, Math.ceil(totalRows / perPage));
-                        const safePage = Math.min(Math.max(1, page), totalPages);
-                        const start = (safePage - 1) * perPage;
-                        const paged = allLecturers.slice(start, start + perPage);
-
-                        const setPage = (p: number) => setPageByTab(prev => ({ ...prev, lecturers: p }));
-                        const setPerPage = (pp: number) => setPerPageByTab(prev => ({ ...prev, lecturers: pp }));
-
-                        return (
-                          <>
-                            {paged.map((item: any) => (
-                              <tr key={item.id} className="border-t border-slate-50 hover:bg-slate-50 transition-colors text-sm font-semibold text-slate-700">
-                                <td className="p-4 text-slate-400 font-mono text-xs">#{item.id}</td>
-                                <td className="p-4">
-                                  <div className="flex items-center gap-4">
-                                    {item.foto && (
-                                      <img
-                                        src={item.foto}
-                                        loading="lazy"
-                                        alt={item.nama || item.name || 'Dosen'}
-                                        className="w-12 h-12 rounded-xl object-cover bg-slate-200 border border-slate-100 shadow-sm"
-                                      />
-                                    )}
-                                    <div>
-                                      <div className="font-bold text-lg">{item.nama || item.name || `Dosen #${item.id}`}</div>
-                                      <div className="text-xs text-slate-400 font-normal uppercase tracking-wide">{item.prodi || item.jurusan || ''}</div>
-                                    </div>
-                                  </div>
-                                </td>
-                                <td className="p-4 text-right">
-                                  <div className="flex justify-end gap-2">
-                                    <button onClick={() => handleEditClick(item)} className="p-2 hover:bg-teal-50 text-slate-300 hover:text-[#008787] rounded-lg transition-colors"><Edit size={16}/></button>
-                                    <button onClick={() => handleDeleteGeneral(item.id)} className="p-2 hover:bg-rose-50 text-slate-300 hover:text-rose-500 rounded-lg transition-colors"><Trash2 size={16}/></button>
-                                  </div>
-                                </td>
-                              </tr>
-                            ))}
-                            <tr className="border-t border-slate-50">
-                              <td colSpan={3} className="p-4">
-                                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-                                  <div className="text-xs text-slate-500">
-                                    Total: <b>{totalRows}</b> dosen • Page <b>{safePage}</b> / <b>{totalPages}</b>
-                                  </div>
-                                  <div className="flex items-center gap-2 flex-wrap justify-end">
-                                    <select
-                                      className="text-xs bg-slate-50 border border-slate-200 rounded-lg px-2 py-1"
-                                      value={perPage}
-                                      onChange={(e) => { setPerPage(parseInt(e.target.value, 10) || 25); setPage(1); }}
-                                    >
-                                      {[10, 25, 50, 100].map(n => (
-                                        <option key={n} value={n}>{n}/hal</option>
-                                      ))}
-                                    </select>
-                                    <button
-                                      className="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 disabled:opacity-50"
-                                      onClick={() => setPage(1)}
-                                      disabled={safePage <= 1}
-                                    >
-                                      First
-                                    </button>
-                                    <button
-                                      className="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 disabled:opacity-50"
-                                      onClick={() => setPage(safePage - 1)}
-                                      disabled={safePage <= 1}
-                                    >
-                                      Prev
-                                    </button>
-                                    <button
-                                      className="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 disabled:opacity-50"
-                                      onClick={() => setPage(safePage + 1)}
-                                      disabled={safePage >= totalPages}
-                                    >
-                                      Next
-                                    </button>
-                                    <button
-                                      className="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 disabled:opacity-50"
-                                      onClick={() => setPage(totalPages)}
-                                      disabled={safePage >= totalPages}
-                                    >
-                                      Last
-                                    </button>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                          </>
-                        );
-                      }
-
-
-                      // DEFAULT TAB: gunakan pagination umum untuk tab data (courses/items/rooms/dll)
-                      const allItems = ((db[activeTab as keyof Database] as any[]) || []).slice();
-                      const pg = paginate(allItems, activeTab);
-
-                      return (
-                        <>
-                          {pg.paged.map((item: any) => (
+                     {(db[activeTab as keyof Database] as any[]).map((item: any) => (
                        <tr key={item.id} className="border-t border-slate-50 hover:bg-slate-50 transition-colors text-sm font-semibold text-slate-700">
                          <td className="p-4 text-slate-400 font-mono text-xs">#{item.id}</td>
                          <td className="p-4">
@@ -2130,18 +1765,11 @@ const AdminView = ({ db, onDataChange }: { db: Database, onDataChange: () => voi
                             </div>
                          </td>
                        </tr>
-                          ))}
-                          <tr className="border-t border-slate-50">
-                            <td colSpan={3} className="p-4">
-                              <PaginationBar tab={activeTab} totalItems={pg.totalItems} page={pg.page} totalPages={pg.totalPages} />
-                            </td>
-                          </tr>
-                        </>
-                      );})()}
+                     ))}
                    </tbody>
                  </table>
                </div>
-               {activeTab === 'schedules' && <p className="text-center text-xs text-slate-400 italic mt-4">Tab Jadwal memakai pagination supaya load lebih cepat dan editing lebih mudah.</p>}
+               {activeTab === 'schedules' && <p className="text-center text-xs text-slate-400 italic mt-4">Hanya menampilkan sebagian data untuk performa.</p>}
              </div>
           )}
 
