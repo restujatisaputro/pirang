@@ -1,19 +1,37 @@
-require("dotenv").config();
-const express = require("express");
-const cors = require("cors");
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
 
-const healthRoutes = require("./routes/health.routes");
-const databaseRoutes = require("./routes/database.routes");
-const authRoutes = require("./routes/auth.routes");
+import authRoutes from "./routes/auth.js";
+import databaseRoutes from "./routes/database.js";
+import usersRoutes from "./routes/users.js";
+import bookingsRoutes from "./routes/bookings.js";
+import borrowingsRoutes from "./routes/borrowings.js";
+import crudRoutes from "./routes/crud.js";
+import dbdumpRoutes from "./routes/dbdump.js";
+import schedulesRoutes from "./routes/schedules.js";
+
+dotenv.config();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use("/api", healthRoutes);
-app.use("/api", databaseRoutes);
-app.use("/api", authRoutes);
+// health
+app.get("/", (req, res) => res.json({ ok: true, service: "pija-backend" }));
 
-app.listen(process.env.PORT || 3001, () => {
-  console.log(`Backend running on port ${process.env.PORT || 3001}`);
-});
+// mount routes
+app.use("/api/auth", authRoutes);
+app.use("/api/database", databaseRoutes);
+app.use("/api/users", usersRoutes);
+app.use("/api/bookings", bookingsRoutes);
+app.use("/api/borrowings", borrowingsRoutes);
+app.use("/api/crud", crudRoutes);
+app.use("/api/dbdump", dbdumpRoutes);
+app.use("/api/schedules", schedulesRoutes);
+// 404 handler (biar jelas)
+app.use((req, res) => res.status(404).json({ message: "Not Found", path: req.path }));
+
+const PORT = Number(process.env.PORT || 3001);
+app.listen(PORT, "0.0.0.0", () => console.log(`Backend running on port ${PORT}`));
+
