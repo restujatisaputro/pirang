@@ -6,10 +6,10 @@ async function run() {
   // seed users
   const users = [
     { username: "admin", password: "nimda", fullName: "Administrator Sistem", role: "ADMIN" },
-    { username: "restu", password: "restu", fullName: "Restu Jati Saputro", role: "ADMIN" }
-    { username: "d3ab", password: "d3ab", fullName: "Camil", role: "ADMIN" }
-    { username: "d4abt", password: "d4abt", fullName: "Siska", role: "ADMIN" }
-    { username: "d4mice", password: "d4mice", fullName: "Yuli", role: "ADMIN" }
+    { username: "restu", password: "restu", fullName: "Restu Jati Saputro", role: "ADMIN" },
+    { username: "d3ab", password: "d3ab", fullName: "Camil", role: "ADMIN" },
+    { username: "d4abt", password: "d4abt", fullName: "Siska", role: "ADMIN" },
+    { username: "d4mice", password: "d4mice", fullName: "Yuli", role: "ADMIN" },
     { username: "d4bispro", password: "d4bispro", fullName: "Tiwi", role: "ADMIN" }
   ];
 
