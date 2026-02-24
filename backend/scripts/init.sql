@@ -58,6 +58,24 @@ CREATE TABLE schedules (
   weeks TEXT
 );
 
+-- ===== TEAM TEACHING SUPPORT =====
+DROP TABLE IF EXISTS schedule_lecturers;
+
+CREATE TABLE schedule_lecturers (
+  scheduleId INT NOT NULL,
+  lecturerId INT NOT NULL,
+  role VARCHAR(50) NULL,
+  PRIMARY KEY (scheduleId, lecturerId),
+  INDEX idx_sl_lecturer (lecturerId),
+  CONSTRAINT fk_sl_schedule FOREIGN KEY (scheduleId)
+    REFERENCES schedules(id) ON DELETE CASCADE
+);
+
+-- migrasi data lama (kalau schedules masih punya lecturerId)
+INSERT IGNORE INTO schedule_lecturers (scheduleId, lecturerId)
+SELECT id, lecturerId FROM schedules
+WHERE lecturerId IS NOT NULL;
+
 CREATE TABLE bookings (
   id INT AUTO_INCREMENT PRIMARY KEY,
   userId INT,
@@ -92,3 +110,22 @@ CREATE TABLE itemBorrowings (
   purpose VARCHAR(255),
   status ENUM('APPROVED','REJECTED','PENDING','RETURNED') DEFAULT 'PENDING'
 );
+
+
+ALTER TABLE schedules
+  ADD COLUMN lecturerIds JSON NULL AFTER courseId;
+
+-- 2) (opsional) migrasi nilai lama lecturerId -> lecturerIds
+--    jalankan ini kalau dulu schedules.lecturerId berisi 1 dosen
+UPDATE schedules
+SET lecturerIds = JSON_ARRAY(lecturerId)
+WHERE lecturerIds IS NULL AND lecturerId IS NOT NULL;
+
+-- 3) set default kalau ada yang masih NULL
+UPDATE schedules
+SET lecturerIds = JSON_ARRAY()
+WHERE lecturerIds IS NULL;
+
+-- 4) jadikan NOT NULL + default []
+ALTER TABLE schedules
+  MODIFY lecturerIds JSON NOT NULL;
