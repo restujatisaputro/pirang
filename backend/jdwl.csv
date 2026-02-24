@@ -1,14 +1,14 @@
 ﻿kelas;Hari;Jam;prof;Mata Kuliah;SKS;JPM;Dosen;Ruang
-MICE-2A;Senin;07.30 - 08.20;2;Praktik Perkantoran;2;4;Dr Etty Khongrat, SE, M.Si;201
+MICE-2A;Senin;07.30 - 08.20;2;Praktik Perkantoran;2;4;Dr. Etty Khongrat,SE.,M.Si;201
 MICE-4A;Senin;07.30 - 08.20;4;CIQ (Custom Immigration Quarantine);2;4;Raden Ayu Trisnayoni, S.Tr.Par., M.Tr.Par;117
-MICE-2A;Senin;08.20 - 09.10;2;Praktik Perkantoran;2;4;Dr Etty Khongrat, SE, M.Si;201
+MICE-2A;Senin;08.20 - 09.10;2;Praktik Perkantoran;2;4;Dr. Etty Khongrat,SE.,M.Si;201
 MICE-4A;Senin;08.20 - 09.10;4;CIQ (Custom Immigration Quarantine);2;4;Raden Ayu Trisnayoni, S.Tr.Par., M.Tr.Par;117
 MICE-2A;Senin;09.10 - 10.00;2;Keprotokolan;2;4;Meisa Sofia, S.Tr., M.Par;114
 MICE-4A;Senin;09.10 - 10.00;4;Self Manajemen dan Interpersonal  Skill;2;4;M. Hamdi, S.Psi;312
-MICE-6A;Senin;09.10 - 10.00;6;Kewirausahaan ;2;4;Sudarno,SE.,M.Si./Noni Noerkaisar, S.M.B., M.M.;online
+MICE-6A;Senin;09.10 - 10.00;6;Kewirausahaan;2;4;Sudarno, S.E., M.Si./Noni Noerkaisar, S.M.B., M.M.;online
 MICE-2A;Senin;10.00 - 10.50;2;Keprotokolan;2;4;Meisa Sofia, S.Tr., M.Par;114
 MICE-4A;Senin;10.00 - 10.50;4;Self Manajemen dan Interpersonal  Skill;2;4;M. Hamdi, S.Psi;312
-MICE-6A;Senin;10.00 - 10.50;6;Kewirausahaan ;2;4;Sudarno,SE.,M.Si./Noni Noerkaisar, S.M.B., M.M.;online
+MICE-6A;Senin;10.00 - 10.50;6;Kewirausahaan;2;4;Sudarno, S.E., M.Si./Noni Noerkaisar, S.M.B., M.M.;online
 MICE-2A;Senin;10.50 - 11.40;2;Dasar-dasar Akuntansi;2;4;Sudarno, S.E., M.Si./Yuningsih S.E., M.Si.;106
 MICE-4A;Senin;10.50 - 11.40;4;Manajemen Keuangan;2;4;Asterina Anggraini, M.M;116
 MICE-6A;Senin;10.50 - 11.40;6;Manajemen Sumber Daya Manusia;2;4;Djuni Akbar, SE, M.Si;online
@@ -26,17 +26,17 @@ MICE-2A;Selasa;08.20 - 09.10;2;Manajemen Logistik MICE;2;4;M. Iqbal Katik RE., S
 MICE-4A;Selasa;08.20 - 09.10;4;CIQ (Custom Immigration Quarantine);2;4;Raden Ayu Trisnayoni, S.Tr.Par., M.Tr.Par;105
 MICE-6A;Selasa;08.20 - 09.10;6;Penyelenggaraan Konvensi;6;12;M. Iqbal Katik RE., S.ST., M.P.Par./Karbala Madania S.I.Kom., M.Si;online
 MICE-2A;Selasa;09.10 - 10.00;2;Geografi Destinasi Pariwisata;2;4;Rimsky K Judiseno, SE, MM, PhD;106
-MICE-4A;Selasa;09.10 - 10.00;4;Perencanaan Incentive Travel;2;4;Dr. Christina L. Rudatin,SE.,M.Si/Karbala Madania S.I.Kom., M.Si;online
+MICE-4A;Selasa;09.10 - 10.00;4;Perencanaan Incentive Travel;2;4;Dr. Christina L. Rudatin, SE, M.Si/Karbala Madania S.I.Kom., M.Si;online
 MICE-6A;Selasa;09.10 - 10.00;6;Penyelenggaraan Konvensi;6;12;M. Iqbal Katik RE., S.ST., M.P.Par./Karbala Madania S.I.Kom., M.Si;online
 MICE-6A;Selasa;09.10 - 10.00;6;Manajemen Sumber Daya Manusia;2;4;Djuni Akbar, SE, M.Si;online
 MICE-2A;Selasa;10.00 - 10.50;2;Geografi Destinasi Pariwisata;2;4;Rimsky K Judiseno, SE, MM, PhD;106
-MICE-4A;Selasa;10.00 - 10.50;4;Perencanaan Incentive Travel;2;4;Dr. Christina L. Rudatin,SE.,M.Si/Karbala Madania S.I.Kom., M.Si;online
+MICE-4A;Selasa;10.00 - 10.50;4;Perencanaan Incentive Travel;2;4;Dr. Christina L. Rudatin, SE, M.Si/Karbala Madania S.I.Kom., M.Si;online
 MICE-6A;Selasa;10.00 - 10.50;6;Penyelenggaraan Konvensi;6;12;M. Iqbal Katik RE., S.ST., M.P.Par./Karbala Madania S.I.Kom., M.Si;online
 MICE-6A;Selasa;10.00 - 10.50;6;Manajemen Sumber Daya Manusia;2;4;Djuni Akbar, SE, M.Si;online
-MICE-2A;Selasa;10.50 - 11.40;2;Registrasi;2;4;Dr Etty Khongrat, SE, M.Si;203
+MICE-2A;Selasa;10.50 - 11.40;2;Registrasi;2;4;Dr. Etty Khongrat,SE.,M.Si;203
 MICE-4A;Selasa;10.50 - 11.40;4;Self Manajemen dan Interpersonal  Skill;2;4;M. Hamdi, S.Psi;115
 MICE-6A;Selasa;10.50 - 11.40;6;Penyelenggaraan Konvensi;6;12;M. Iqbal Katik RE., S.ST., M.P.Par./Karbala Madania S.I.Kom., M.Si;online
-MICE-2A;Selasa;12.30 - 13.20;2;Registrasi;2;4;Dr Etty Khongrat, SE, M.Si;203
+MICE-2A;Selasa;12.30 - 13.20;2;Registrasi;2;4;Dr. Etty Khongrat,SE.,M.Si;203
 MICE-4A;Selasa;12.30 - 13.20;4;Self Manajemen dan Interpersonal  Skill;2;4;M. Hamdi, S.Psi;115
 MICE-6A;Selasa;12.30 - 13.20;6;Penyelenggaraan Konvensi;6;12;M. Iqbal Katik RE., S.ST., M.P.Par./Karbala Madania S.I.Kom., M.Si;online
 MICE-2A;Selasa;13.20 - 14.10;2;Pengantar Marketing;2;4;Djuni Akbar, SE, M.Si;103
@@ -51,19 +51,19 @@ MICE-6A;Rabu;07.30 - 08.20;6;Penyelenggaraan Pameran;6;12;Fauzi Mubarak, S.ST, M
 MICE-2A;Rabu;08.20 - 09.10;2;Dasar-dasar Akuntansi;2;4;Sudarno, S.E., M.Si./Yuningsih S.E., M.Si.;103
 MICE-4A;Rabu;08.20 - 09.10;4;Manajemen Keuangan;2;4;Asterina Anggraini, M.M;302
 MICE-6A;Rabu;08.20 - 09.10;6;Penyelenggaraan Pameran;6;12;Fauzi Mubarak, S.ST, MT;online
-MICE-2A;Rabu;09.10 - 10.00;2;Pendidikan Kewarganegaraan ;2;4;Riza Hadikusuma, M.Ag;103
+MICE-2A;Rabu;09.10 - 10.00;2;Pendidikan Kewarganegaraan;2;4;Riza Hadikusuma, M.Ag;103
 MICE-4A;Rabu;09.10 - 10.00;4;Bahasa Inggris 4;2;4;Dr. Tantri Sari Safitry, S.Pd., M.Pd;302
 MICE-6A;Rabu;09.10 - 10.00;6;Penyelenggaraan Pameran;6;12;Fauzi Mubarak, S.ST, MT;online
-MICE-6A;Rabu;09.10 - 10.00;6;Kewirausahaan ;2;4;Sudarno,SE.,M.Si./Noni Noerkaisar, S.M.B., M.M.;online
-MICE-2A;Rabu;10.00 - 10.50;2;Pendidikan Kewarganegaraan ;2;4;Riza Hadikusuma, M.Ag;103
+MICE-6A;Rabu;09.10 - 10.00;6;Kewirausahaan;2;4;Sudarno, S.E., M.Si./Noni Noerkaisar, S.M.B., M.M.;online
+MICE-2A;Rabu;10.00 - 10.50;2;Pendidikan Kewarganegaraan;2;4;Riza Hadikusuma, M.Ag;103
 MICE-4A;Rabu;10.00 - 10.50;4;Bahasa Inggris 4;2;4;Dr. Tantri Sari Safitry, S.Pd., M.Pd;302
 MICE-6A;Rabu;10.00 - 10.50;6;Penyelenggaraan Pameran;6;12;Fauzi Mubarak, S.ST, MT;online
-MICE-6A;Rabu;10.00 - 10.50;6;Kewirausahaan ;2;4;Sudarno,SE.,M.Si./Noni Noerkaisar, S.M.B., M.M.;online
-MICE-2A;Rabu;10.50 - 11.40;2;Praktik Perkantoran;2;4;Dr Etty Khongrat, SE, M.Si;203
+MICE-6A;Rabu;10.00 - 10.50;6;Kewirausahaan;2;4;Sudarno, S.E., M.Si./Noni Noerkaisar, S.M.B., M.M.;online
+MICE-2A;Rabu;10.50 - 11.40;2;Praktik Perkantoran;2;4;Dr. Etty Khongrat,SE.,M.Si;203
 MICE-4A;Rabu;10.50 - 11.40;4;Desain Grafis;2;4;Anggi Anggarini, M.Ds.;301
 MICE-6A;Rabu;10.50 - 11.40;6;Penyelenggaraan Pameran;6;12;Fauzi Mubarak, S.ST, MT;online
 MICE-6A;Rabu;10.50 - 11.40;6;Manajemen Strategik;2;4;Dr. Christina L. Rudatin, SE, M.Si;online
-MICE-2A;Rabu;12.30 - 13.20;2;Praktik Perkantoran;2;4;Dr Etty Khongrat, SE, M.Si;203
+MICE-2A;Rabu;12.30 - 13.20;2;Praktik Perkantoran;2;4;Dr. Etty Khongrat,SE.,M.Si;203
 MICE-4A;Rabu;12.30 - 13.20;4;Desain Grafis;2;4;Anggi Anggarini, M.Ds.;301
 MICE-6A;Rabu;12.30 - 13.20;6;Penyelenggaraan Pameran;6;12;Fauzi Mubarak, S.ST, MT;online
 MICE-6A;Rabu;12.30 - 13.20;6;Manajemen Strategik;2;4;Dr. Christina L. Rudatin, SE, M.Si;online
@@ -74,13 +74,13 @@ MICE-2A;Rabu;14.10 - 15.00;2;Etika Profesi dan Bisnis;2;4;Raden Ayu Trisnayoni, 
 MICE-4A;Rabu;14.10 - 15.00;4;Desain Grafis;2;4;Anggi Anggarini, M.Ds.;307
 MICE-6A;Rabu;14.10 - 15.00;6;Penyelenggaraan Pameran;6;12;Fauzi Mubarak, S.ST, MT;online
 MICE-2A;Kamis;07.30 - 08.20;2;Keprotokolan;2;4;Meisa Sofia, S.Tr., M.Par;103
-MICE-4A;Kamis;07.30 - 08.20;4;Bahasa Mandarin 1;2;4;Hasan, S.Sos., M.Pd.;302
+MICE-4A;Kamis;07.30 - 08.20;4;Bahasa Mandarin 1;2;4;Hasan, S.Sos, M. Pd;302
 MICE-2A;Kamis;08.20 - 09.10;2;Keprotokolan;2;4;Meisa Sofia, S.Tr., M.Par;103
-MICE-4A;Kamis;08.20 - 09.10;4;Bahasa Mandarin 1;2;4;Hasan, S.Sos., M.Pd.;302
-MICE-2A;Kamis;09.10 - 10.00;2;Registrasi;2;4;Dr Etty Khongrat, SE, M.Si;203
-MICE-4A;Kamis;09.10 - 10.00;4;Perencanaan Incentive Travel;2;4;Dr. Christina L. Rudatin,SE.,M.Si/Karbala Madania S.I.Kom., M.Si;online
-MICE-2A;Kamis;10.00 - 10.50;2;Registrasi;2;4;Dr Etty Khongrat, SE, M.Si;203
-MICE-4A;Kamis;10.00 - 10.50;4;Perencanaan Incentive Travel;2;4;Dr. Christina L. Rudatin,SE.,M.Si/Karbala Madania S.I.Kom., M.Si;online
+MICE-4A;Kamis;08.20 - 09.10;4;Bahasa Mandarin 1;2;4;Hasan, S.Sos, M. Pd;302
+MICE-2A;Kamis;09.10 - 10.00;2;Registrasi;2;4;Dr. Etty Khongrat,SE.,M.Si;203
+MICE-4A;Kamis;09.10 - 10.00;4;Perencanaan Incentive Travel;2;4;Dr. Christina L. Rudatin, SE, M.Si/Karbala Madania S.I.Kom., M.Si;online
+MICE-2A;Kamis;10.00 - 10.50;2;Registrasi;2;4;Dr. Etty Khongrat,SE.,M.Si;203
+MICE-4A;Kamis;10.00 - 10.50;4;Perencanaan Incentive Travel;2;4;Dr. Christina L. Rudatin, SE, M.Si/Karbala Madania S.I.Kom., M.Si;online
 MICE-2A;Kamis;10.50 - 11.40;2;Geografi Destinasi Pariwisata;2;4;Rimsky K Judiseno, SE, MM, PhD;103
 MICE-4A;Kamis;10.50 - 11.40;4;Pemprograman Web Dinamis;2;4;Asep Erlan Maulana, S.Kom., M.Kom;208
 MICE-2A;Kamis;12.30 - 13.20;2;Geografi Destinasi Pariwisata;2;4;Rimsky K Judiseno, SE, MM, PhD;103
@@ -89,10 +89,10 @@ MICE-2A;Kamis;13.20 - 14.10;2;Bahasa Inggris 2;2;4;Vini Deliana, S.Pd.,M.Pd;103
 MICE-4A;Kamis;13.20 - 14.10;4;Pemprograman Web Dinamis;2;4;Asep Erlan Maulana, S.Kom., M.Kom;302
 MICE-2A;Kamis;14.10 - 15.00;2;Bahasa Inggris 2;2;4;Vini Deliana, S.Pd.,M.Pd;103
 MICE-4A;Kamis;14.10 - 15.00;4;Pemprograman Web Dinamis;2;4;Asep Erlan Maulana, S.Kom., M.Kom;302
-MICE-2A;Jumat;07.30 - 08.20;2;Pendidikan Kewarganegaraan ;2;4;Riza Hadikusuma, M.Ag;103
-MICE-4A;Jumat;07.30 - 08.20;4;Bahasa Mandarin 1;2;4;Hasan, S.Sos., M.Pd.;302
-MICE-2A;Jumat;08.20 - 09.10;2;Pendidikan Kewarganegaraan ;2;4;Riza Hadikusuma, M.Ag;103
-MICE-4A;Jumat;08.20 - 09.10;4;Bahasa Mandarin 1;2;4;Hasan, S.Sos., M.Pd.;302
+MICE-2A;Jumat;07.30 - 08.20;2;Pendidikan Kewarganegaraan;2;4;Riza Hadikusuma, M.Ag;103
+MICE-4A;Jumat;07.30 - 08.20;4;Bahasa Mandarin 1;2;4;Hasan, S.Sos, M. Pd;302
+MICE-2A;Jumat;08.20 - 09.10;2;Pendidikan Kewarganegaraan;2;4;Riza Hadikusuma, M.Ag;103
+MICE-4A;Jumat;08.20 - 09.10;4;Bahasa Mandarin 1;2;4;Hasan, S.Sos, M. Pd;302
 MICE-2A;Jumat;09.10 - 10.00;2;Manajemen Logistik MICE;2;4;M. Iqbal Katik RE., S.ST., M.P.Par.;103
 MICE-4A;Jumat;09.10 - 10.00;4;Public Relation;2;4;Firman Syah, S.Sos.I, M.M;302
 MICE-2A;Jumat;10.00 - 10.50;2;Manajemen Logistik MICE;2;4;M. Iqbal Katik RE., S.ST., M.P.Par.;103
@@ -109,61 +109,61 @@ MICE-2A;Jumat;14.10 - 15.00;2;Bahasa Inggris 2;2;4;Vini Deliana, S.Pd.,M.Pd;103
 MICE-4A;Jumat;14.10 - 15.00;4;Bahasa Jepang 2;2;4;Maria Nino Istia , S.S., M.Si.;302
 MICE-2B;Senin;07.30 - 08.20;2;Pengantar Marketing;2;4;Djuni Akbar, SE, M.Si;106
 MICE-4B;Senin;07.30 - 08.20;4;Pemprograman Web Dinamis;2;4;Firman Syah, S.Sos.I, M.M;online
-MICE-6B;Senin;07.30 - 08.20;6;Penyelenggaraan Konvensi;6;12;Annisa Wardhani, S.S.T, M.T/Noni Noerkaisar, S.M.B., M.M.;minicon
+MICE-6B;Senin;07.30 - 08.20;6;Penyelenggaraan Konvensi;6;12;Annisa Wardhani, S.S.T, M.T/Noni Noerkaisar, S.M.B., M.M.;315
 MICE-2B;Senin;08.20 - 09.10;2;Pengantar Marketing;2;4;Djuni Akbar, SE, M.Si;106
 MICE-4B;Senin;08.20 - 09.10;4;Pemprograman Web Dinamis;2;4;Firman Syah, S.Sos.I, M.M;online
-MICE-6B;Senin;08.20 - 09.10;6;Penyelenggaraan Konvensi;6;12;Annisa Wardhani, S.S.T, M.T/Noni Noerkaisar, S.M.B., M.M.;minicon
-MICE-2B;Senin;09.10 - 10.00;2;Praktik Perkantoran;2;4;Dr Etty Khongrat, SE, M.Si;203
+MICE-6B;Senin;08.20 - 09.10;6;Penyelenggaraan Konvensi;6;12;Annisa Wardhani, S.S.T, M.T/Noni Noerkaisar, S.M.B., M.M.;315
+MICE-2B;Senin;09.10 - 10.00;2;Praktik Perkantoran;2;4;Dr. Etty Khongrat,SE.,M.Si;203
 MICE-4B;Senin;09.10 - 10.00;4;Manajemen Keuangan;2;4;Asterina Anggraini, M.M;304
-MICE-6B;Senin;09.10 - 10.00;6;Penyelenggaraan Konvensi;6;12;Annisa Wardhani, S.S.T, M.T/Noni Noerkaisar, S.M.B., M.M.;minicon
-MICE-2B;Senin;10.00 - 10.50;2;Praktik Perkantoran;2;4;Dr Etty Khongrat, SE, M.Si;203
+MICE-6B;Senin;09.10 - 10.00;6;Penyelenggaraan Konvensi;6;12;Annisa Wardhani, S.S.T, M.T/Noni Noerkaisar, S.M.B., M.M.;315
+MICE-2B;Senin;10.00 - 10.50;2;Praktik Perkantoran;2;4;Dr. Etty Khongrat,SE.,M.Si;203
 MICE-4B;Senin;10.00 - 10.50;4;Manajemen Keuangan;2;4;Asterina Anggraini, M.M;304
-MICE-6B;Senin;10.00 - 10.50;6;Penyelenggaraan Konvensi;6;12;Annisa Wardhani, S.S.T, M.T/Noni Noerkaisar, S.M.B., M.M.;minicon
-MICE-2B;Senin;10.50 - 11.40;2;Pendidikan Kewarganegaraan ;2;4;Riza Hadikusuma, M.Ag;113
+MICE-6B;Senin;10.00 - 10.50;6;Penyelenggaraan Konvensi;6;12;Annisa Wardhani, S.S.T, M.T/Noni Noerkaisar, S.M.B., M.M.;315
+MICE-2B;Senin;10.50 - 11.40;2;Pendidikan Kewarganegaraan;2;4;Riza Hadikusuma, M.Ag;113
 MICE-4B;Senin;10.50 - 11.40;4;Public Relation;2;4;Imam Syafganti, S.Sos., M.Si., Ph.D.;117
-MICE-6B;Senin;10.50 - 11.40;6;Penyelenggaraan Konvensi;6;12;Annisa Wardhani, S.S.T, M.T/Noni Noerkaisar, S.M.B., M.M.;minicon
-MICE-2B;Senin;12.30 - 13.20;2;Pendidikan Kewarganegaraan ;2;4;Riza Hadikusuma, M.Ag;113
+MICE-6B;Senin;10.50 - 11.40;6;Penyelenggaraan Konvensi;6;12;Annisa Wardhani, S.S.T, M.T/Noni Noerkaisar, S.M.B., M.M.;315
+MICE-2B;Senin;12.30 - 13.20;2;Pendidikan Kewarganegaraan;2;4;Riza Hadikusuma, M.Ag;113
 MICE-4B;Senin;12.30 - 13.20;4;Public Relation;2;4;Imam Syafganti, S.Sos., M.Si., Ph.D.;117
-MICE-6B;Senin;12.30 - 13.20;6;Penyelenggaraan Konvensi;6;12;Annisa Wardhani, S.S.T, M.T/Noni Noerkaisar, S.M.B., M.M.;minicon
-MICE-2B;Senin;13.20 - 14.10;2;Dasar-dasar Akuntansi;2;4;Sudarno, SE, M.Si;107
+MICE-6B;Senin;12.30 - 13.20;6;Penyelenggaraan Konvensi;6;12;Annisa Wardhani, S.S.T, M.T/Noni Noerkaisar, S.M.B., M.M.;315
+MICE-2B;Senin;13.20 - 14.10;2;Dasar-dasar Akuntansi;2;4;Sudarno, S.E., M.Si.;107
 MICE-4B;Senin;13.20 - 14.10;4;Self Manajemen dan Interpersonal  Skill;2;4;M. Hamdi, S.Psi;302
-MICE-6B;Senin;13.20 - 14.10;6;Penyelenggaraan Konvensi;6;12;Annisa Wardhani, S.S.T, M.T/Noni Noerkaisar, S.M.B., M.M.;minicon
-MICE-2B;Senin;14.10 - 15.00;2;Dasar-dasar Akuntansi;2;4;Sudarno, SE, M.Si;107
+MICE-6B;Senin;13.20 - 14.10;6;Penyelenggaraan Konvensi;6;12;Annisa Wardhani, S.S.T, M.T/Noni Noerkaisar, S.M.B., M.M.;315
+MICE-2B;Senin;14.10 - 15.00;2;Dasar-dasar Akuntansi;2;4;Sudarno, S.E., M.Si.;107
 MICE-4B;Senin;14.10 - 15.00;4;Self Manajemen dan Interpersonal  Skill;2;4;M. Hamdi, S.Psi;302
-MICE-6B;Senin;14.10 - 15.00;6;Penyelenggaraan Konvensi;6;12;Annisa Wardhani, S.S.T, M.T/Noni Noerkaisar, S.M.B., M.M.;minicon
-MICE-2B;Selasa;07.30 - 08.20;2;Registrasi;2;4;Dr. Etty Khongrat,SE.,M.Si/Yuningsih S.E., M.Si.;203
+MICE-6B;Senin;14.10 - 15.00;6;Penyelenggaraan Konvensi;6;12;Annisa Wardhani, S.S.T, M.T/Noni Noerkaisar, S.M.B., M.M.;315
+MICE-2B;Selasa;07.30 - 08.20;2;Registrasi;2;4;Dr. Etty Khongrat,SE.,M.Si/Yuningsih S.E., M.Si;203
 MICE-4B;Selasa;07.30 - 08.20;4;Self Manajemen dan Interpersonal  Skill;2;4;M. Hamdi, S.Psi;304
-MICE-6B;Selasa;07.30 - 08.20;6;Penyelenggaraan Pameran;6;12;Heri Setyawan, SE, M.Si;online
-MICE-6B;Selasa;07.30 - 08.20;6;Kewirausahaan ;2;4;Sudarno,SE.,M.Si./Noni Noerkaisar, S.M.B., M.M.;online
-MICE-2B;Selasa;08.20 - 09.10;2;Registrasi;2;4;Dr. Etty Khongrat,SE.,M.Si/Yuningsih S.E., M.Si.;203
+MICE-6B;Selasa;07.30 - 08.20;6;Penyelenggaraan Pameran;6;12;Hasan, S.Sos, M. Pd;online
+MICE-6B;Selasa;07.30 - 08.20;6;Kewirausahaan;2;4;Sudarno, S.E., M.Si./Noni Noerkaisar, S.M.B., M.M.;online
+MICE-2B;Selasa;08.20 - 09.10;2;Registrasi;2;4;Dr. Etty Khongrat,SE.,M.Si/Yuningsih S.E., M.Si;203
 MICE-4B;Selasa;08.20 - 09.10;4;Self Manajemen dan Interpersonal  Skill;2;4;M. Hamdi, S.Psi;304
-MICE-6B;Selasa;08.20 - 09.10;6;Penyelenggaraan Pameran;6;12;Heri Setyawan, SE, M.Si;online
-MICE-6B;Selasa;08.20 - 09.10;6;Kewirausahaan ;2;4;Sudarno,SE.,M.Si./Noni Noerkaisar, S.M.B., M.M.;online
+MICE-6B;Selasa;08.20 - 09.10;6;Penyelenggaraan Pameran;6;12;Hasan, S.Sos, M. Pd;online
+MICE-6B;Selasa;08.20 - 09.10;6;Kewirausahaan;2;4;Sudarno, S.E., M.Si./Noni Noerkaisar, S.M.B., M.M.;online
 MICE-2B;Selasa;09.10 - 10.00;2;Manajemen Logistik MICE;2;4;M. Iqbal Katik RE., S.ST., M.P.Par.;105
 MICE-4B;Selasa;09.10 - 10.00;4;Desain Grafis;2;4;Annisaa Syifa Aqlina, M.Ds.;301
-MICE-6B;Selasa;09.10 - 10.00;6;Penyelenggaraan Pameran;6;12;Heri Setyawan, SE, M.Si;online
+MICE-6B;Selasa;09.10 - 10.00;6;Penyelenggaraan Pameran;6;12;Hasan, S.Sos, M. Pd;online
 MICE-2B;Selasa;10.00 - 10.50;2;Manajemen Logistik MICE;2;4;M. Iqbal Katik RE., S.ST., M.P.Par.;105
 MICE-4B;Selasa;10.00 - 10.50;4;Desain Grafis;2;4;Annisaa Syifa Aqlina, M.Ds.;301
-MICE-6B;Selasa;10.00 - 10.50;6;Penyelenggaraan Pameran;6;12;Heri Setyawan, SE, M.Si;online
+MICE-6B;Selasa;10.00 - 10.50;6;Penyelenggaraan Pameran;6;12;Hasan, S.Sos, M. Pd;online
 MICE-2B;Selasa;10.50 - 11.40;2;Pengantar Marketing;2;4;Djuni Akbar, SE, M.Si;103
 MICE-4B;Selasa;10.50 - 11.40;4;Perencanaan Incentive Travel;2;4;Dr. Christina L. Rudatin, SE, M.Si;online
-MICE-6B;Selasa;10.50 - 11.40;6;Penyelenggaraan Pameran;6;12;Heri Setyawan, SE, M.Si;online
+MICE-6B;Selasa;10.50 - 11.40;6;Penyelenggaraan Pameran;6;12;Hasan, S.Sos, M. Pd;online
 MICE-6B;Selasa;10.50 - 11.40;6;Manajemen Sumber Daya Manusia;2;4;Dr. Syamsu Rizal, SE, MM;online
 MICE-2B;Selasa;12.30 - 13.20;2;Pengantar Marketing;2;4;Djuni Akbar, SE, M.Si;103
 MICE-4B;Selasa;12.30 - 13.20;4;Perencanaan Incentive Travel;2;4;Dr. Christina L. Rudatin, SE, M.Si;online
-MICE-6B;Selasa;12.30 - 13.20;6;Penyelenggaraan Pameran;6;12;Heri Setyawan, SE, M.Si;online
+MICE-6B;Selasa;12.30 - 13.20;6;Penyelenggaraan Pameran;6;12;Hasan, S.Sos, M. Pd;online
 MICE-6B;Selasa;12.30 - 13.20;6;Manajemen Sumber Daya Manusia;2;4;Dr. Syamsu Rizal, SE, MM;online
 MICE-2B;Selasa;13.20 - 14.10;2;Geografi Destinasi Pariwisata;2;4;Rimsky K Judiseno, SE, MM, PhD;115
-MICE-4B;Selasa;13.20 - 14.10;4;CIQ (Custom Immigration Quarantine);2;4;Annisa Wardhani, S.ST, MT;online
-MICE-6B;Selasa;13.20 - 14.10;6;Penyelenggaraan Pameran;6;12;Heri Setyawan, SE, M.Si;online
+MICE-4B;Selasa;13.20 - 14.10;4;CIQ (Custom Immigration Quarantine);2;4;Annisa Wardhani, S.S.T, M.T;online
+MICE-6B;Selasa;13.20 - 14.10;6;Penyelenggaraan Pameran;6;12;Hasan, S.Sos, M. Pd;online
 MICE-2B;Selasa;14.10 - 15.00;2;Geografi Destinasi Pariwisata;2;4;Rimsky K Judiseno, SE, MM, PhD;115
-MICE-4B;Selasa;14.10 - 15.00;4;CIQ (Custom Immigration Quarantine);2;4;Annisa Wardhani, S.ST, MT;online
-MICE-6B;Selasa;14.10 - 15.00;6;Penyelenggaraan Pameran;6;12;Heri Setyawan, SE, M.Si;online
-MICE-2B;Rabu;07.30 - 08.20;2;Praktik Perkantoran;2;4;Dr Etty Khongrat, SE, M.Si;203
-MICE-4B;Rabu;07.30 - 08.20;4;CIQ (Custom Immigration Quarantine);2;4;Annisa Wardhani, S.ST, MT;309
+MICE-4B;Selasa;14.10 - 15.00;4;CIQ (Custom Immigration Quarantine);2;4;Annisa Wardhani, S.S.T, M.T;online
+MICE-6B;Selasa;14.10 - 15.00;6;Penyelenggaraan Pameran;6;12;Hasan, S.Sos, M. Pd;online
+MICE-2B;Rabu;07.30 - 08.20;2;Praktik Perkantoran;2;4;Dr. Etty Khongrat,SE.,M.Si;203
+MICE-4B;Rabu;07.30 - 08.20;4;CIQ (Custom Immigration Quarantine);2;4;Annisa Wardhani, S.S.T, M.T;309
 MICE-6B;Rabu;07.30 - 08.20;6;Manajemen Strategik;2;4;Rimsky K Judiseno, SE, MM, PhD;online
-MICE-2B;Rabu;08.20 - 09.10;2;Praktik Perkantoran;2;4;Dr Etty Khongrat, SE, M.Si;203
-MICE-4B;Rabu;08.20 - 09.10;4;CIQ (Custom Immigration Quarantine);2;4;Annisa Wardhani, S.ST, MT;309
+MICE-2B;Rabu;08.20 - 09.10;2;Praktik Perkantoran;2;4;Dr. Etty Khongrat,SE.,M.Si;203
+MICE-4B;Rabu;08.20 - 09.10;4;CIQ (Custom Immigration Quarantine);2;4;Annisa Wardhani, S.S.T, M.T;309
 MICE-6B;Rabu;08.20 - 09.10;6;Manajemen Strategik;2;4;Rimsky K Judiseno, SE, MM, PhD;online
 MICE-2B;Rabu;09.10 - 10.00;2;Etika Profesi dan Bisnis;2;4;Raden Ayu Trisnayoni, S.Tr.Par., M.Tr.Par;306
 MICE-4B;Rabu;09.10 - 10.00;4;Pemprograman Web Dinamis;2;4;Firman Syah, S.Sos.I, M.M;303
@@ -175,10 +175,10 @@ MICE-2B;Rabu;10.50 - 11.40;2;Keprotokolan;2;4;Meisa Sofia, S.Tr., M.Par;306
 MICE-4B;Rabu;10.50 - 11.40;4;Manajemen Keuangan;2;4;Asterina Anggraini, M.M;309
 MICE-2B;Rabu;12.30 - 13.20;2;Keprotokolan;2;4;Meisa Sofia, S.Tr., M.Par;306
 MICE-4B;Rabu;12.30 - 13.20;4;Manajemen Keuangan;2;4;Asterina Anggraini, M.M;309
-MICE-2B;Rabu;13.20 - 14.10;2;Dasar-dasar Akuntansi;2;4;Sudarno, SE, M.Si;306
+MICE-2B;Rabu;13.20 - 14.10;2;Dasar-dasar Akuntansi;2;4;Sudarno, S.E., M.Si.;306
 MICE-4B;Rabu;13.20 - 14.10;4;Bahasa Jepang 2;2;4;Asrie Rahmiatie, S.S., M.Hum;309
 MICE-6B;Rabu;13.20 - 14.10;6;Pengelolaan Acara dalam Pameran/Konvensi;2;4;Dr. Christina L. Rudatin, SE, M.Si;online
-MICE-2B;Rabu;14.10 - 15.00;2;Dasar-dasar Akuntansi;2;4;Sudarno, SE, M.Si;306
+MICE-2B;Rabu;14.10 - 15.00;2;Dasar-dasar Akuntansi;2;4;Sudarno, S.E., M.Si.;306
 MICE-4B;Rabu;14.10 - 15.00;4;Bahasa Jepang 2;2;4;Asrie Rahmiatie, S.S., M.Hum;309
 MICE-6B;Rabu;14.10 - 15.00;6;Pengelolaan Acara dalam Pameran/Konvensi;2;4;Dr. Christina L. Rudatin, SE, M.Si;online
 MICE-2B;Kamis;07.30 - 08.20;2;Geografi Destinasi Pariwisata;2;4;Rimsky K Judiseno, SE, MM, PhD;306
@@ -187,19 +187,19 @@ MICE-2B;Kamis;08.20 - 09.10;2;Geografi Destinasi Pariwisata;2;4;Rimsky K Judisen
 MICE-4B;Kamis;08.20 - 09.10;4;Bahasa Inggris 4;2;4;Dr. Tantri Sari Safitry, S.Pd., M.Pd;307
 MICE-2B;Kamis;09.10 - 10.00;2;Bahasa Inggris 2;2;4;Dr. Tantri Sari Safitry, S.Pd., M.Pd;306
 MICE-4B;Kamis;09.10 - 10.00;4;Public Relation;2;4;Imam Syafganti, S.Sos., M.Si., Ph.D.;115
-MICE-6B;Kamis;09.10 - 10.00;6;Kewirausahaan ;2;4;Sudarno,SE.,M.Si./Noni Noerkaisar, S.M.B., M.M.;online
+MICE-6B;Kamis;09.10 - 10.00;6;Kewirausahaan;2;4;Sudarno, S.E., M.Si./Noni Noerkaisar, S.M.B., M.M.;online
 MICE-2B;Kamis;10.00 - 10.50;2;Bahasa Inggris 2;2;4;Dr. Tantri Sari Safitry, S.Pd., M.Pd;306
 MICE-4B;Kamis;10.00 - 10.50;4;Public Relation;2;4;Imam Syafganti, S.Sos., M.Si., Ph.D.;115
-MICE-6B;Kamis;10.00 - 10.50;6;Kewirausahaan ;2;4;Sudarno,SE.,M.Si./Noni Noerkaisar, S.M.B., M.M.;online
-MICE-2B;Kamis;10.50 - 11.40;2;Pendidikan Kewarganegaraan ;2;4;Riza Hadikusuma, M.Ag;306
+MICE-6B;Kamis;10.00 - 10.50;6;Kewirausahaan;2;4;Sudarno, S.E., M.Si./Noni Noerkaisar, S.M.B., M.M.;online
+MICE-2B;Kamis;10.50 - 11.40;2;Pendidikan Kewarganegaraan;2;4;Riza Hadikusuma, M.Ag;306
 MICE-4B;Kamis;10.50 - 11.40;4;Bahasa Jepang 2;2;4;Asrie Rahmiatie, S.S., M.Hum;304
 MICE-6B;Kamis;10.50 - 11.40;6;Manajemen Sumber Daya Manusia;2;4;Dr. Syamsu Rizal, SE, MM;online
-MICE-2B;Kamis;12.30 - 13.20;2;Pendidikan Kewarganegaraan ;2;4;Riza Hadikusuma, M.Ag;306
+MICE-2B;Kamis;12.30 - 13.20;2;Pendidikan Kewarganegaraan;2;4;Riza Hadikusuma, M.Ag;306
 MICE-4B;Kamis;12.30 - 13.20;4;Bahasa Jepang 2;2;4;Asrie Rahmiatie, S.S., M.Hum;304
 MICE-6B;Kamis;12.30 - 13.20;6;Manajemen Sumber Daya Manusia;2;4;Dr. Syamsu Rizal, SE, MM;online
-MICE-2B;Kamis;13.20 - 14.10;2;Registrasi;2;4;Dr. Etty Khongrat,SE.,M.Si/Yuningsih S.E., M.Si.;203
+MICE-2B;Kamis;13.20 - 14.10;2;Registrasi;2;4;Dr. Etty Khongrat,SE.,M.Si/Yuningsih S.E., M.Si;203
 MICE-4B;Kamis;13.20 - 14.10;4;Perencanaan Incentive Travel;2;4;Dr. Christina L. Rudatin, SE, M.Si;online
-MICE-2B;Kamis;14.10 - 15.00;2;Registrasi;2;4;Dr. Etty Khongrat,SE.,M.Si/Yuningsih S.E., M.Si.;203
+MICE-2B;Kamis;14.10 - 15.00;2;Registrasi;2;4;Dr. Etty Khongrat,SE.,M.Si/Yuningsih S.E., M.Si;203
 MICE-4B;Kamis;14.10 - 15.00;4;Perencanaan Incentive Travel;2;4;Dr. Christina L. Rudatin, SE, M.Si;online
 MICE-2B;Jumat;07.30 - 08.20;2;Manajemen Logistik MICE;2;4;M. Iqbal Katik RE., S.ST., M.P.Par.;306
 MICE-4B;Jumat;07.30 - 08.20;4;Bahasa Inggris 4;2;4;Dr. Tantri Sari Safitry, S.Pd., M.Pd;online
@@ -221,63 +221,63 @@ MICE-4B;Jumat;14.10 - 15.00;4;Bahasa Mandarin 1;2;4;Vanya Zelia, S.S, M.Pd;309
 MICE-6B;Jumat;14.10 - 15.00;6;Pengelolaan Acara dalam Pameran/Konvensi;2;4;Dr. Christina L. Rudatin, SE, M.Si;online
 MICE-2C;Senin;07.30 - 08.20;2;Dasar-dasar Akuntansi;2;4;Sudarno, S.E., M.Si./Yuningsih S.E., M.Si.;112
 MICE-4C;Senin;07.30 - 08.20;4;Self Manajemen dan Interpersonal  Skill;2;4;M. Hamdi, S.Psi;305
-MICE-6C;Senin;07.30 - 08.20;6;Penyelenggaraan Konvensi;6;12;M. Iqbal Katik RE., S.ST., M.P.Par./Karbala Madania S.I.Kom., M.Si;minicon
+MICE-6C;Senin;07.30 - 08.20;6;Penyelenggaraan Konvensi;6;12;M. Iqbal Katik RE., S.ST., M.P.Par./Karbala Madania S.I.Kom., M.Si;315
 MICE-2C;Senin;08.20 - 09.10;2;Dasar-dasar Akuntansi;2;4;Sudarno, S.E., M.Si./Yuningsih S.E., M.Si.;112
 MICE-4C;Senin;08.20 - 09.10;4;Self Manajemen dan Interpersonal  Skill;2;4;M. Hamdi, S.Psi;305
 MICE-6C;Senin;08.20 - 09.10;6;Penyelenggaraan Konvensi;6;12;M. Iqbal Katik RE., S.ST., M.P.Par./Karbala Madania S.I.Kom., M.Si;online
 MICE-2C;Senin;09.10 - 10.00;2;Pengantar Marketing;2;4;Djuni Akbar, SE, M.Si;107
 MICE-4C;Senin;09.10 - 10.00;4;Public Relation;2;4;Firman Syah, S.Sos.I, M.M;201
-MICE-6C;Senin;09.10 - 10.00;6;Penyelenggaraan Konvensi;6;12;M. Iqbal Katik RE., S.ST., M.P.Par./Karbala Madania S.I.Kom., M.Si;minicon
+MICE-6C;Senin;09.10 - 10.00;6;Penyelenggaraan Konvensi;6;12;M. Iqbal Katik RE., S.ST., M.P.Par./Karbala Madania S.I.Kom., M.Si;315
 MICE-2C;Senin;10.00 - 10.50;2;Pengantar Marketing;2;4;Djuni Akbar, SE, M.Si;107
 MICE-4C;Senin;10.00 - 10.50;4;Public Relation;2;4;Firman Syah, S.Sos.I, M.M;201
-MICE-6C;Senin;10.00 - 10.50;6;Penyelenggaraan Konvensi;6;12;M. Iqbal Katik RE., S.ST., M.P.Par./Karbala Madania S.I.Kom., M.Si;minicon
-MICE-2C;Senin;10.50 - 11.40;2;Praktik Perkantoran;2;4;Dr Etty Khongrat, SE, M.Si;203
+MICE-6C;Senin;10.00 - 10.50;6;Penyelenggaraan Konvensi;6;12;M. Iqbal Katik RE., S.ST., M.P.Par./Karbala Madania S.I.Kom., M.Si;315
+MICE-2C;Senin;10.50 - 11.40;2;Praktik Perkantoran;2;4;Dr. Etty Khongrat,SE.,M.Si;203
 MICE-4C;Senin;10.50 - 11.40;4;Desain Grafis;2;4;Anggi Anggarini, M.Ds.;208
-MICE-6C;Senin;10.50 - 11.40;6;Penyelenggaraan Konvensi;6;12;M. Iqbal Katik RE., S.ST., M.P.Par./Karbala Madania S.I.Kom., M.Si;minicon
-MICE-2C;Senin;12.30 - 13.20;2;Praktik Perkantoran;2;4;Dr Etty Khongrat, SE, M.Si;203
+MICE-6C;Senin;10.50 - 11.40;6;Penyelenggaraan Konvensi;6;12;M. Iqbal Katik RE., S.ST., M.P.Par./Karbala Madania S.I.Kom., M.Si;315
+MICE-2C;Senin;12.30 - 13.20;2;Praktik Perkantoran;2;4;Dr. Etty Khongrat,SE.,M.Si;203
 MICE-4C;Senin;12.30 - 13.20;4;Desain Grafis;2;4;Anggi Anggarini, M.Ds.;208
-MICE-6C;Senin;12.30 - 13.20;6;Penyelenggaraan Konvensi;6;12;M. Iqbal Katik RE., S.ST., M.P.Par./Karbala Madania S.I.Kom., M.Si;minicon
+MICE-6C;Senin;12.30 - 13.20;6;Penyelenggaraan Konvensi;6;12;M. Iqbal Katik RE., S.ST., M.P.Par./Karbala Madania S.I.Kom., M.Si;315
 MICE-2C;Senin;13.20 - 14.10;2;Manajemen Logistik MICE;2;4;Fauzi Mubarak, S.ST, MT;114
 MICE-4C;Senin;13.20 - 14.10;4;Desain Grafis;2;4;Anggi Anggarini, M.Ds.;309
-MICE-6C;Senin;13.20 - 14.10;6;Penyelenggaraan Konvensi;6;12;M. Iqbal Katik RE., S.ST., M.P.Par./Karbala Madania S.I.Kom., M.Si;minicon
+MICE-6C;Senin;13.20 - 14.10;6;Penyelenggaraan Konvensi;6;12;M. Iqbal Katik RE., S.ST., M.P.Par./Karbala Madania S.I.Kom., M.Si;315
 MICE-2C;Senin;14.10 - 15.00;2;Manajemen Logistik MICE;2;4;Fauzi Mubarak, S.ST, MT;114
 MICE-4C;Senin;14.10 - 15.00;4;Desain Grafis;2;4;Anggi Anggarini, M.Ds.;309
-MICE-6C;Senin;14.10 - 15.00;6;Penyelenggaraan Konvensi;6;12;M. Iqbal Katik RE., S.ST., M.P.Par./Karbala Madania S.I.Kom., M.Si;minicon
+MICE-6C;Senin;14.10 - 15.00;6;Penyelenggaraan Konvensi;6;12;M. Iqbal Katik RE., S.ST., M.P.Par./Karbala Madania S.I.Kom., M.Si;315
 MICE-2C;Selasa;07.30 - 08.20;2;Pengantar Marketing;2;4;Djuni Akbar, SE, M.Si;112
-MICE-4C;Selasa;07.30 - 08.20;4;CIQ (Custom Immigration Quarantine);2;4;Annisa Wardhani, S.ST, MT;online
+MICE-4C;Selasa;07.30 - 08.20;4;CIQ (Custom Immigration Quarantine);2;4;Annisa Wardhani, S.S.T, M.T;online
 MICE-6C;Selasa;07.30 - 08.20;6;Penyelenggaraan Pameran;6;12;Fauzi Mubarak, S.ST, MT;online
 MICE-2C;Selasa;08.20 - 09.10;2;Pengantar Marketing;2;4;Djuni Akbar, SE, M.Si;112
-MICE-4C;Selasa;08.20 - 09.10;4;CIQ (Custom Immigration Quarantine);2;4;Annisa Wardhani, S.ST, MT;online
+MICE-4C;Selasa;08.20 - 09.10;4;CIQ (Custom Immigration Quarantine);2;4;Annisa Wardhani, S.S.T, M.T;online
 MICE-6C;Selasa;08.20 - 09.10;6;Penyelenggaraan Pameran;6;12;Fauzi Mubarak, S.ST, MT;online
-MICE-2C;Selasa;09.10 - 10.00;2;Pendidikan Kewarganegaraan ;2;4;Erlyn Rosalina, S.Hum., M.Pd;115
+MICE-2C;Selasa;09.10 - 10.00;2;Pendidikan Kewarganegaraan;2;4;Erlyn Rosalina, S.Hum., M.Pd;115
 MICE-4C;Selasa;09.10 - 10.00;4;Bahasa Inggris 4;2;4;Dr. Tantri Sari Safitry, S.Pd., M.Pd;305
 MICE-6C;Selasa;09.10 - 10.00;6;Penyelenggaraan Pameran;6;12;Fauzi Mubarak, S.ST, MT;online
-MICE-2C;Selasa;10.00 - 10.50;2;Pendidikan Kewarganegaraan ;2;4;Erlyn Rosalina, S.Hum., M.Pd;115
+MICE-2C;Selasa;10.00 - 10.50;2;Pendidikan Kewarganegaraan;2;4;Erlyn Rosalina, S.Hum., M.Pd;115
 MICE-4C;Selasa;10.00 - 10.50;4;Bahasa Inggris 4;2;4;Dr. Tantri Sari Safitry, S.Pd., M.Pd;305
 MICE-6C;Selasa;10.00 - 10.50;6;Penyelenggaraan Pameran;6;12;Fauzi Mubarak, S.ST, MT;online
 MICE-2C;Selasa;10.50 - 11.40;2;Geografi Destinasi Pariwisata;2;4;Rimsky K Judiseno, SE, MM, PhD;310
 MICE-4C;Selasa;10.50 - 11.40;4;Public Relation;2;4;Firman Syah, S.Sos.I, M.M;305
 MICE-6C;Selasa;10.50 - 11.40;6;Penyelenggaraan Pameran;6;12;Fauzi Mubarak, S.ST, MT;online
-MICE-6C;Selasa;10.50 - 11.40;6;Kewirausahaan ;2;4;Sudarno, SE, M.Si;online
+MICE-6C;Selasa;10.50 - 11.40;6;Kewirausahaan;2;4;Sudarno, S.E., M.Si.;online
 MICE-2C;Selasa;12.30 - 13.20;2;Geografi Destinasi Pariwisata;2;4;Rimsky K Judiseno, SE, MM, PhD;310
 MICE-4C;Selasa;12.30 - 13.20;4;Public Relation;2;4;Firman Syah, S.Sos.I, M.M;305
 MICE-6C;Selasa;12.30 - 13.20;6;Penyelenggaraan Pameran;6;12;Fauzi Mubarak, S.ST, MT;online
-MICE-6C;Selasa;12.30 - 13.20;6;Kewirausahaan ;2;4;Sudarno, SE, M.Si;online
-MICE-2C;Selasa;13.20 - 14.10;2;Registrasi;2;4;Dr. Etty Khongrat,SE.,M.Si/Yuningsih S.E., M.Si.;201
+MICE-6C;Selasa;12.30 - 13.20;6;Kewirausahaan;2;4;Sudarno, S.E., M.Si.;online
+MICE-2C;Selasa;13.20 - 14.10;2;Registrasi;2;4;Dr. Etty Khongrat,SE.,M.Si/Yuningsih S.E., M.Si;201
 MICE-4C;Selasa;13.20 - 14.10;4;Self Manajemen dan Interpersonal  Skill;2;4;M. Hamdi, S.Psi;305
 MICE-6C;Selasa;13.20 - 14.10;6;Penyelenggaraan Pameran;6;12;Fauzi Mubarak, S.ST, MT;online
-MICE-2C;Selasa;14.10 - 15.00;2;Registrasi;2;4;Dr. Etty Khongrat,SE.,M.Si/Yuningsih S.E., M.Si.;201
+MICE-2C;Selasa;14.10 - 15.00;2;Registrasi;2;4;Dr. Etty Khongrat,SE.,M.Si/Yuningsih S.E., M.Si;201
 MICE-4C;Selasa;14.10 - 15.00;4;Self Manajemen dan Interpersonal  Skill;2;4;M. Hamdi, S.Psi;305
 MICE-6C;Selasa;14.10 - 15.00;6;Penyelenggaraan Pameran;6;12;Fauzi Mubarak, S.ST, MT;online
 MICE-2C;Rabu;07.30 - 08.20;2;Keprotokolan;2;4;Raden Ayu Trisnayoni, S.Tr.Par., M.Tr.Par;306
-MICE-4C;Rabu;07.30 - 08.20;4;Perencanaan Incentive Travel;2;4;Imam Syafganti, S.Sos, M.Si., Ph.D./Karbala Madania, S.I.Kom.,M.Si;116
+MICE-4C;Rabu;07.30 - 08.20;4;Perencanaan Incentive Travel;2;4;Imam Syafganti, S.Sos., M.Si., Ph.D./Karbala Madania, S.I.Kom.,M.Si;116
 MICE-2C;Rabu;08.20 - 09.10;2;Keprotokolan;2;4;Raden Ayu Trisnayoni, S.Tr.Par., M.Tr.Par;306
-MICE-4C;Rabu;08.20 - 09.10;4;Perencanaan Incentive Travel;2;4;Imam Syafganti, S.Sos, M.Si., Ph.D./Karbala Madania, S.I.Kom.,M.Si;116
-MICE-2C;Rabu;09.10 - 10.00;2;Praktik Perkantoran;2;4;Dr Etty Khongrat, SE, M.Si;203
-MICE-4C;Rabu;09.10 - 10.00;4;CIQ (Custom Immigration Quarantine);2;4;Annisa Wardhani, S.ST, MT;309
+MICE-4C;Rabu;08.20 - 09.10;4;Perencanaan Incentive Travel;2;4;Imam Syafganti, S.Sos., M.Si., Ph.D./Karbala Madania, S.I.Kom.,M.Si;116
+MICE-2C;Rabu;09.10 - 10.00;2;Praktik Perkantoran;2;4;Dr. Etty Khongrat,SE.,M.Si;203
+MICE-4C;Rabu;09.10 - 10.00;4;CIQ (Custom Immigration Quarantine);2;4;Annisa Wardhani, S.S.T, M.T;309
 MICE-6C;Rabu;09.10 - 10.00;6;Manajemen Sumber Daya Manusia;2;4;Meisa Sofia, S.Tr., M.Par;online
-MICE-2C;Rabu;10.00 - 10.50;2;Praktik Perkantoran;2;4;Dr Etty Khongrat, SE, M.Si;203
-MICE-4C;Rabu;10.00 - 10.50;4;CIQ (Custom Immigration Quarantine);2;4;Annisa Wardhani, S.ST, MT;309
+MICE-2C;Rabu;10.00 - 10.50;2;Praktik Perkantoran;2;4;Dr. Etty Khongrat,SE.,M.Si;203
+MICE-4C;Rabu;10.00 - 10.50;4;CIQ (Custom Immigration Quarantine);2;4;Annisa Wardhani, S.S.T, M.T;309
 MICE-6C;Rabu;10.00 - 10.50;6;Manajemen Sumber Daya Manusia;2;4;Meisa Sofia, S.Tr., M.Par;online
 MICE-2C;Rabu;10.50 - 11.40;2;Dasar-dasar Akuntansi;2;4;Sudarno, S.E., M.Si./Yuningsih S.E., M.Si.;116
 MICE-4C;Rabu;10.50 - 11.40;4;Pemprograman Web Dinamis;2;4;Asep Erlan Maulana, S.Kom., M.Kom;303
@@ -291,24 +291,24 @@ MICE-6C;Rabu;13.20 - 14.10;6;Manajemen Strategik;2;4;Rimsky K Judiseno, SE, MM, 
 MICE-2C;Rabu;14.10 - 15.00;2;Etika Profesi dan Bisnis;2;4;Meisa Sofia, S.Tr., M.Par;116
 MICE-4C;Rabu;14.10 - 15.00;4;Manajemen Keuangan;2;4;Asterina Anggraini, M.M./Yuningsih S.E., M.Si;115
 MICE-6C;Rabu;14.10 - 15.00;6;Manajemen Strategik;2;4;Rimsky K Judiseno, SE, MM, PhD;online
-MICE-2C;Kamis;07.30 - 08.20;2;Registrasi;2;4;Dr. Etty Khongrat,SE.,M.Si/Yuningsih S.E., M.Si.;203
+MICE-2C;Kamis;07.30 - 08.20;2;Registrasi;2;4;Dr. Etty Khongrat,SE.,M.Si/Yuningsih S.E., M.Si;203
 MICE-4C;Kamis;07.30 - 08.20;4;Bahasa Jepang 2;2;4;Asrie Rahmiatie, S.S., M.Hum;304
-MICE-2C;Kamis;08.20 - 09.10;2;Registrasi;2;4;Dr. Etty Khongrat,SE.,M.Si/Yuningsih S.E., M.Si.;203
+MICE-2C;Kamis;08.20 - 09.10;2;Registrasi;2;4;Dr. Etty Khongrat,SE.,M.Si/Yuningsih S.E., M.Si;203
 MICE-4C;Kamis;08.20 - 09.10;4;Bahasa Jepang 2;2;4;Asrie Rahmiatie, S.S., M.Hum;304
 MICE-2C;Kamis;09.10 - 10.00;2;Geografi Destinasi Pariwisata;2;4;Rimsky K Judiseno, SE, MM, PhD;116
 MICE-4C;Kamis;09.10 - 10.00;4;Pemprograman Web Dinamis;2;4;Asep Erlan Maulana, S.Kom., M.Kom;208
 MICE-2C;Kamis;10.00 - 10.50;2;Geografi Destinasi Pariwisata;2;4;Rimsky K Judiseno, SE, MM, PhD;116
 MICE-4C;Kamis;10.00 - 10.50;4;Pemprograman Web Dinamis;2;4;Asep Erlan Maulana, S.Kom., M.Kom;208
 MICE-2C;Kamis;10.50 - 11.40;2;Bahasa Inggris 2;2;4;Vini Deliana, S.Pd.,M.Pd;116
-MICE-4C;Kamis;10.50 - 11.40;4;Bahasa Mandarin 1;2;4;Hasan, S.Sos., M.Pd.;305
-MICE-6C;Kamis;10.50 - 11.40;6;Kewirausahaan ;2;4;Sudarno, SE, M.Si;online
+MICE-4C;Kamis;10.50 - 11.40;4;Bahasa Mandarin 1;2;4;Hasan, S.Sos, M. Pd;305
+MICE-6C;Kamis;10.50 - 11.40;6;Kewirausahaan;2;4;Sudarno, S.E., M.Si.;online
 MICE-2C;Kamis;12.30 - 13.20;2;Bahasa Inggris 2;2;4;Vini Deliana, S.Pd.,M.Pd;116
-MICE-4C;Kamis;12.30 - 13.20;4;Bahasa Mandarin 1;2;4;Hasan, S.Sos., M.Pd.;305
-MICE-6C;Kamis;12.30 - 13.20;6;Kewirausahaan ;2;4;Sudarno, SE, M.Si;online
+MICE-4C;Kamis;12.30 - 13.20;4;Bahasa Mandarin 1;2;4;Hasan, S.Sos, M. Pd;305
+MICE-6C;Kamis;12.30 - 13.20;6;Kewirausahaan;2;4;Sudarno, S.E., M.Si.;online
 MICE-2C;Kamis;13.20 - 14.10;2;Etika Profesi dan Bisnis;2;4;Meisa Sofia, S.Tr., M.Par;116
-MICE-4C;Kamis;13.20 - 14.10;4;Perencanaan Incentive Travel;2;4;Imam Syafganti, S.Sos, M.Si., Ph.D./Karbala Madania, S.I.Kom.,M.Si;105
+MICE-4C;Kamis;13.20 - 14.10;4;Perencanaan Incentive Travel;2;4;Imam Syafganti, S.Sos., M.Si., Ph.D./Karbala Madania, S.I.Kom.,M.Si;105
 MICE-2C;Kamis;14.10 - 15.00;2;Etika Profesi dan Bisnis;2;4;Meisa Sofia, S.Tr., M.Par;116
-MICE-4C;Kamis;14.10 - 15.00;4;Perencanaan Incentive Travel;2;4;Imam Syafganti, S.Sos, M.Si., Ph.D./Karbala Madania, S.I.Kom.,M.Si;105
+MICE-4C;Kamis;14.10 - 15.00;4;Perencanaan Incentive Travel;2;4;Imam Syafganti, S.Sos., M.Si., Ph.D./Karbala Madania, S.I.Kom.,M.Si;105
 MICE-2C;Jumat;07.30 - 08.20;2;Keprotokolan;2;4;Raden Ayu Trisnayoni, S.Tr.Par., M.Tr.Par;116
 MICE-4C;Jumat;07.30 - 08.20;4;Manajemen Keuangan;2;4;Asterina Anggraini, M.M./Yuningsih S.E., M.Si;106
 MICE-6C;Jumat;07.30 - 08.20;6;Manajemen Sumber Daya Manusia;2;4;Meisa Sofia, S.Tr., M.Par;online
@@ -320,12 +320,12 @@ MICE-4C;Jumat;09.10 - 10.00;4;Bahasa Inggris 4;2;4;Dr. Tantri Sari Safitry, S.Pd
 MICE-2C;Jumat;10.00 - 10.50;2;Manajemen Logistik MICE;2;4;Fauzi Mubarak, S.ST, MT;116
 MICE-4C;Jumat;10.00 - 10.50;4;Bahasa Inggris 4;2;4;Dr. Tantri Sari Safitry, S.Pd., M.Pd;106
 MICE-2C;Jumat;10.50 - 11.40;2;Bahasa Inggris 2;2;4;Vini Deliana, S.Pd.,M.Pd;116
-MICE-4C;Jumat;10.50 - 11.40;4;Bahasa Mandarin 1;2;4;Hasan, S.Sos., M.Pd.;106
+MICE-4C;Jumat;10.50 - 11.40;4;Bahasa Mandarin 1;2;4;Hasan, S.Sos, M. Pd;106
 MICE-2C;Jumat;12.30 - 13.20;2;Bahasa Inggris 2;2;4;Vini Deliana, S.Pd.,M.Pd;116
-MICE-4C;Jumat;12.30 - 13.20;4;Bahasa Mandarin 1;2;4;Hasan, S.Sos., M.Pd.;106
-MICE-2C;Jumat;13.20 - 14.10;2;Pendidikan Kewarganegaraan ;2;4;Erlyn Rosalina, S.Hum., M.Pd;116
+MICE-4C;Jumat;12.30 - 13.20;4;Bahasa Mandarin 1;2;4;Hasan, S.Sos, M. Pd;106
+MICE-2C;Jumat;13.20 - 14.10;2;Pendidikan Kewarganegaraan;2;4;Erlyn Rosalina, S.Hum., M.Pd;116
 MICE-4C;Jumat;13.20 - 14.10;4;Bahasa Jepang 2;2;4;Asrie Rahmiatie, S.S., M.Hum;107
-MICE-2C;Jumat;14.10 - 15.00;2;Pendidikan Kewarganegaraan ;2;4;Erlyn Rosalina, S.Hum., M.Pd;116
+MICE-2C;Jumat;14.10 - 15.00;2;Pendidikan Kewarganegaraan;2;4;Erlyn Rosalina, S.Hum., M.Pd;116
 MICE-4C;Jumat;14.10 - 15.00;4;Bahasa Jepang 2;2;4;Asrie Rahmiatie, S.S., M.Hum;107
 MICE-4D;Senin;09.10 - 10.00;4;CIQ (Custom Immigration Quarantine);2;4;Raden Ayu Trisnayoni, S.Tr.Par., M.Tr.Par;309
 MICE-4D;Senin;10.00 - 10.50;4;CIQ (Custom Immigration Quarantine);2;4;Raden Ayu Trisnayoni, S.Tr.Par., M.Tr.Par;309
@@ -349,32 +349,32 @@ MICE-4D;Selasa;12.30 - 13.20;4;Bahasa Inggris 4;2;4;Dr. Tantri Sari Safitry, S.P
 MICE-6D;Selasa;12.30 - 13.20;6;Penyelenggaraan Konvensi;6;12;Annisa Wardhani, S.S.T, M.T/Noni Noerkaisar, S.M.B., M.M.;online
 MICE-4D;Selasa;13.20 - 14.10;4;Perencanaan Incentive Travel;2;4;Dr. Christina L. Rudatin, SE, M.Si;online
 MICE-6D;Selasa;13.20 - 14.10;6;Penyelenggaraan Konvensi;6;12;Annisa Wardhani, S.S.T, M.T/Noni Noerkaisar, S.M.B., M.M.;online
-MICE-6D;Selasa;13.20 - 14.10;6;Kewirausahaan ;2;4;Sudarno, SE, M.Si;online
+MICE-6D;Selasa;13.20 - 14.10;6;Kewirausahaan;2;4;Sudarno, S.E., M.Si.;online
 MICE-4D;Selasa;14.10 - 15.00;4;Perencanaan Incentive Travel;2;4;Dr. Christina L. Rudatin, SE, M.Si;online
 MICE-6D;Selasa;14.10 - 15.00;6;Penyelenggaraan Konvensi;6;12;Annisa Wardhani, S.S.T, M.T/Noni Noerkaisar, S.M.B., M.M.;online
-MICE-6D;Selasa;14.10 - 15.00;6;Kewirausahaan ;2;4;Sudarno, SE, M.Si;online
-MICE-6D;Rabu;07.30 - 08.20;6;Penyelenggaraan Pameran;6;12;Heri Setyawan, SE, M.Si;online
+MICE-6D;Selasa;14.10 - 15.00;6;Kewirausahaan;2;4;Sudarno, S.E., M.Si.;online
+MICE-6D;Rabu;07.30 - 08.20;6;Penyelenggaraan Pameran;6;12;Hasan, S.Sos, M. Pd;online
 MICE-6D;Rabu;07.30 - 08.20;6;Manajemen Sumber Daya Manusia;2;4;Sujiwo Priambodo, S.E., M.M.;online
-MICE-6D;Rabu;08.20 - 09.10;6;Penyelenggaraan Pameran;6;12;Heri Setyawan, SE, M.Si;online
+MICE-6D;Rabu;08.20 - 09.10;6;Penyelenggaraan Pameran;6;12;Hasan, S.Sos, M. Pd;online
 MICE-6D;Rabu;08.20 - 09.10;6;Manajemen Sumber Daya Manusia;2;4;Sujiwo Priambodo, S.E., M.M.;online
 MICE-4D;Rabu;09.10 - 10.00;4;Manajemen Keuangan;2;4;Asterina Anggraini, M.M./Yuningsih S.E., M.Si;305
-MICE-6D;Rabu;09.10 - 10.00;6;Penyelenggaraan Pameran;6;12;Heri Setyawan, SE, M.Si;online
-MICE-6D;Rabu;09.10 - 10.00;6;Manajemen Strategik;2;4;Dr. Christina L. Rudatin,SE.,M.Si/Karbala Madania S.I.Kom., M.Si;online
+MICE-6D;Rabu;09.10 - 10.00;6;Penyelenggaraan Pameran;6;12;Hasan, S.Sos, M. Pd;online
+MICE-6D;Rabu;09.10 - 10.00;6;Manajemen Strategik;2;4;Dr. Christina L. Rudatin, SE, M.Si/Karbala Madania S.I.Kom., M.Si;online
 MICE-4D;Rabu;10.00 - 10.50;4;Manajemen Keuangan;2;4;Asterina Anggraini, M.M./Yuningsih S.E., M.Si;305
-MICE-6D;Rabu;10.00 - 10.50;6;Penyelenggaraan Pameran;6;12;Heri Setyawan, SE, M.Si;online
-MICE-6D;Rabu;10.00 - 10.50;6;Manajemen Strategik;2;4;Dr. Christina L. Rudatin,SE.,M.Si/Karbala Madania S.I.Kom., M.Si;online
+MICE-6D;Rabu;10.00 - 10.50;6;Penyelenggaraan Pameran;6;12;Hasan, S.Sos, M. Pd;online
+MICE-6D;Rabu;10.00 - 10.50;6;Manajemen Strategik;2;4;Dr. Christina L. Rudatin, SE, M.Si/Karbala Madania S.I.Kom., M.Si;online
 MICE-4D;Rabu;10.50 - 11.40;4;Bahasa Jepang 2;2;4;Asrie Rahmiatie, S.S., M.Hum;305
-MICE-6D;Rabu;10.50 - 11.40;6;Penyelenggaraan Pameran;6;12;Heri Setyawan, SE, M.Si;online
+MICE-6D;Rabu;10.50 - 11.40;6;Penyelenggaraan Pameran;6;12;Hasan, S.Sos, M. Pd;online
 MICE-4D;Rabu;12.30 - 13.20;4;Bahasa Jepang 2;2;4;Asrie Rahmiatie, S.S., M.Hum;305
-MICE-6D;Rabu;12.30 - 13.20;6;Penyelenggaraan Pameran;6;12;Heri Setyawan, SE, M.Si;online
-MICE-4D;Rabu;13.20 - 14.10;4;Public Relation;2;4;Imam Syafganti, S.Sos, M.Si., Ph.D./Karbala Madania, S.I.Kom.,M.Si;108
-MICE-6D;Rabu;13.20 - 14.10;6;Penyelenggaraan Pameran;6;12;Heri Setyawan, SE, M.Si;online
-MICE-4D;Rabu;14.10 - 15.00;4;Public Relation;2;4;Imam Syafganti, S.Sos, M.Si., Ph.D./Karbala Madania, S.I.Kom.,M.Si;108
-MICE-6D;Rabu;14.10 - 15.00;6;Penyelenggaraan Pameran;6;12;Heri Setyawan, SE, M.Si;online
+MICE-6D;Rabu;12.30 - 13.20;6;Penyelenggaraan Pameran;6;12;Hasan, S.Sos, M. Pd;online
+MICE-4D;Rabu;13.20 - 14.10;4;Public Relation;2;4;Imam Syafganti, S.Sos., M.Si., Ph.D./Karbala Madania, S.I.Kom.,M.Si;108
+MICE-6D;Rabu;13.20 - 14.10;6;Penyelenggaraan Pameran;6;12;Hasan, S.Sos, M. Pd;online
+MICE-4D;Rabu;14.10 - 15.00;4;Public Relation;2;4;Imam Syafganti, S.Sos., M.Si., Ph.D./Karbala Madania, S.I.Kom.,M.Si;108
+MICE-6D;Rabu;14.10 - 15.00;6;Penyelenggaraan Pameran;6;12;Hasan, S.Sos, M. Pd;online
 MICE-4D;Rabu;15.15 - 16.05;4;Bahasa Inggris 4;2;4;Dr. Tantri Sari Safitry, S.Pd., M.Pd;112
 MICE-4D;Rabu;16.05 - 16.55;4;Bahasa Inggris 4;2;4;Dr. Tantri Sari Safitry, S.Pd., M.Pd;112
-MICE-6D;Kamis;07.30 - 08.20;6;Kewirausahaan ;2;4;Sudarno, SE, M.Si;online
-MICE-6D;Kamis;08.20 - 09.10;6;Kewirausahaan ;2;4;Sudarno, SE, M.Si;online
+MICE-6D;Kamis;07.30 - 08.20;6;Kewirausahaan;2;4;Sudarno, S.E., M.Si.;online
+MICE-6D;Kamis;08.20 - 09.10;6;Kewirausahaan;2;4;Sudarno, S.E., M.Si.;online
 MICE-4D;Kamis;09.10 - 10.00;4;Bahasa Jepang 2;2;4;Asrie Rahmiatie, S.S., M.Hum;304
 MICE-6D;Kamis;09.10 - 10.00;6;Manajemen Sumber Daya Manusia;2;4;Sujiwo Priambodo, S.E., M.M.;online
 MICE-4D;Kamis;10.00 - 10.50;4;Bahasa Jepang 2;2;4;Asrie Rahmiatie, S.S., M.Hum;304
@@ -388,11 +388,11 @@ MICE-4D;Kamis;16.05 - 16.55;4;Desain Grafis;2;4;Annisaa Syifa Aqlina, M.Ds.;301
 MICE-4D;Jumat;07.30 - 08.20;4;Bahasa Mandarin 1;2;4;Vanya Zelia, S.S, M.Pd;305
 MICE-4D;Jumat;08.20 - 09.10;4;Bahasa Mandarin 1;2;4;Vanya Zelia, S.S, M.Pd;305
 MICE-4D;Jumat;09.10 - 10.00;4;Bahasa Mandarin 1;2;4;Vanya Zelia, S.S, M.Pd;305
-MICE-6D;Jumat;09.10 - 10.00;6;Manajemen Strategik;2;4;Dr. Christina L. Rudatin,SE.,M.Si/Karbala Madania S.I.Kom., M.Si;online
+MICE-6D;Jumat;09.10 - 10.00;6;Manajemen Strategik;2;4;Dr. Christina L. Rudatin, SE, M.Si/Karbala Madania S.I.Kom., M.Si;online
 MICE-4D;Jumat;10.00 - 10.50;4;Bahasa Mandarin 1;2;4;Vanya Zelia, S.S, M.Pd;305
-MICE-6D;Jumat;10.00 - 10.50;6;Manajemen Strategik;2;4;Dr. Christina L. Rudatin,SE.,M.Si/Karbala Madania S.I.Kom., M.Si;online
-MICE-4D;Jumat;10.50 - 11.40;4;Public Relation;2;4;Imam Syafganti, S.Sos, M.Si., Ph.D./Karbala Madania, S.I.Kom.,M.Si;112
-MICE-4D;Jumat;12.30 - 13.20;4;Public Relation;2;4;Imam Syafganti, S.Sos, M.Si., Ph.D./Karbala Madania, S.I.Kom.,M.Si;112
+MICE-6D;Jumat;10.00 - 10.50;6;Manajemen Strategik;2;4;Dr. Christina L. Rudatin, SE, M.Si/Karbala Madania S.I.Kom., M.Si;online
+MICE-4D;Jumat;10.50 - 11.40;4;Public Relation;2;4;Imam Syafganti, S.Sos., M.Si., Ph.D./Karbala Madania, S.I.Kom.,M.Si;112
+MICE-4D;Jumat;12.30 - 13.20;4;Public Relation;2;4;Imam Syafganti, S.Sos., M.Si., Ph.D./Karbala Madania, S.I.Kom.,M.Si;112
 MICE-4D;Jumat;13.20 - 14.10;4;CIQ (Custom Immigration Quarantine);2;4;Raden Ayu Trisnayoni, S.Tr.Par., M.Tr.Par;112
 MICE-4D;Jumat;14.10 - 15.00;4;CIQ (Custom Immigration Quarantine);2;4;Raden Ayu Trisnayoni, S.Tr.Par., M.Tr.Par;112
 ABT-2A;Senin;07.30 - 08.20;2;English For Business;2;4;Dr. Nidia Sofa, S.Pd.I, M.Pd;105
@@ -413,9 +413,9 @@ ABT-6A;Senin;10.50 - 11.40;6;Metodologi Penelitian Bisnis Terapan;3;6;Imas Chand
 ABT-2A;Senin;12.30 - 13.20;2;Komunikasi Bisnis;2;4;Risya Zahrotul Firdaus, S.I.Kom., M.Si;108
 ABT-4A;Senin;12.30 - 13.20;4;Aspek Hukum dalam Bisnis;2;4;Dr. Nining Latianingsih, SH, MH;201
 ABT-6A;Senin;12.30 - 13.20;6;Metodologi Penelitian Bisnis Terapan;3;6;Imas Chandra Pratiwi , M.S.M;105
-ABT-2A;Senin;13.20 - 14.10;2;Pengantar Ilmu Ekonomi ;2;4;Adilah Permananingrum, S.E., M.Sc.;112
+ABT-2A;Senin;13.20 - 14.10;2;Pengantar Ilmu Ekonomi;2;4;Adilah Permananingrum, S.E., M.Sc.;112
 ABT-6A;Senin;13.20 - 14.10;6;E- Logistics;2;4;Restu Jati Saputro, S.Si., M.Sc;online
-ABT-2A;Senin;14.10 - 15.00;2;Pengantar Ilmu Ekonomi ;2;4;Adilah Permananingrum, S.E., M.Sc.;112
+ABT-2A;Senin;14.10 - 15.00;2;Pengantar Ilmu Ekonomi;2;4;Adilah Permananingrum, S.E., M.Sc.;112
 ABT-6A;Senin;14.10 - 15.00;6;E- Logistics;2;4;Restu Jati Saputro, S.Si., M.Sc;online
 ABT-4A;Senin;15.15 - 16.05;4;Manajemen Keuangan;3;6;Adilah Permananingrum, S.E., M.Sc.;online
 ABT-4A;Senin;16.05 - 16.55;4;Manajemen Keuangan;3;6;Adilah Permananingrum, S.E., M.Sc.;online
@@ -472,10 +472,10 @@ ABT-2A;Kamis;08.20 - 09.10;2;Pendidikan Kewarganegaraan;2;4;Erlyn Rosalina, S.Hu
 ABT-4A;Kamis;08.20 - 09.10;4;Aspek Hukum dalam Bisnis;2;4;Dr. Nining Latianingsih, SH, MH;online
 ABT-6A;Kamis;08.20 - 09.10;6;Manajemen Asuransi Transportasi;2;4;Yanita Ella N.C, S.A.B., M.Si;online
 ABT-2A;Kamis;09.10 - 10.00;2;Pengantar Ilmu Ekonomi;2;4;Adilah Permananingrum, S.E., M.Sc.;107
-ABT-4A;Kamis;09.10 - 10.00;4;Manajemen Risiko;2;4;Meisa Sofia, S.Tr., M.Par;online
+ABT-4A;Kamis;09.10 - 10.00;4;Manajemen Resiko;2;4;Meisa Sofia, S.Tr., M.Par;online
 ABT-6A;Kamis;09.10 - 10.00;6;Manajemen Asuransi Transportasi;2;4;Yanita Ella N.C, S.A.B., M.Si;online
 ABT-2A;Kamis;10.00 - 10.50;2;Pengantar Ilmu Ekonomi;2;4;Adilah Permananingrum, S.E., M.Sc.;107
-ABT-4A;Kamis;10.00 - 10.50;4;Manajemen Risiko;2;4;Meisa Sofia, S.Tr., M.Par;online
+ABT-4A;Kamis;10.00 - 10.50;4;Manajemen Resiko;2;4;Meisa Sofia, S.Tr., M.Par;online
 ABT-6A;Kamis;10.00 - 10.50;6;Manajemen Asuransi Transportasi;2;4;Yanita Ella N.C, S.A.B., M.Si;online
 ABT-2A;Kamis;10.50 - 11.40;2;Pemasaran dan Pelayanan Pelanggan;2;4;Dr. Dra. Iis Mariam, M.Si;201
 ABT-4A;Kamis;10.50 - 11.40;4;Pemasaran Digital;2;4;Fachri Aditya,S.Si.,M.M;online
@@ -494,23 +494,23 @@ ABT-2A;Jumat;08.20 - 09.10;2;Ilmu Administrasi Bisnis;2;4;Dr. Wahyudi Utomo, S.S
 ABT-4A;Jumat;08.20 - 09.10;4;Pemasaran Digital;2;4;Fachri Aditya,S.Si.,M.M;113
 ABT-6A;Jumat;08.20 - 09.10;6;Manajemen Inventory;2;4;Nuria Puspitasari, SE., M.EC., Dev;115
 ABT-2A;Jumat;09.10 - 10.00;2;Akuntansi Biaya;2;4;Ratri Kurniasari,M.Ak;107
-ABT-4A;Jumat;09.10 - 10.00;4;Manajemen Risiko;2;4;Meisa Sofia, S.Tr., M.Par;115
+ABT-4A;Jumat;09.10 - 10.00;4;Manajemen Resiko;2;4;Meisa Sofia, S.Tr., M.Par;115
 ABT-6A;Jumat;09.10 - 10.00;6;Etika Bisnis dan Profesi;2;4;Ni Made Widhi S, SE., M.M;203
 ABT-2A;Jumat;10.00 - 10.50;2;Akuntansi Biaya;2;4;Ratri Kurniasari,M.Ak;107
-ABT-4A;Jumat;10.00 - 10.50;4;Manajemen Risiko;2;4;Meisa Sofia, S.Tr., M.Par;115
+ABT-4A;Jumat;10.00 - 10.50;4;Manajemen Resiko;2;4;Meisa Sofia, S.Tr., M.Par;115
 ABT-6A;Jumat;10.00 - 10.50;6;Etika Bisnis dan Profesi;2;4;Ni Made Widhi S, SE., M.M;203
 ABT-2A;Jumat;10.50 - 11.40;2;Pengantar Logistik dan Supply Chain;2;4;Arizal Putra Pratama,B.O.M.,M.A.B;107
 ABT-2A;Jumat;12.30 - 13.20;2;Pengantar Logistik dan Supply Chain;2;4;Arizal Putra Pratama,B.O.M.,M.A.B;107
 ABT-2A;Jumat;13.20 - 14.10;2;Pengantar Manajemen;2;4;Yuningsih, S.E., M.Si.;117
 ABT-4A;Jumat;13.20 - 14.10;4;manajemen pengadaan barang dan jasa;3;6;Restu Jati Saputro, S.Si., M.Sc;203
-ABT-6A;Jumat;13.20 - 14.10;6;Budgeting;3;6;Adilah Permananingrum, S.E., M.Sc.;Eksekutif
+ABT-6A;Jumat;13.20 - 14.10;6;Budgeting;3;6;Adilah Permananingrum, S.E., M.Sc.;207
 ABT-2A;Jumat;14.10 - 15.00;2;Pengantar Manajemen;2;4;Yuningsih, S.E., M.Si.;117
 ABT-4A;Jumat;14.10 - 15.00;4;manajemen pengadaan barang dan jasa;3;6;Restu Jati Saputro, S.Si., M.Sc;203
-ABT-6A;Jumat;14.10 - 15.00;6;Budgeting;3;6;Adilah Permananingrum, S.E., M.Sc.;Eksekutif
+ABT-6A;Jumat;14.10 - 15.00;6;Budgeting;3;6;Adilah Permananingrum, S.E., M.Sc.;207
 ABT-4A;Jumat;15.15 - 16.05;4;Manajemen Pergudangan;3;6;Yoshua Ardy Putra , S.Si., M.T.;203
-ABT-6A;Jumat;15.15 - 16.05;6;Budgeting;3;6;Adilah Permananingrum, S.E., M.Sc.;Eksekutif
+ABT-6A;Jumat;15.15 - 16.05;6;Budgeting;3;6;Adilah Permananingrum, S.E., M.Sc.;207
 ABT-4A;Jumat;16.05 - 16.55;4;Manajemen Pergudangan;3;6;Yoshua Ardy Putra , S.Si., M.T.;203
-ABT-6A;Jumat;16.05 - 16.55;6;Budgeting;3;6;Adilah Permananingrum, S.E., M.Sc.;Eksekutif
+ABT-6A;Jumat;16.05 - 16.55;6;Budgeting;3;6;Adilah Permananingrum, S.E., M.Sc.;207
 ABT-2B;Senin;07.30 - 08.20;2;Komunikasi Bisnis;2;4;Titik Purwinarti, S.Sos, M.Pd;116
 ABT-4B;Senin;07.30 - 08.20;4;Aspek Hukum dalam Bisnis;2;4;Dr. Nining Latianingsih, SH, MH;203
 ABT-2B;Senin;08.20 - 09.10;2;Komunikasi Bisnis;2;4;Titik Purwinarti, S.Sos, M.Pd;116
@@ -539,29 +539,29 @@ ABT-2B;Selasa;08.20 - 09.10;2;Pengantar Ilmu Ekonomi;2;4;Ratri Kurniasari,M.Ak;1
 ABT-4B;Selasa;08.20 - 09.10;4;Manajemen Keuangan;3;6;Arif Santoso, S.Pd., M.Ak.;309
 ABT-2B;Selasa;09.10 - 10.00;2;English For Business;2;4;Dr. Nidia Sofa, S.Pd.I, M.Pd;116
 ABT-4B;Selasa;09.10 - 10.00;4;Manajemen Keuangan;3;6;Arif Santoso, S.Pd., M.Ak.;309
-ABT-6B;Selasa;09.10 - 10.00;6;Metodologi Penelitian Bisnis Terapan;3;6;Dr. Wahyudi Utomo, S.Sos, M.Si;SMART
+ABT-6B;Selasa;09.10 - 10.00;6;Metodologi Penelitian Bisnis Terapan;3;6;Dr. Wahyudi Utomo, S.Sos, M.Si;111
 ABT-2B;Selasa;10.00 - 10.50;2;English For Business;2;4;Dr. Nidia Sofa, S.Pd.I, M.Pd;116
 ABT-4B;Selasa;10.00 - 10.50;4;Manajemen Keuangan;3;6;Arif Santoso, S.Pd., M.Ak.;309
-ABT-6B;Selasa;10.00 - 10.50;6;Metodologi Penelitian Bisnis Terapan;3;6;Dr. Wahyudi Utomo, S.Sos, M.Si;SMART
+ABT-6B;Selasa;10.00 - 10.50;6;Metodologi Penelitian Bisnis Terapan;3;6;Dr. Wahyudi Utomo, S.Sos, M.Si;111
 ABT-2B;Selasa;10.50 - 11.40;2;Pengantar Manajemen;2;4;Taufik Akbar, SE., M.S.M;108
 ABT-4B;Selasa;10.50 - 11.40;4;Manajemen Distribusi dan Delivery;3;6;Haris Satria Putra , M.M.S.I.;302
-ABT-6B;Selasa;10.50 - 11.40;6;Metodologi Penelitian Bisnis Terapan;3;6;Dr. Wahyudi Utomo, S.Sos, M.Si;SMART
+ABT-6B;Selasa;10.50 - 11.40;6;Metodologi Penelitian Bisnis Terapan;3;6;Dr. Wahyudi Utomo, S.Sos, M.Si;111
 ABT-2B;Selasa;12.30 - 13.20;2;Pengantar Manajemen;2;4;Taufik Akbar, SE., M.S.M;108
 ABT-4B;Selasa;12.30 - 13.20;4;Manajemen Distribusi dan Delivery;3;6;Haris Satria Putra , M.M.S.I.;302
-ABT-6B;Selasa;12.30 - 13.20;6;Metodologi Penelitian Bisnis Terapan;3;6;Dr. Wahyudi Utomo, S.Sos, M.Si;SMART
+ABT-6B;Selasa;12.30 - 13.20;6;Metodologi Penelitian Bisnis Terapan;3;6;Dr. Wahyudi Utomo, S.Sos, M.Si;111
 ABT-2B;Selasa;13.20 - 14.10;2;Ilmu Administrasi Bisnis;2;4;Dr. Dra. Iis Mariam, M.Si;108
 ABT-4B;Selasa;13.20 - 14.10;4;Manajemen Distribusi dan Delivery;3;6;Haris Satria Putra , M.M.S.I.;302
-ABT-6B;Selasa;13.20 - 14.10;6;Budgeting;3;6;Adilah Permananingrum, S.E., M.Sc.;Eksekutif
+ABT-6B;Selasa;13.20 - 14.10;6;Budgeting;3;6;Adilah Permananingrum, S.E., M.Sc.;207
 ABT-2B;Selasa;14.10 - 15.00;2;Ilmu Administrasi Bisnis;2;4;Dr. Dra. Iis Mariam, M.Si;108
 ABT-4B;Selasa;14.10 - 15.00;4;Manajemen Distribusi dan Delivery;3;6;Haris Satria Putra , M.M.S.I.;302
-ABT-6B;Selasa;14.10 - 15.00;6;Budgeting;3;6;Adilah Permananingrum, S.E., M.Sc.;Eksekutif
-ABT-6B;Selasa;15.15 - 16.05;6;Budgeting;3;6;Adilah Permananingrum, S.E., M.Sc.;Eksekutif
-ABT-6B;Selasa;16.05 - 16.55;6;Budgeting;3;6;Adilah Permananingrum, S.E., M.Sc.;Eksekutif
+ABT-6B;Selasa;14.10 - 15.00;6;Budgeting;3;6;Adilah Permananingrum, S.E., M.Sc.;207
+ABT-6B;Selasa;15.15 - 16.05;6;Budgeting;3;6;Adilah Permananingrum, S.E., M.Sc.;207
+ABT-6B;Selasa;16.05 - 16.55;6;Budgeting;3;6;Adilah Permananingrum, S.E., M.Sc.;207
 ABT-2B;Rabu;07.30 - 08.20;2;Ilmu Administrasi Bisnis;2;4;Dr. Dra. Iis Mariam, M.Si;108
-ABT-4B;Rabu;07.30 - 08.20;4;Manajemen Risiko;2;4;Meisa Sofia, S.Tr., M.Par;online
+ABT-4B;Rabu;07.30 - 08.20;4;Manajemen Resiko;2;4;Meisa Sofia, S.Tr., M.Par;online
 ABT-6B;Rabu;07.30 - 08.20;6;Statistik Bisnis;3;6;Imas Chandra Pratiwi , M.S.M;online
 ABT-2B;Rabu;08.20 - 09.10;2;Ilmu Administrasi Bisnis;2;4;Dr. Dra. Iis Mariam, M.Si;108
-ABT-4B;Rabu;08.20 - 09.10;4;Manajemen Risiko;2;4;Meisa Sofia, S.Tr., M.Par;online
+ABT-4B;Rabu;08.20 - 09.10;4;Manajemen Resiko;2;4;Meisa Sofia, S.Tr., M.Par;online
 ABT-6B;Rabu;08.20 - 09.10;6;Statistik Bisnis;3;6;Imas Chandra Pratiwi , M.S.M;online
 ABT-2B;Rabu;09.10 - 10.00;2;Pengantar Manajemen;2;4;Taufik Akbar, SE., M.S.M;108
 ABT-4B;Rabu;09.10 - 10.00;4;Perencanaan dan pengendalian logistik;2;4;Arizal Putra Pratama,B.O.M.,M.A.B;online
@@ -606,7 +606,7 @@ ABT-6B;Kamis;15.15 - 16.05;6;Freight Logistik;3;6;Yoshua Ardy Putra , S.Si., M.T
 ABT-4B;Kamis;16.05 - 16.55;4;Manajemen Pergudangan;3;6;Irfan Rusydi Triyanto, S.T., M.T.;309
 ABT-6B;Kamis;16.05 - 16.55;6;Freight Logistik;3;6;Yoshua Ardy Putra , S.Si., M.T.;online
 ABT-6B;Jumat;07.30 - 08.20;6;Etika Bisnis dan Profesi;2;4;Ni Made Widhi S, SE., M.M;online
-ABT-6B;Jumat;08.20 - 09.10;6;Etika Bisnis dan Profesi;2;4;Ni Made Widhi S., SE, MM;online
+ABT-6B;Jumat;08.20 - 09.10;6;Etika Bisnis dan Profesi;2;4;Ni Made Widhi S, SE., M.M;online
 ABT-2B;Jumat;09.10 - 10.00;2;Akuntansi Biaya;2;4;Arif Santoso, S.Pd., M.Ak.;113
 ABT-4B;Jumat;09.10 - 10.00;4;Manajemen Pergudangan;3;6;Irfan Rusydi Triyanto, S.T., M.T.;online
 ABT-6B;Jumat;09.10 - 10.00;6;Manajemen Inventory;2;4;Nuria Puspitasari, SE., M.EC., Dev;online
@@ -614,10 +614,10 @@ ABT-2B;Jumat;10.00 - 10.50;2;Akuntansi Biaya;2;4;Arif Santoso, S.Pd., M.Ak.;113
 ABT-4B;Jumat;10.00 - 10.50;4;Manajemen Pergudangan;3;6;Irfan Rusydi Triyanto, S.T., M.T.;online
 ABT-6B;Jumat;10.00 - 10.50;6;Manajemen Inventory;2;4;Nuria Puspitasari, SE., M.EC., Dev;online
 ABT-2B;Jumat;10.50 - 11.40;2;Pengantar Ilmu Ekonomi;2;4;Ratri Kurniasari,M.Ak;113
-ABT-4B;Jumat;10.50 - 11.40;4;Manajemen Risiko;2;4;Meisa Sofia, S.Tr., M.Par;online
+ABT-4B;Jumat;10.50 - 11.40;4;Manajemen Resiko;2;4;Meisa Sofia, S.Tr., M.Par;online
 ABT-6B;Jumat;10.50 - 11.40;6;Budgeting;3;6;Adilah Permananingrum, S.E., M.Sc.;online
 ABT-2B;Jumat;12.30 - 13.20;2;Pengantar Ilmu Ekonomi;2;4;Ratri Kurniasari,M.Ak;113
-ABT-4B;Jumat;12.30 - 13.20;4;Manajemen Risiko;2;4;Meisa Sofia, S.Tr., M.Par;online
+ABT-4B;Jumat;12.30 - 13.20;4;Manajemen Resiko;2;4;Meisa Sofia, S.Tr., M.Par;online
 ABT-6B;Jumat;12.30 - 13.20;6;Budgeting;3;6;Adilah Permananingrum, S.E., M.Sc.;online
 ABT-2B;Jumat;13.20 - 14.10;2;Pemasaran dan Pelayanan Pelanggan;2;4;Endah Wartiningsih, SE, MM;113
 ABT-4B;Jumat;13.20 - 14.10;4;manajemen pengadaan barang dan jasa;3;6;Nuria Puspitasari, SE., M.EC., Dev;online
@@ -631,24 +631,24 @@ ABT-6C;Senin;07.30 - 08.20;6;Metodologi Penelitian Bisnis Terapan;3;6;Imas Chand
 ABT-6C;Senin;08.20 - 09.10;6;Metodologi Penelitian Bisnis Terapan;3;6;Imas Chandra Pratiwi , M.S.M;306
 ABT-2C;Senin;09.10 - 10.00;2;Komunikasi Bisnis;2;4;Titik Purwinarti, S.Sos, M.Pd;105
 ABT-4C;Senin;09.10 - 10.00;4;Perencanaan dan pengendalian logistik;2;4;Arizal Putra Pratama,B.O.M.,M.A.B;307
-ABT-6C;Senin;09.10 - 10.00;6;Budgeting;3;6;Arif Santoso, S.Pd., M.Ak.;Eksekutif
+ABT-6C;Senin;09.10 - 10.00;6;Budgeting;3;6;Arif Santoso, S.Pd., M.Ak.;207
 ABT-2C;Senin;10.00 - 10.50;2;Komunikasi Bisnis;2;4;Titik Purwinarti, S.Sos, M.Pd;105
 ABT-4C;Senin;10.00 - 10.50;4;Perencanaan dan pengendalian logistik;2;4;Arizal Putra Pratama,B.O.M.,M.A.B;307
-ABT-6C;Senin;10.00 - 10.50;6;Budgeting;3;6;Arif Santoso, S.Pd., M.Ak.;Eksekutif
+ABT-6C;Senin;10.00 - 10.50;6;Budgeting;3;6;Arif Santoso, S.Pd., M.Ak.;207
 ABT-2C;Senin;10.50 - 11.40;2;Pengantar Manajemen;2;4;Dr. Wahyudi Utomo, S.Sos, M.Si;112
 ABT-4C;Senin;10.50 - 11.40;4;Manajemen Pergudangan;3;4;Irfan Rusydi Triyanto, S.T., M.T.;307
-ABT-6C;Senin;10.50 - 11.40;6;Budgeting;3;6;Arif Santoso, S.Pd., M.Ak.;Eksekutif
+ABT-6C;Senin;10.50 - 11.40;6;Budgeting;3;6;Arif Santoso, S.Pd., M.Ak.;207
 ABT-2C;Senin;12.30 - 13.20;2;Pengantar Manajemen;2;4;Dr. Wahyudi Utomo, S.Sos, M.Si;112
 ABT-4C;Senin;12.30 - 13.20;4;Manajemen Pergudangan;3;4;Irfan Rusydi Triyanto, S.T., M.T.;307
-ABT-6C;Senin;12.30 - 13.20;6;Budgeting;3;6;Arif Santoso, S.Pd., M.Ak.;Eksekutif
+ABT-6C;Senin;12.30 - 13.20;6;Budgeting;3;6;Arif Santoso, S.Pd., M.Ak.;207
 ABT-2C;Senin;13.20 - 14.10;2;English For Business;2;4;Dr. Nidia Sofa, S.Pd.I, M.Pd;103
 ABT-4C;Senin;13.20 - 14.10;4;Manajemen Pergudangan;3;4;Irfan Rusydi Triyanto, S.T., M.T.;307
 ABT-6C;Senin;13.20 - 14.10;6;Etika Bisnis dan Profesi;2;4;Titik Purwinarti, S.Sos, M.Pd;online
 ABT-2C;Senin;14.10 - 15.00;2;English For Business;2;4;Dr. Nidia Sofa, S.Pd.I, M.Pd;103
 ABT-4C;Senin;14.10 - 15.00;4;Manajemen Pergudangan;3;4;Irfan Rusydi Triyanto, S.T., M.T.;307
 ABT-6C;Senin;14.10 - 15.00;6;Etika Bisnis dan Profesi;2;4;Titik Purwinarti, S.Sos, M.Pd;online
-ABT-4C;Senin;15.15 - 16.05;4;Manajemen Risiko;2;4;Nuria Puspitasari, SE., M.EC., Dev;103
-ABT-4C;Senin;16.05 - 16.55;4;Manajemen Risiko;2;4;Nuria Puspitasari, SE., M.EC., Dev;103
+ABT-4C;Senin;15.15 - 16.05;4;Manajemen Resiko;2;4;Nuria Puspitasari, SE., M.EC., Dev;103
+ABT-4C;Senin;16.05 - 16.55;4;Manajemen Resiko;2;4;Nuria Puspitasari, SE., M.EC., Dev;103
 ABT-2C;Selasa;07.30 - 08.20;2;Pengantar Manajemen;2;4;Dr. Wahyudi Utomo, S.Sos, M.Si;107
 ABT-4C;Selasa;07.30 - 08.20;4;manajemen pengadaan barang dan jasa;3;6;Dr. Syamsu Rizal, SE, MM;201
 ABT-6C;Selasa;07.30 - 08.20;6;E- Logistics;2;4;Restu Jati Saputro, S.Si., M.Sc;online
@@ -710,10 +710,10 @@ ABT-2C;Kamis;10.00 - 10.50;2;Akuntansi Biaya;2;4;Arif Santoso, S.Pd., M.Ak.;114
 ABT-4C;Kamis;10.00 - 10.50;4;Aspek Hukum dalam Bisnis;2;4;Dr. Nining Latianingsih, SH, MH;201
 ABT-6C;Kamis;10.00 - 10.50;6;Manajemen Inventory;2;4;Nuria Puspitasari, SE., M.EC., Dev;online
 ABT-2C;Kamis;10.50 - 11.40;2;Pengantar Logistik dan Supply Chain;2;4;Arizal Putra Pratama,B.O.M.,M.A.B;114
-ABT-4C;Kamis;10.50 - 11.40;4;Manajemen Risiko;2;4;Nuria Puspitasari, SE., M.EC., Dev;115
+ABT-4C;Kamis;10.50 - 11.40;4;Manajemen Resiko;2;4;Nuria Puspitasari, SE., M.EC., Dev;115
 ABT-6C;Kamis;10.50 - 11.40;6;Etika Bisnis dan Profesi;2;4;Titik Purwinarti, S.Sos, M.Pd;online
 ABT-2C;Kamis;12.30 - 13.20;2;Pengantar Logistik dan Supply Chain;2;4;Arizal Putra Pratama,B.O.M.,M.A.B;114
-ABT-4C;Kamis;12.30 - 13.20;4;Manajemen Risiko;2;4;Nuria Puspitasari, SE., M.EC., Dev;115
+ABT-4C;Kamis;12.30 - 13.20;4;Manajemen Resiko;2;4;Nuria Puspitasari, SE., M.EC., Dev;115
 ABT-6C;Kamis;12.30 - 13.20;6;Etika Bisnis dan Profesi;2;4;Titik Purwinarti, S.Sos, M.Pd;online
 ABT-2C;Kamis;13.20 - 14.10;2;Pemasaran dan Pelayanan Pelanggan;2;4;Endah Wartiningsih, SE, MM;114
 ABT-4C;Kamis;13.20 - 14.10;4;Perencanaan dan pengendalian logistik;2;4;Arizal Putra Pratama,B.O.M.,M.A.B;115
@@ -759,9 +759,9 @@ ABT-4D;Senin;15.15 - 16.05;4;Manajemen Keuangan;3;6;Ratri Kurniasari,M.Ak;306
 ABT-6D;Senin;15.15 - 16.05;6;Statistik Bisnis;3;6;Irfan Rusydi Triyanto, S.T., M.T.;online
 ABT-4D;Senin;16.05 - 16.55;4;Manajemen Keuangan;3;6;Ratri Kurniasari,M.Ak;306
 ABT-6D;Senin;16.05 - 16.55;6;Statistik Bisnis;3;6;Irfan Rusydi Triyanto, S.T., M.T.;online
-ABT-4D;Selasa;07.30 - 08.20;4;Manajemen Risiko;2;4;Hana Nurdina, S.ST, MBA;online
+ABT-4D;Selasa;07.30 - 08.20;4;Manajemen Resiko;2;4;Hana Nurdina, S.ST, MBA;online
 ABT-6D;Selasa;07.30 - 08.20;6;Etika Bisnis dan Profesi;2;4;Titik Purwinarti, S.Sos, M.Pd;online
-ABT-4D;Selasa;08.20 - 09.10;4;Manajemen Risiko;2;4;Hana Nurdina, S.ST, MBA;online
+ABT-4D;Selasa;08.20 - 09.10;4;Manajemen Resiko;2;4;Hana Nurdina, S.ST, MBA;online
 ABT-6D;Selasa;08.20 - 09.10;6;Etika Bisnis dan Profesi;2;4;Titik Purwinarti, S.Sos, M.Pd;online
 ABT-4D;Selasa;09.10 - 10.00;4;Manajemen Keuangan;3;6;Ratri Kurniasari,M.Ak;online
 ABT-6D;Selasa;09.10 - 10.00;6;Manajemen Asuransi Transportasi;2;4;Yanita Ella N.C, S.A.B., M.Si;online
@@ -792,16 +792,16 @@ ABT-6D;Rabu;15.15 - 16.05;6;Manajemen Asuransi Transportasi;2;4;Yanita Ella N.C,
 ABT-4D;Rabu;16.05 - 16.55;4;Aspek Hukum dalam Bisnis;2;4;Dr. Nining Latianingsih, SH, MH;online
 ABT-6D;Rabu;16.05 - 16.55;6;Manajemen Asuransi Transportasi;2;4;Yanita Ella N.C, S.A.B., M.Si;online
 ABT-4D;Kamis;07.30 - 08.20;4;Manajemen Pergudangan;3;6;Irfan Rusydi Triyanto, S.T., M.T.;114
-ABT-6D;Kamis;07.30 - 08.20;6;Metodologi Penelitian Bisnis Terapan;3;6;Dr. Erwin Permana, S.P., M.E;Eksekutif
+ABT-6D;Kamis;07.30 - 08.20;6;Metodologi Penelitian Bisnis Terapan;3;6;Dr. Erwin Permana, S.P., M.E;207
 ABT-4D;Kamis;08.20 - 09.10;4;Manajemen Pergudangan;3;6;Irfan Rusydi Triyanto, S.T., M.T.;114
-ABT-6D;Kamis;08.20 - 09.10;6;Metodologi Penelitian Bisnis Terapan;3;6;Dr. Erwin Permana, S.P., M.E;Eksekutif
+ABT-6D;Kamis;08.20 - 09.10;6;Metodologi Penelitian Bisnis Terapan;3;6;Dr. Erwin Permana, S.P., M.E;207
 ABT-4D;Kamis;09.10 - 10.00;4;Pemasaran Digital;2;4;Restu Jati Saputro, S.Si., M.Sc;302
-ABT-6D;Kamis;09.10 - 10.00;6;Metodologi Penelitian Bisnis Terapan;3;6;Dr. Erwin Permana, S.P., M.E;Eksekutif
+ABT-6D;Kamis;09.10 - 10.00;6;Metodologi Penelitian Bisnis Terapan;3;6;Dr. Erwin Permana, S.P., M.E;207
 ABT-4D;Kamis;10.00 - 10.50;4;Pemasaran Digital;2;4;Restu Jati Saputro, S.Si., M.Sc;302
-ABT-6D;Kamis;10.00 - 10.50;6;Metodologi Penelitian Bisnis Terapan;3;6;Dr. Erwin Permana, S.P., M.E;Eksekutif
-ABT-4D;Kamis;10.50 - 11.40;4;Manajemen Risiko;2;4;Hana Nurdina, S.ST, MBA;302
+ABT-6D;Kamis;10.00 - 10.50;6;Metodologi Penelitian Bisnis Terapan;3;6;Dr. Erwin Permana, S.P., M.E;207
+ABT-4D;Kamis;10.50 - 11.40;4;Manajemen Resiko;2;4;Hana Nurdina, S.ST, MBA;302
 ABT-6D;Kamis;10.50 - 11.40;6;Budgeting;3;6;Adilah Permananingrum, S.E., M.Sc.;203
-ABT-4D;Kamis;12.30 - 13.20;4;Manajemen Risiko;2;4;Hana Nurdina, S.ST, MBA;302
+ABT-4D;Kamis;12.30 - 13.20;4;Manajemen Resiko;2;4;Hana Nurdina, S.ST, MBA;302
 ABT-6D;Kamis;12.30 - 13.20;6;Budgeting;3;6;Adilah Permananingrum, S.E., M.Sc.;203
 ABT-4D;Kamis;13.20 - 14.10;4;Aspek Hukum dalam Bisnis;2;4;Dr. Nining Latianingsih, SH, MH;201
 ABT-6D;Kamis;13.20 - 14.10;6;Budgeting;3;6;Adilah Permananingrum, S.E., M.Sc.;104
@@ -823,138 +823,138 @@ ABT-4D;Jumat;15.15 - 16.05;4;manajemen pengadaan barang dan jasa;3;6;Nuria Puspi
 ABT-6D;Jumat;15.15 - 16.05;6;Statistik Bisnis;3;6;Irfan Rusydi Triyanto, S.T., M.T.;202
 ABT-4D;Jumat;16.05 - 16.55;4;manajemen pengadaan barang dan jasa;3;6;Nuria Puspitasari, SE., M.EC., Dev;online
 ABT-6D;Jumat;16.05 - 16.55;6;Statistik Bisnis;3;6;Irfan Rusydi Triyanto, S.T., M.T.;202
-ABT-2MSU;Senin;07.30 - 08.20;2;Pengantar Manajemen;2;4;Dr. Wahyudi Utomo, S.Sos, M.Si;Telcon
+ABT-2MSU;Senin;07.30 - 08.20;2;Pengantar Manajemen;2;4;Dr. Wahyudi Utomo, S.Sos, M.Si;308
 ABT-4MSU;Senin;07.30 - 08.20;4;Manajemen Pergudangan;3;6;Yoshua Ardy Putra , S.Si., M.T.;202
-ABT-6MSU;Senin;07.30 - 08.20;6;Budgeting;3;6;Ratri Kurniasari,M.Ak;SMART
-ABT-2MSU;Senin;08.20 - 09.10;2;Pengantar Manajemen;2;4;Dr. Wahyudi Utomo, S.Sos, M.Si;Telcon
+ABT-6MSU;Senin;07.30 - 08.20;6;Budgeting;3;6;Ratri Kurniasari,M.Ak;111
+ABT-2MSU;Senin;08.20 - 09.10;2;Pengantar Manajemen;2;4;Dr. Wahyudi Utomo, S.Sos, M.Si;308
 ABT-4MSU;Senin;08.20 - 09.10;4;Manajemen Pergudangan;3;6;Yoshua Ardy Putra , S.Si., M.T.;202
-ABT-6MSU;Senin;08.20 - 09.10;6;Budgeting;3;6;Ratri Kurniasari,M.Ak;SMART
-ABT-2MSU;Senin;09.10 - 10.00;2;Ilmu Administrasi Bisnis;2;4;Laras Afifah, M.M.;Telcon
+ABT-6MSU;Senin;08.20 - 09.10;6;Budgeting;3;6;Ratri Kurniasari,M.Ak;111
+ABT-2MSU;Senin;09.10 - 10.00;2;Ilmu Administrasi Bisnis;2;4;Laras Afifah, M.M.;308
 ABT-4MSU;Senin;09.10 - 10.00;4;Manajemen Pergudangan;3;6;Yoshua Ardy Putra , S.Si., M.T.;online
-ABT-6MSU;Senin;09.10 - 10.00;6;Budgeting;3;6;Ratri Kurniasari,M.Ak;SMART
-ABT-2MSU;Senin;10.00 - 10.50;2;Ilmu Administrasi Bisnis;2;4;Laras Afifah, M.M.;Telcon
+ABT-6MSU;Senin;09.10 - 10.00;6;Budgeting;3;6;Ratri Kurniasari,M.Ak;111
+ABT-2MSU;Senin;10.00 - 10.50;2;Ilmu Administrasi Bisnis;2;4;Laras Afifah, M.M.;308
 ABT-4MSU;Senin;10.00 - 10.50;4;Manajemen Pergudangan;3;6;Yoshua Ardy Putra , S.Si., M.T.;online
-ABT-6MSU;Senin;10.00 - 10.50;6;Budgeting;3;6;Ratri Kurniasari,M.Ak;SMART
-ABT-2MSU;Senin;10.50 - 11.40;2;Pengantar Logistik dan Supply Chain;2;4;Arizal Putra Pratama,B.O.M.,M.A.B;SMART
-ABT-4MSU;Senin;10.50 - 11.40;4;Pemasaran Digital;2;4;Haris Satria Putra , M.M.S.I.;Telcon
+ABT-6MSU;Senin;10.00 - 10.50;6;Budgeting;3;6;Ratri Kurniasari,M.Ak;111
+ABT-2MSU;Senin;10.50 - 11.40;2;Pengantar Logistik dan Supply Chain;2;4;Arizal Putra Pratama,B.O.M.,M.A.B;111
+ABT-4MSU;Senin;10.50 - 11.40;4;Pemasaran Digital;2;4;Haris Satria Putra , M.M.S.I.;308
 ABT-6MSU;Senin;10.50 - 11.40;6;Statistik Bisnis;3;6;Yoshua Ardy Putra , S.Si., M.T.;202
-ABT-2MSU;Senin;12.30 - 13.20;2;Pengantar Logistik dan Supply Chain;2;4;Arizal Putra Pratama,B.O.M.,M.A.B;SMART
-ABT-4MSU;Senin;12.30 - 13.20;4;Pemasaran Digital;2;4;Haris Satria Putra , M.M.S.I.;Telcon
+ABT-2MSU;Senin;12.30 - 13.20;2;Pengantar Logistik dan Supply Chain;2;4;Arizal Putra Pratama,B.O.M.,M.A.B;111
+ABT-4MSU;Senin;12.30 - 13.20;4;Pemasaran Digital;2;4;Haris Satria Putra , M.M.S.I.;308
 ABT-6MSU;Senin;12.30 - 13.20;6;Statistik Bisnis;3;6;Yoshua Ardy Putra , S.Si., M.T.;202
-ABT-2MSU;Senin;13.20 - 14.10;2;Akutansi Biaya;2;4;Arif Santoso, S.Pd., M.Ak.;Eksekutif
-ABT-4MSU;Senin;13.20 - 14.10;4;Aspek Hukum dalam Bisnis;2;4;Rieke Yolanda Sari, S.H.,M.H;Telcon
+ABT-2MSU;Senin;13.20 - 14.10;2;Akuntansi Biaya;2;4;Arif Santoso, S.Pd., M.Ak.;207
+ABT-4MSU;Senin;13.20 - 14.10;4;Aspek Hukum dalam Bisnis;2;4;Rieke Yolanda Sari, S.H.,M.H;308
 ABT-6MSU;Senin;13.20 - 14.10;6;Statistik Bisnis;3;6;Yoshua Ardy Putra , S.Si., M.T.;202
-ABT-2MSU;Senin;14.10 - 15.00;2;Akutansi Biaya;2;4;Arif Santoso, S.Pd., M.Ak.;Eksekutif
-ABT-4MSU;Senin;14.10 - 15.00;4;Aspek Hukum dalam Bisnis;2;4;Rieke Yolanda Sari, S.H.,M.H;Telcon
+ABT-2MSU;Senin;14.10 - 15.00;2;Akuntansi Biaya;2;4;Arif Santoso, S.Pd., M.Ak.;207
+ABT-4MSU;Senin;14.10 - 15.00;4;Aspek Hukum dalam Bisnis;2;4;Rieke Yolanda Sari, S.H.,M.H;308
 ABT-6MSU;Senin;14.10 - 15.00;6;Statistik Bisnis;3;6;Yoshua Ardy Putra , S.Si., M.T.;202
-ABT-2MSU;Selasa;07.30 - 08.20;2;Pengantar Ilmu Ekonomi;2;4;Adilah Permananingrum, S.E., M.Sc.;Eksekutif
-ABT-4MSU;Selasa;07.30 - 08.20;4;Aspek Hukum dalam Bisnis;2;4;Rieke Yolanda Sari, S.H.,M.H;Telcon
+ABT-2MSU;Selasa;07.30 - 08.20;2;Pengantar Ilmu Ekonomi;2;4;Adilah Permananingrum, S.E., M.Sc.;207
+ABT-4MSU;Selasa;07.30 - 08.20;4;Aspek Hukum dalam Bisnis;2;4;Rieke Yolanda Sari, S.H.,M.H;308
 ABT-6MSU;Selasa;07.30 - 08.20;6;Freight Logistik;3;6;Irfan Rusydi Triyanto, S.T., M.T.;online
-ABT-2MSU;Selasa;08.20 - 09.10;2;Pengantar Ilmu Ekonomi;2;4;Adilah Permananingrum, S.E., M.Sc.;Eksekutif
-ABT-4MSU;Selasa;08.20 - 09.10;4;Aspek Hukum dalam Bisnis;2;4;Rieke Yolanda Sari, S.H.,M.H;Telcon
+ABT-2MSU;Selasa;08.20 - 09.10;2;Pengantar Ilmu Ekonomi;2;4;Adilah Permananingrum, S.E., M.Sc.;207
+ABT-4MSU;Selasa;08.20 - 09.10;4;Aspek Hukum dalam Bisnis;2;4;Rieke Yolanda Sari, S.H.,M.H;308
 ABT-6MSU;Selasa;08.20 - 09.10;6;Freight Logistik;3;6;Irfan Rusydi Triyanto, S.T., M.T.;online
-ABT-2MSU;Selasa;09.10 - 10.00;2;Pemasaran dan Pelayanan Pelanggan;2;4;Dr. Dra. Iis Mariam, M.Si;Eksekutif
-ABT-4MSU;Selasa;09.10 - 10.00;4;Perencanaan dan pengendalian logistik;2;4;Arizal Putra Pratama,B.O.M.,M.A.B;Telcon
+ABT-2MSU;Selasa;09.10 - 10.00;2;Pemasaran dan Pelayanan Pelanggan;2;4;Dr. Dra. Iis Mariam, M.Si;207
+ABT-4MSU;Selasa;09.10 - 10.00;4;Perencanaan dan pengendalian logistik;2;4;Arizal Putra Pratama,B.O.M.,M.A.B;308
 ABT-6MSU;Selasa;09.10 - 10.00;6;Freight Logistik;3;6;Irfan Rusydi Triyanto, S.T., M.T.;online
-ABT-2MSU;Selasa;10.00 - 10.50;2;Pemasaran dan Pelayanan Pelanggan;2;4;Dr. Dra. Iis Mariam, M.Si;Eksekutif
-ABT-4MSU;Selasa;10.00 - 10.50;4;Perencanaan dan pengendalian logistik;2;4;Arizal Putra Pratama,B.O.M.,M.A.B;Telcon
+ABT-2MSU;Selasa;10.00 - 10.50;2;Pemasaran dan Pelayanan Pelanggan;2;4;Dr. Dra. Iis Mariam, M.Si;207
+ABT-4MSU;Selasa;10.00 - 10.50;4;Perencanaan dan pengendalian logistik;2;4;Arizal Putra Pratama,B.O.M.,M.A.B;308
 ABT-6MSU;Selasa;10.00 - 10.50;6;Freight Logistik;3;6;Irfan Rusydi Triyanto, S.T., M.T.;online
-ABT-2MSU;Selasa;10.50 - 11.40;2;Pengantar Logistik dan Supply Chain;2;4;Arizal Putra Pratama,B.O.M.,M.A.B;Eksekutif
-ABT-4MSU;Selasa;10.50 - 11.40;4;Manajemen Distribusi dan Delivery;3;6;Yanita Ella N.C, S.A.B., M.Si;Telcon
+ABT-2MSU;Selasa;10.50 - 11.40;2;Pengantar Logistik dan Supply Chain;2;4;Arizal Putra Pratama,B.O.M.,M.A.B;207
+ABT-4MSU;Selasa;10.50 - 11.40;4;Manajemen Distribusi dan Delivery;3;6;Yanita Ella N.C, S.A.B., M.Si;308
 ABT-6MSU;Selasa;10.50 - 11.40;6;Etika Bisnis dan Profesi;2;4;Titik Purwinarti, S.Sos, M.Pd;online
-ABT-2MSU;Selasa;12.30 - 13.20;2;Pengantar Logistik dan Supply Chain;2;4;Arizal Putra Pratama,B.O.M.,M.A.B;Eksekutif
-ABT-4MSU;Selasa;12.30 - 13.20;4;Manajemen Distribusi dan Delivery;3;6;Yanita Ella N.C, S.A.B., M.Si;Telcon
+ABT-2MSU;Selasa;12.30 - 13.20;2;Pengantar Logistik dan Supply Chain;2;4;Arizal Putra Pratama,B.O.M.,M.A.B;207
+ABT-4MSU;Selasa;12.30 - 13.20;4;Manajemen Distribusi dan Delivery;3;6;Yanita Ella N.C, S.A.B., M.Si;308
 ABT-6MSU;Selasa;12.30 - 13.20;6;Etika Bisnis dan Profesi;2;4;Titik Purwinarti, S.Sos, M.Pd;online
-ABT-2MSU;Selasa;13.20 - 14.10;2;Pendidkan Kewarganegaraan;2;4;Erlyn Rosalina, S.Hum., M.Pd;TELCON
-ABT-4MSU;Selasa;13.20 - 14.10;4;Manajemen Distribusi dan Delivery;3;6;Yanita Ella N.C, S.A.B., M.Si;eksekutif
-ABT-2MSU;Selasa;14.10 - 15.00;2;Pendidkan Kewarganegaraan;2;4;Erlyn Rosalina, S.Hum., M.Pd;TELCON
+ABT-2MSU;Selasa;13.20 - 14.10;2;Pendidikan Kewarganegaraan;2;4;Erlyn Rosalina, S.Hum., M.Pd;308
+ABT-4MSU;Selasa;13.20 - 14.10;4;Manajemen Distribusi dan Delivery;3;6;Yanita Ella N.C, S.A.B., M.Si;207
+ABT-2MSU;Selasa;14.10 - 15.00;2;Pendidikan Kewarganegaraan;2;4;Erlyn Rosalina, S.Hum., M.Pd;308
 ABT-4MSU;Selasa;14.10 - 15.00;4;Manajemen Distribusi dan Delivery;3;6;Yanita Ella N.C, S.A.B., M.Si;online
 ABT-6MSU;Selasa;15.15 - 16.05;6;Manajemen Asuransi Transportasi;2;4;Yanita Ella N.C, S.A.B., M.Si;online
 ABT-6MSU;Selasa;16.05 - 16.55;6;Manajemen Asuransi Transportasi;2;4;Yanita Ella N.C, S.A.B., M.Si;online
-ABT-2MSU;Rabu;07.30 - 08.20;2;English For Business;2;4;Dr. Nidia Sofa, S.Pd.I, M.Pd;Eksekutif
-ABT-2MSU;Rabu;08.20 - 09.10;2;English For Business;2;4;Dr. Nidia Sofa, S.Pd.I, M.Pd;Eksekutif
-ABT-2MSU;Rabu;09.10 - 10.00;2;Pengantar Manajemen;2;4;Dr. Wahyudi Utomo, S.Sos, M.Si;Eksekutif
-ABT-4MSU;Rabu;09.10 - 10.00;4;manajemen pengadaan barang dan jasa;3;6;Dr. Syamsu Rizal, SE, MM;Telcon
+ABT-2MSU;Rabu;07.30 - 08.20;2;English For Business;2;4;Dr. Nidia Sofa, S.Pd.I, M.Pd;207
+ABT-2MSU;Rabu;08.20 - 09.10;2;English For Business;2;4;Dr. Nidia Sofa, S.Pd.I, M.Pd;207
+ABT-2MSU;Rabu;09.10 - 10.00;2;Pengantar Manajemen;2;4;Dr. Wahyudi Utomo, S.Sos, M.Si;207
+ABT-4MSU;Rabu;09.10 - 10.00;4;manajemen pengadaan barang dan jasa;3;6;Dr. Syamsu Rizal, SE, MM;308
 ABT-6MSU;Rabu;09.10 - 10.00;6;Metodologi Penelitian Bisnis Terapan;3;6;Imas Chandra Pratiwi , M.S.M;202
-ABT-2MSU;Rabu;10.00 - 10.50;2;Pengantar Manajemen;2;4;Dr. Wahyudi Utomo, S.Sos, M.Si;Eksekutif
-ABT-4MSU;Rabu;10.00 - 10.50;4;manajemen pengadaan barang dan jasa;3;6;Dr. Syamsu Rizal, SE, MM;Telcon
+ABT-2MSU;Rabu;10.00 - 10.50;2;Pengantar Manajemen;2;4;Dr. Wahyudi Utomo, S.Sos, M.Si;207
+ABT-4MSU;Rabu;10.00 - 10.50;4;manajemen pengadaan barang dan jasa;3;6;Dr. Syamsu Rizal, SE, MM;308
 ABT-6MSU;Rabu;10.00 - 10.50;6;Metodologi Penelitian Bisnis Terapan;3;6;Imas Chandra Pratiwi , M.S.M;202
-ABT-2MSU;Rabu;10.50 - 11.40;2;Komunikasi Bisnis;2;4;Titik Purwinarti, S.Sos, M.Pd;Eksekutif
-ABT-4MSU;Rabu;10.50 - 11.40;4;manajemen pengadaan barang dan jasa;3;6;Dr. Syamsu Rizal, SE, MM;Telcon
+ABT-2MSU;Rabu;10.50 - 11.40;2;Komunikasi Bisnis;2;4;Titik Purwinarti, S.Sos, M.Pd;207
+ABT-4MSU;Rabu;10.50 - 11.40;4;manajemen pengadaan barang dan jasa;3;6;Dr. Syamsu Rizal, SE, MM;308
 ABT-6MSU;Rabu;10.50 - 11.40;6;Metodologi Penelitian Bisnis Terapan;3;6;Imas Chandra Pratiwi , M.S.M;202
-ABT-2MSU;Rabu;12.30 - 13.20;2;Komunikasi Bisnis;2;4;Titik Purwinarti, S.Sos, M.Pd;Eksekutif
-ABT-4MSU;Rabu;12.30 - 13.20;4;manajemen pengadaan barang dan jasa;3;6;Dr. Syamsu Rizal, SE, MM;Telcon
+ABT-2MSU;Rabu;12.30 - 13.20;2;Komunikasi Bisnis;2;4;Titik Purwinarti, S.Sos, M.Pd;207
+ABT-4MSU;Rabu;12.30 - 13.20;4;manajemen pengadaan barang dan jasa;3;6;Dr. Syamsu Rizal, SE, MM;308
 ABT-6MSU;Rabu;12.30 - 13.20;6;Metodologi Penelitian Bisnis Terapan;3;6;Imas Chandra Pratiwi , M.S.M;202
-ABT-2MSU;Rabu;13.20 - 14.10;2;Pengantar Ilmu Ekonomi;2;4;Adilah Permananingrum, S.E., M.Sc.;Eksekutif
-ABT-4MSU;Rabu;13.20 - 14.10;4;Manajemen Distribusi dan Delivery;3;6;Yanita Ella N.C, S.A.B., M.Si;TELCON
+ABT-2MSU;Rabu;13.20 - 14.10;2;Pengantar Ilmu Ekonomi;2;4;Adilah Permananingrum, S.E., M.Sc.;207
+ABT-4MSU;Rabu;13.20 - 14.10;4;Manajemen Distribusi dan Delivery;3;6;Yanita Ella N.C, S.A.B., M.Si;308
 ABT-6MSU;Rabu;13.20 - 14.10;6;E- Logistics;2;4;Haris Satria Putra , M.M.S.I.;online
-ABT-2MSU;Rabu;14.10 - 15.00;2;Pengantar Ilmu Ekonomi;2;4;Adilah Permananingrum, S.E., M.Sc.;Eksekutif
-ABT-4MSU;Rabu;14.10 - 15.00;4;Manajemen Distribusi dan Delivery;3;6;Yanita Ella N.C, S.A.B., M.Si;TELCON
+ABT-2MSU;Rabu;14.10 - 15.00;2;Pengantar Ilmu Ekonomi;2;4;Adilah Permananingrum, S.E., M.Sc.;207
+ABT-4MSU;Rabu;14.10 - 15.00;4;Manajemen Distribusi dan Delivery;3;6;Yanita Ella N.C, S.A.B., M.Si;308
 ABT-6MSU;Rabu;14.10 - 15.00;6;E- Logistics;2;4;Haris Satria Putra , M.M.S.I.;online
-ABT-4MSU;Rabu;15.15 - 16.05;4;Manajemen Risiko;2;4;Imas Chandra Pratiwi , M.S.M;Telcon
+ABT-4MSU;Rabu;15.15 - 16.05;4;Manajemen Resiko;2;4;Imas Chandra Pratiwi , M.S.M;308
 ABT-6MSU;Rabu;15.15 - 16.05;6;Statistik Bisnis;3;6;Yoshua Ardy Putra , S.Si., M.T.;online
-ABT-4MSU;Rabu;16.05 - 16.55;4;Manajemen Risiko;2;4;Imas Chandra Pratiwi , M.S.M;Telcon
+ABT-4MSU;Rabu;16.05 - 16.55;4;Manajemen Resiko;2;4;Imas Chandra Pratiwi , M.S.M;308
 ABT-6MSU;Rabu;16.05 - 16.55;6;Statistik Bisnis;3;6;Yoshua Ardy Putra , S.Si., M.T.;online
-ABT-2MSU;Kamis;07.30 - 08.20;2;Komunikasi Bisnis;2;4;Titik Purwinarti, S.Sos, M.Pd;TELCON
+ABT-2MSU;Kamis;07.30 - 08.20;2;Komunikasi Bisnis;2;4;Titik Purwinarti, S.Sos, M.Pd;308
 ABT-4MSU;Kamis;07.30 - 08.20;4;manajemen pengadaan barang dan jasa;3;6;Dr. Syamsu Rizal, SE, MM;online
 ABT-6MSU;Kamis;07.30 - 08.20;6;Manajemen Inventory;2;4;Nuria Puspitasari, SE., M.EC., Dev;online
-ABT-2MSU;Kamis;08.20 - 09.10;2;Komunikasi Bisnis;2;4;Titik Purwinarti, S.Sos, M.Pd;TELCON
+ABT-2MSU;Kamis;08.20 - 09.10;2;Komunikasi Bisnis;2;4;Titik Purwinarti, S.Sos, M.Pd;308
 ABT-4MSU;Kamis;08.20 - 09.10;4;manajemen pengadaan barang dan jasa;3;6;Dr. Syamsu Rizal, SE, MM;online
 ABT-6MSU;Kamis;08.20 - 09.10;6;Manajemen Inventory;2;4;Nuria Puspitasari, SE., M.EC., Dev;online
-ABT-2MSU;Kamis;09.10 - 10.00;2;Pemasaran dan Pelayanan Pelanggan;2;4;Dr. Dra. Iis Mariam, M.Si;TELCON
+ABT-2MSU;Kamis;09.10 - 10.00;2;Pemasaran dan Pelayanan Pelanggan;2;4;Dr. Dra. Iis Mariam, M.Si;308
 ABT-4MSU;Kamis;09.10 - 10.00;4;Perencanaan dan pengendalian logistik;2;4;Arizal Putra Pratama,B.O.M.,M.A.B;online
 ABT-6MSU;Kamis;09.10 - 10.00;6;Etika Bisnis dan Profesi;2;4;Titik Purwinarti, S.Sos, M.Pd;online
-ABT-2MSU;Kamis;10.00 - 10.50;2;Pemasaran dan Pelayanan Pelanggan;2;4;Dr. Dra. Iis Mariam, M.Si;TELCON
+ABT-2MSU;Kamis;10.00 - 10.50;2;Pemasaran dan Pelayanan Pelanggan;2;4;Dr. Dra. Iis Mariam, M.Si;308
 ABT-4MSU;Kamis;10.00 - 10.50;4;Perencanaan dan pengendalian logistik;2;4;Arizal Putra Pratama,B.O.M.,M.A.B;online
 ABT-6MSU;Kamis;10.00 - 10.50;6;Etika Bisnis dan Profesi;2;4;Titik Purwinarti, S.Sos, M.Pd;online
-ABT-2MSU;Kamis;10.50 - 11.40;2;Ilmu Administrasi Bisnis;2;4;Laras Afifah, M.M.;Eksekutif
+ABT-2MSU;Kamis;10.50 - 11.40;2;Ilmu Administrasi Bisnis;2;4;Laras Afifah, M.M.;207
 ABT-6MSU;Kamis;10.50 - 11.40;6;Manajemen Asuransi Transportasi;2;4;Yanita Ella N.C, S.A.B., M.Si;online
-ABT-2MSU;Kamis;12.30 - 13.20;2;Ilmu Administrasi Bisnis;2;4;Laras Afifah, M.M.;Eksekutif
+ABT-2MSU;Kamis;12.30 - 13.20;2;Ilmu Administrasi Bisnis;2;4;Laras Afifah, M.M.;207
 ABT-6MSU;Kamis;12.30 - 13.20;6;Manajemen Asuransi Transportasi;2;4;Yanita Ella N.C, S.A.B., M.Si;online
-ABT-2MSU;Kamis;13.20 - 14.10;2;English For Business;2;4;Dr. Nidia Sofa, S.Pd.I, M.Pd;Eksekutif
-ABT-4MSU;Kamis;13.20 - 14.10;4;Manajemen Keuangan;3;6;Ratri Kurniasari,M.Ak;TELCON
-ABT-2MSU;Kamis;14.10 - 15.00;2;English For Business;2;4;Dr. Nidia Sofa, S.Pd.I, M.Pd;Eksekutif
-ABT-4MSU;Kamis;14.10 - 15.00;4;Manajemen Keuangan;3;6;Ratri Kurniasari,M.Ak;TELCON
-ABT-4MSU;Kamis;15.15 - 16.05;4;Manajemen Keuangan;3;6;Ratri Kurniasari,M.Ak;TELCON
+ABT-2MSU;Kamis;13.20 - 14.10;2;English For Business;2;4;Dr. Nidia Sofa, S.Pd.I, M.Pd;207
+ABT-4MSU;Kamis;13.20 - 14.10;4;Manajemen Keuangan;3;6;Ratri Kurniasari,M.Ak;308
+ABT-2MSU;Kamis;14.10 - 15.00;2;English For Business;2;4;Dr. Nidia Sofa, S.Pd.I, M.Pd;207
+ABT-4MSU;Kamis;14.10 - 15.00;4;Manajemen Keuangan;3;6;Ratri Kurniasari,M.Ak;308
+ABT-4MSU;Kamis;15.15 - 16.05;4;Manajemen Keuangan;3;6;Ratri Kurniasari,M.Ak;308
 ABT-6MSU;Kamis;15.15 - 16.05;6;E- Logistics;2;4;Haris Satria Putra , M.M.S.I.;online
-ABT-4MSU;Kamis;16.05 - 16.55;4;Manajemen Keuangan;3;6;Ratri Kurniasari,M.Ak;TELCON
+ABT-4MSU;Kamis;16.05 - 16.55;4;Manajemen Keuangan;3;6;Ratri Kurniasari,M.Ak;308
 ABT-6MSU;Kamis;16.05 - 16.55;6;E- Logistics;2;4;Haris Satria Putra , M.M.S.I.;online
-ABT-2MSU;Jumat;07.30 - 08.20;2;Akutansi Biaya;2;4;Arif Santoso, S.Pd., M.Ak.;Eksekutif
-ABT-4MSU;Jumat;07.30 - 08.20;4;Manajemen Pergudangan;3;6;Yoshua Ardy Putra , S.Si., M.T.;TELCON
+ABT-2MSU;Jumat;07.30 - 08.20;2;Akuntansi Biaya;2;4;Arif Santoso, S.Pd., M.Ak.;207
+ABT-4MSU;Jumat;07.30 - 08.20;4;Manajemen Pergudangan;3;6;Yoshua Ardy Putra , S.Si., M.T.;308
 ABT-6MSU;Jumat;07.30 - 08.20;6;Freight Logistik;3;6;Irfan Rusydi Triyanto, S.T., M.T.;online
-ABT-2MSU;Jumat;08.20 - 09.10;2;Akutansi Biaya;2;4;Arif Santoso, S.Pd., M.Ak.;Eksekutif
-ABT-4MSU;Jumat;08.20 - 09.10;4;Manajemen Pergudangan;3;6;Yoshua Ardy Putra , S.Si., M.T.;TELCON
+ABT-2MSU;Jumat;08.20 - 09.10;2;Akuntansi Biaya;2;4;Arif Santoso, S.Pd., M.Ak.;207
+ABT-4MSU;Jumat;08.20 - 09.10;4;Manajemen Pergudangan;3;6;Yoshua Ardy Putra , S.Si., M.T.;308
 ABT-6MSU;Jumat;08.20 - 09.10;6;Freight Logistik;3;6;Irfan Rusydi Triyanto, S.T., M.T.;online
-ABT-2MSU;Jumat;09.10 - 10.00;2;Pendidkan Kewarganegaraan;2;4;Erlyn Rosalina, S.Hum., M.Pd;Eksekutif
-ABT-4MSU;Jumat;09.10 - 10.00;4;Pemasaran Digital;2;4;Haris Satria Putra , M.M.S.I.;TELCON
-ABT-2MSU;Jumat;10.00 - 10.50;2;Pendidkan Kewarganegaraan;2;4;Erlyn Rosalina, S.Hum., M.Pd;Eksekutif
-ABT-4MSU;Jumat;10.00 - 10.50;4;Pemasaran Digital;2;4;Haris Satria Putra , M.M.S.I.;TELCON
-ABT-4MSU;Jumat;10.50 - 11.40;4;Manajemen Resiko;2;4;Imas Chandra Pratiwi , M.S.M;TELCON
+ABT-2MSU;Jumat;09.10 - 10.00;2;Pendidikan Kewarganegaraan;2;4;Erlyn Rosalina, S.Hum., M.Pd;207
+ABT-4MSU;Jumat;09.10 - 10.00;4;Pemasaran Digital;2;4;Haris Satria Putra , M.M.S.I.;308
+ABT-2MSU;Jumat;10.00 - 10.50;2;Pendidikan Kewarganegaraan;2;4;Erlyn Rosalina, S.Hum., M.Pd;207
+ABT-4MSU;Jumat;10.00 - 10.50;4;Pemasaran Digital;2;4;Haris Satria Putra , M.M.S.I.;308
+ABT-4MSU;Jumat;10.50 - 11.40;4;Manajemen Resiko;2;4;Imas Chandra Pratiwi , M.S.M;308
 ABT-6MSU;Jumat;10.50 - 11.40;6;Manajemen Inventory;2;4;Nuria Puspitasari, SE., M.EC., Dev;online
-ABT-4MSU;Jumat;12.30 - 13.20;4;Manajemen Resiko;2;4;Imas Chandra Pratiwi , M.S.M;TELCON
+ABT-4MSU;Jumat;12.30 - 13.20;4;Manajemen Resiko;2;4;Imas Chandra Pratiwi , M.S.M;308
 ABT-6MSU;Jumat;12.30 - 13.20;6;Manajemen Inventory;2;4;Nuria Puspitasari, SE., M.EC., Dev;online
-ABT-4MSU;Jumat;13.20 - 14.10;4;Manajemen Keuangan;3;6;Ratri Kurniasari,M.Ak;TELCON
+ABT-4MSU;Jumat;13.20 - 14.10;4;Manajemen Keuangan;3;6;Ratri Kurniasari,M.Ak;308
 ABT-6MSU;Jumat;13.20 - 14.10;6;Metodologi Penelitian Bisnis Terapan;3;6;Imas Chandra Pratiwi , M.S.M;online
-ABT-4MSU;Jumat;14.10 - 15.00;4;Manajemen Keuangan;3;6;Ratri Kurniasari,M.Ak;TELCON
+ABT-4MSU;Jumat;14.10 - 15.00;4;Manajemen Keuangan;3;6;Ratri Kurniasari,M.Ak;308
 ABT-6MSU;Jumat;14.10 - 15.00;6;Metodologi Penelitian Bisnis Terapan;3;6;Imas Chandra Pratiwi , M.S.M;online
 ABT-6MSU;Jumat;15.15 - 16.05;6;Budgeting;3;6;Ratri Kurniasari,M.Ak;online
 ABT-6MSU;Jumat;16.05 - 16.55;6;Budgeting;3;6;Ratri Kurniasari,M.Ak;online
-ABT-2CCIT;Rabu;09.10 - 10.00;2;Basic English;2;4;Dr. Nidia Sofa, S.Pd.I, M.Pd;SMART
-ABT-2CCIT;Rabu;10.00 - 10.50;2;Basic English;2;4;Dr. Nidia Sofa, S.Pd.I, M.Pd;SMART
-ABT-2CCIT;Rabu;13.20 - 14.10;2;Pendidikan Agama;2;4;Riza Hadikusuma, M.Ag;SMART
-ABT-2CCIT;Rabu;14.10 - 15.00;2;Pendidikan Agama;2;4;Riza Hadikusuma, M.Ag;SMART
-ABT-2CCIT;Kamis;09.10 - 10.00;2;Pendidikan Agama;2;4;Riza Hadikusuma, M.Ag;SMART
-ABT-2CCIT;Kamis;10.00 - 10.50;2;Pendidikan Agama;2;4;Riza Hadikusuma, M.Ag;SMART
-ABT-2CCIT;Kamis;10.50 - 11.40;2;Basic English;2;4;Dr. Nidia Sofa, S.Pd.I, M.Pd;SMART
-ABT-2CCIT;Kamis;12.30 - 13.20;2;Basic English;2;4;Dr. Nidia Sofa, S.Pd.I, M.Pd;SMART
+ABT-2CCIT;Rabu;09.10 - 10.00;2;Basic English;2;4;Dr. Nidia Sofa, S.Pd.I, M.Pd;111
+ABT-2CCIT;Rabu;10.00 - 10.50;2;Basic English;2;4;Dr. Nidia Sofa, S.Pd.I, M.Pd;111
+ABT-2CCIT;Rabu;13.20 - 14.10;2;Pendidikan Agama;2;4;Riza Hadikusuma, M.Ag;111
+ABT-2CCIT;Rabu;14.10 - 15.00;2;Pendidikan Agama;2;4;Riza Hadikusuma, M.Ag;111
+ABT-2CCIT;Kamis;09.10 - 10.00;2;Pendidikan Agama;2;4;Riza Hadikusuma, M.Ag;111
+ABT-2CCIT;Kamis;10.00 - 10.50;2;Pendidikan Agama;2;4;Riza Hadikusuma, M.Ag;111
+ABT-2CCIT;Kamis;10.50 - 11.40;2;Basic English;2;4;Dr. Nidia Sofa, S.Pd.I, M.Pd;111
+ABT-2CCIT;Kamis;12.30 - 13.20;2;Basic English;2;4;Dr. Nidia Sofa, S.Pd.I, M.Pd;111
 AB-2A;Senin;07.30 - 08.20;2;Etika Bisnis dan Keprotokolan;2;4;Ni Made Widhi S, SE., M.M;103
 AB-4A;Senin;07.30 - 08.20;4;Hubungan Masyarakat;2;4;Risya Zahrotul Firdaus, S.I.Kom., M.Si;107
 AB-2A;Senin;08.20 - 09.10;2;Etika Bisnis dan Keprotokolan;2;4;Ni Made Widhi S, SE., M.M;103
 AB-4A;Senin;08.20 - 09.10;4;Hubungan Masyarakat;2;4;Risya Zahrotul Firdaus, S.I.Kom., M.Si;107
 AB-2A;Senin;09.10 - 10.00;2;Komunikasi Bisnis 1;2;4;Risya Zahrotul Firdaus, S.I.Kom., M.Si;302
-AB-4A;Senin;09.10 - 10.00;4;Manajemen Keuangan ;2;4;Friscila Purba, M.M.;online
+AB-4A;Senin;09.10 - 10.00;4;Manajemen Keuangan;2;4;Friscila Purba, M.M.;online
 AB-2A;Senin;10.00 - 10.50;2;Komunikasi Bisnis 1;2;4;Risya Zahrotul Firdaus, S.I.Kom., M.Si;302
-AB-4A;Senin;10.00 - 10.50;4;Manajemen Keuangan ;2;4;Friscila Purba, M.M.;online
+AB-4A;Senin;10.00 - 10.50;4;Manajemen Keuangan;2;4;Friscila Purba, M.M.;online
 AB-2A;Senin;10.50 - 11.40;2;Perbankan;2;4;Friscila Purba, M.M.;107
 AB-4A;Senin;10.50 - 11.40;4;Hukum Bisnis;2;4;Dr. M.Ikhsan, M.Si;114
 AB-2A;Senin;12.30 - 13.20;2;Perbankan;2;4;Friscila Purba, M.M.;107
@@ -1012,9 +1012,9 @@ AB-4A;Kamis;13.20 - 14.10;4;Hukum Bisnis;2;4;Dr. M.Ikhsan, M.Si;312
 AB-2A;Kamis;14.10 - 15.00;2;Kesekretariatan 1;2;4;Dr. Dra. Iis Mariam, M.Si;112
 AB-4A;Kamis;14.10 - 15.00;4;Hukum Bisnis;2;4;Dr. M.Ikhsan, M.Si;312
 AB-2A;Jumat;07.30 - 08.20;2;Komunikasi Bisnis 1;2;4;Risya Zahrotul Firdaus, S.I.Kom., M.Si;112
-AB-4A;Jumat;07.30 - 08.20;4;Manajemen Keuangan ;2;4;Friscila Purba, M.M.;312
+AB-4A;Jumat;07.30 - 08.20;4;Manajemen Keuangan;2;4;Friscila Purba, M.M.;312
 AB-2A;Jumat;08.20 - 09.10;2;Komunikasi Bisnis 1;2;4;Risya Zahrotul Firdaus, S.I.Kom., M.Si;112
-AB-4A;Jumat;08.20 - 09.10;4;Manajemen Keuangan ;2;4;Friscila Purba, M.M.;312
+AB-4A;Jumat;08.20 - 09.10;4;Manajemen Keuangan;2;4;Friscila Purba, M.M.;312
 AB-2A;Jumat;09.10 - 10.00;2;Perbankan;2;4;Friscila Purba, M.M.;112
 AB-4A;Jumat;09.10 - 10.00;4;Pelayanan Prima;2;4;Fachri Aditya,S.Si.,M.M;312
 AB-2A;Jumat;10.00 - 10.50;2;Perbankan;2;4;Friscila Purba, M.M.;112
@@ -1033,9 +1033,9 @@ AB-2B;Senin;09.10 - 10.00;2;Kewarganegaraan;2;4;Riza Hadikusuma, M.Ag;108
 AB-4B;Senin;09.10 - 10.00;4;Bahasa Jepang;2;4;Maria Nino Istia , S.S., M.Si.;116
 AB-2B;Senin;10.00 - 10.50;2;Kewarganegaraan;2;4;Riza Hadikusuma, M.Ag;108
 AB-4B;Senin;10.00 - 10.50;4;Bahasa Jepang;2;4;Maria Nino Istia , S.S., M.Si.;116
-AB-4B;Senin;10.50 - 11.40;4;Manajemen Keuangan ;2;4;Taufik Akbar, SE., M.S.M;304
+AB-4B;Senin;10.50 - 11.40;4;Manajemen Keuangan;2;4;Taufik Akbar, SE., M.S.M;304
 AB-2B;Senin;12.30 - 13.20;2;Aplikasi Komputer;3;6;Riskon Ginting, SE, M.Si;301
-AB-4B;Senin;12.30 - 13.20;4;Manajemen Keuangan ;2;4;Taufik Akbar, SE., M.S.M;304
+AB-4B;Senin;12.30 - 13.20;4;Manajemen Keuangan;2;4;Taufik Akbar, SE., M.S.M;304
 AB-2B;Senin;13.20 - 14.10;2;Aplikasi Komputer;3;6;Riskon Ginting, SE, M.Si;301
 AB-4B;Senin;13.20 - 14.10;4;Hukum Bisnis;2;4;Dr. M.Ikhsan, M.Si;117
 AB-2B;Senin;14.10 - 15.00;2;Aplikasi Komputer;3;6;Riskon Ginting, SE, M.Si;301
@@ -1082,9 +1082,9 @@ AB-4B;Kamis;09.10 - 10.00;4;Administrasi Kantor;2;4;Laras Afifah, M.M.;310
 AB-2B;Kamis;10.00 - 10.50;2;Bahasa Inggris 2;2;4;Dra. Mawarta O Sinaga, M.Si;307
 AB-4B;Kamis;10.00 - 10.50;4;Administrasi Kantor;2;4;Laras Afifah, M.M.;310
 AB-2B;Kamis;10.50 - 11.40;2;Komunikasi Bisnis 1;2;4;Dr. Narulita Syarweni, SE, ME;107
-AB-4B;Kamis;10.50 - 11.40;4;Manajemen Keuangan ;2;4;Taufik Akbar, SE., M.S.M;310
+AB-4B;Kamis;10.50 - 11.40;4;Manajemen Keuangan;2;4;Taufik Akbar, SE., M.S.M;310
 AB-2B;Kamis;12.30 - 13.20;2;Komunikasi Bisnis 1;2;4;Dr. Narulita Syarweni, SE, ME;107
-AB-4B;Kamis;12.30 - 13.20;4;Manajemen Keuangan ;2;4;Taufik Akbar, SE., M.S.M;310
+AB-4B;Kamis;12.30 - 13.20;4;Manajemen Keuangan;2;4;Taufik Akbar, SE., M.S.M;310
 AB-2B;Kamis;13.20 - 14.10;2;Ilmu Administrasi Bisnis;2;4;Hana Nurdina, S.ST, MBA;307
 AB-4B;Kamis;13.20 - 14.10;4;Hubungan Masyarakat;2;4;Risya Zahrotul Firdaus, S.I.Kom., M.Si;310
 AB-2B;Kamis;14.10 - 15.00;2;Ilmu Administrasi Bisnis;2;4;Hana Nurdina, S.ST, MBA;307
@@ -1136,9 +1136,9 @@ AB-4C;Selasa;13.20 - 14.10;4;Pelayanan Prima;2;4;Dr. Wahyudi Utomo, S.Sos, M.Si;
 AB-2C;Selasa;14.10 - 15.00;2;Bahasa Inggris 2;2;4;Drs. Anwar Mustofa, M.Hum;310
 AB-4C;Selasa;14.10 - 15.00;4;Pelayanan Prima;2;4;Dr. Wahyudi Utomo, S.Sos, M.Si;203
 AB-2C;Rabu;07.30 - 08.20;2;Etika Bisnis dan Keprotokolan;2;4;Dra. Mawarta O Sinaga, M.Si;117
-AB-4C;Rabu;07.30 - 08.20;4;Manajemen Keuangan ;2;4;Friscila Purba, M.M.;online
+AB-4C;Rabu;07.30 - 08.20;4;Manajemen Keuangan;2;4;Friscila Purba, M.M.;online
 AB-2C;Rabu;08.20 - 09.10;2;Etika Bisnis dan Keprotokolan;2;4;Dra. Mawarta O Sinaga, M.Si;117
-AB-4C;Rabu;08.20 - 09.10;4;Manajemen Keuangan ;2;4;Friscila Purba, M.M.;online
+AB-4C;Rabu;08.20 - 09.10;4;Manajemen Keuangan;2;4;Friscila Purba, M.M.;online
 AB-2C;Rabu;09.10 - 10.00;2;Komunikasi Bisnis 1;2;4;Imam Syafganti, S.Sos., M.Si., Ph.D.;117
 AB-4C;Rabu;09.10 - 10.00;4;Bahasa Inggris untuk Bisnis;2;4;Drs. Anwar Mustofa, M.Hum;online
 AB-2C;Rabu;10.00 - 10.50;2;Komunikasi Bisnis 1;2;4;Imam Syafganti, S.Sos., M.Si., Ph.D.;117
@@ -1160,9 +1160,9 @@ AB-4C;Kamis;09.10 - 10.00;4;Pemasaran;2;4;Fachri Aditya,S.Si.,M.M;103
 AB-2C;Kamis;10.00 - 10.50;2;Ilmu Administrasi Bisnis;2;4;Dr. M.Ikhsan, M.Si;117
 AB-4C;Kamis;10.00 - 10.50;4;Pemasaran;2;4;Fachri Aditya,S.Si.,M.M;103
 AB-2C;Kamis;10.50 - 11.40;2;Bahasa Inggris 2;2;4;Drs. Anwar Mustofa, M.Hum;117
-AB-4C;Kamis;10.50 - 11.40;4;Manajemen Keuangan ;2;4;Friscila Purba, M.M.;307
+AB-4C;Kamis;10.50 - 11.40;4;Manajemen Keuangan;2;4;Friscila Purba, M.M.;307
 AB-2C;Kamis;12.30 - 13.20;2;Bahasa Inggris 2;2;4;Drs. Anwar Mustofa, M.Hum;117
-AB-4C;Kamis;12.30 - 13.20;4;Manajemen Keuangan ;2;4;Friscila Purba, M.M.;307
+AB-4C;Kamis;12.30 - 13.20;4;Manajemen Keuangan;2;4;Friscila Purba, M.M.;307
 AB-2C;Kamis;13.20 - 14.10;2;Perbankan;2;4;Friscila Purba, M.M.;117
 AB-4C;Kamis;13.20 - 14.10;4;Manajemen Sumber Daya Manusia;2;4;Dr. Narulita Syarweni, SE, ME;108
 AB-2C;Kamis;14.10 - 15.00;2;Perbankan;2;4;Friscila Purba, M.M.;117
@@ -1186,9 +1186,9 @@ AB-4D;Senin;07.30 - 08.20;4;Bahasa Jepang;2;4;Maria Nino Istia , S.S., M.Si.;114
 AB-2D;Senin;08.20 - 09.10;2;Pengetikan Bisnis;2;4;Laras Afifah, M.M.;301
 AB-4D;Senin;08.20 - 09.10;4;Bahasa Jepang;2;4;Maria Nino Istia , S.S., M.Si.;114
 AB-2D;Senin;09.10 - 10.00;2;Aplikasi Komputer;3;6;Riskon Ginting, SE, M.Si;208
-AB-4D;Senin;09.10 - 10.00;4;Manajemen Keuangan ;2;4;Taufik Akbar, SE., M.S.M;305
+AB-4D;Senin;09.10 - 10.00;4;Manajemen Keuangan;2;4;Taufik Akbar, SE., M.S.M;305
 AB-2D;Senin;10.00 - 10.50;2;Aplikasi Komputer;3;6;Riskon Ginting, SE, M.Si;208
-AB-4D;Senin;10.00 - 10.50;4;Manajemen Keuangan ;2;4;Taufik Akbar, SE., M.S.M;305
+AB-4D;Senin;10.00 - 10.50;4;Manajemen Keuangan;2;4;Taufik Akbar, SE., M.S.M;305
 AB-2D;Senin;10.50 - 11.40;2;Kewarganegaraan;2;4;Erlyn Rosalina, S.Hum., M.Pd;305
 AB-4D;Senin;10.50 - 11.40;4;Kearsipan;2;4;Laras Afifah, M.M.;302
 AB-2D;Senin;12.30 - 13.20;2;Kewarganegaraan;2;4;Erlyn Rosalina, S.Hum., M.Pd;305
@@ -1202,9 +1202,9 @@ AB-4D;Selasa;07.30 - 08.20;4;Kearsipan;2;4;Laras Afifah, M.M.;307
 AB-2D;Selasa;08.20 - 09.10;2;Perbankan;2;4;Taufik Akbar, SE., M.S.M;302
 AB-4D;Selasa;08.20 - 09.10;4;Kearsipan;2;4;Laras Afifah, M.M.;307
 AB-2D;Selasa;09.10 - 10.00;2;Komunikasi Bisnis 1;2;4;Dr. Narulita Syarweni, SE, ME;203
-AB-4D;Selasa;09.10 - 10.00;4;Manajemen Keuangan ;2;4;Taufik Akbar, SE., M.S.M;304
+AB-4D;Selasa;09.10 - 10.00;4;Manajemen Keuangan;2;4;Taufik Akbar, SE., M.S.M;304
 AB-2D;Selasa;10.00 - 10.50;2;Komunikasi Bisnis 1;2;4;Dr. Narulita Syarweni, SE, ME;203
-AB-4D;Selasa;10.00 - 10.50;4;Manajemen Keuangan ;2;4;Taufik Akbar, SE., M.S.M;304
+AB-4D;Selasa;10.00 - 10.50;4;Manajemen Keuangan;2;4;Taufik Akbar, SE., M.S.M;304
 AB-2D;Selasa;10.50 - 11.40;2;Kesekretariatan 1;2;4;Endah Wartiningsih, SE, MM;116
 AB-4D;Selasa;10.50 - 11.40;4;Pelayanan Prima;2;4;Hana Nurdina, S.ST, MBA;304
 AB-2D;Selasa;12.30 - 13.20;2;Kesekretariatan 1;2;4;Endah Wartiningsih, SE, MM;116
@@ -1324,9 +1324,9 @@ BISPRO-2A;Rabu;15.15 - 16.05;2;Mendengarkan dan Mengungkapkan dalam Bahasa Inggr
 BISPRO-4A;Rabu;15.15 - 16.05;4;Penerjemahan Teks Akademik;3;6;Dr. Dra. Ina Sukaesih, Dipl. TESOL, M.M., M.Hum.;online
 BISPRO-2A;Rabu;16.05 - 16.55;2;Mendengarkan dan Mengungkapkan dalam Bahasa Inggris;2;4;Inanti Pinintakasih Diran;001
 BISPRO-4A;Rabu;16.05 - 16.55;4;Penerjemahan Teks Akademik;3;6;Dr. Dra. Ina Sukaesih, Dipl. TESOL, M.M., M.Hum.;online
-BISPRO-2A;Kamis;07.30 - 08.20;2;Menulis Teks Akademik Dasar Bahasa Indonesia;2;4;Linda Sari Wulandari, S.Hum, M.Hum;305
+BISPRO-2A;Kamis;07.30 - 08.20;2;Menulis Teks Akademik Bahasa Indonesia;2;4;Linda Sari Wulandari, S.Hum, M.Hum;305
 BISPRO-4A;Kamis;07.30 - 08.20;4;Etika Profesi Penerjemah dan Juru Bahasa;2;4;Prof Rahayu;online
-BISPRO-2A;Kamis;08.20 - 09.10;2;Menulis Teks Akademik Dasar Bahasa Indonesia;2;4;Linda Sari Wulandari, S.Hum, M.Hum;305
+BISPRO-2A;Kamis;08.20 - 09.10;2;Menulis Teks Akademik Bahasa Indonesia;2;4;Linda Sari Wulandari, S.Hum, M.Hum;305
 BISPRO-4A;Kamis;08.20 - 09.10;4;Etika Profesi Penerjemah dan Juru Bahasa;2;4;Prof Rahayu;online
 BISPRO-2A;Kamis;09.10 - 10.00;2;Menulis Teks Akademik Dasar Bahasa Inggris;3;6;Septina Indrayani, S.Pd., M.TESOL.;106
 BISPRO-4A;Kamis;09.10 - 10.00;4;Penerjemahan Teks Dokumen Pribadi;3;6;Fanny Puji Rakhmi, S.Hum. M.Hum.;303
@@ -1352,11 +1352,11 @@ BISPRO-6A;Jumat;09.10 - 10.00;6;Mandarin;2;4;Hasan, S.Sos, M. Pd;001
 BISPRO-4A;Jumat;10.00 - 10.50;4;Penerjemahan Teks Dokumen Pribadi;3;6;Fanny Puji Rakhmi, S.Hum. M.Hum.;309
 BISPRO-6A;Jumat;10.00 - 10.50;6;Mandarin;2;4;Hasan, S.Sos, M. Pd;001
 BISPRO-2A;Jumat;14.10 - 15.00;2;Membaca Analitis (Dwibahasa);3;6;Dewi Kurniawati, S.S., M.Pd.;106
-BISPRO-4A;Jumat;14.10 - 15.00;4;Teori Penyuntingan Terjemahan;;;Taufik Eryadi Abdillah, S.S., M.Hum.;online
+BISPRO-4A;Jumat;14.10 - 15.00;4;Teori Penyuntingan Terjemahan;3;6;Taufik Eryadi Abdillah, S.S., M.Hum.;online
 BISPRO-2A;Jumat;15.15 - 16.05;2;Membaca Analitis (Dwibahasa);3;6;Dewi Kurniawati, S.S., M.Pd.;106
-BISPRO-4A;Jumat;15.15 - 16.05;4;Teori Penyuntingan Terjemahan;;;Taufik Eryadi Abdillah, S.S., M.Hum.;online
+BISPRO-4A;Jumat;15.15 - 16.05;4;Teori Penyuntingan Terjemahan;3;6;Taufik Eryadi Abdillah, S.S., M.Hum.;online
 BISPRO-2A;Jumat;16.05 - 16.55;2;Membaca Analitis (Dwibahasa);3;6;Dewi Kurniawati, S.S., M.Pd.;106
-BISPRO-4A;Jumat;16.05 - 16.55;4;Teori Penyuntingan Terjemahan;;;Taufik Eryadi Abdillah, S.S., M.Hum.;online
+BISPRO-4A;Jumat;16.05 - 16.55;4;Teori Penyuntingan Terjemahan;3;6;Taufik Eryadi Abdillah, S.S., M.Hum.;online
 BISPRO-2B;Senin;07.30 - 08.20;2;Menulis Teks Akademik Bahasa Indonesia;2;4;Dr. Drs. Nur Hasyim, M.Si., M.Hum.;310
 BISPRO-4B;Senin;07.30 - 08.20;4;Menulis Kreatif Bahasa Indonesia;3;6;Eky Erlanda Edel, S.Pd., M.Pd.;001
 BISPRO-6B;Senin;07.30 - 08.20;6;Mandarin;2;4;Hasan, S.Sos, M. Pd;online
@@ -1461,9 +1461,9 @@ BISPRO-2C;Senin;08.20 - 09.10;2;Kosakata Dwibahasa;2;4;Dr. Drs. Supriatnoko, M.H
 BISPRO-4C;Senin;08.20 - 09.10;4;Penerjemahan Teks Dokumen Pribadi;3;6;Fanny Puji Rakhmi, S.Hum. M.Hum.;309
 BISPRO-4C;Senin;09.10 - 10.00;4;Penerjemahan Teks Bisnis Lanjutan;3;6;Taufik Eryadi Abdillah, S.S., M.Hum.;202
 BISPRO-4C;Senin;10.00 - 10.50;4;Penerjemahan Teks Bisnis Lanjutan;3;6;Taufik Eryadi Abdillah, S.S., M.Hum.;202
-BISPRO-2C;Senin;10.50 - 11.40;2;Membaca Analitis;3;6;Dewi Kurniawati, S.S., M.Pd.;312
-BISPRO-2C;Senin;12.30 - 13.20;2;Membaca Analitis;3;6;Dewi Kurniawati, S.S., M.Pd.;312
-BISPRO-2C;Senin;13.20 - 14.10;2;Membaca Analitis;3;6;Dewi Kurniawati, S.S., M.Pd.;312
+BISPRO-2C;Senin;10.50 - 11.40;2;Membaca Analitis (Dwibahasa);3;6;Dewi Kurniawati, S.S., M.Pd.;312
+BISPRO-2C;Senin;12.30 - 13.20;2;Membaca Analitis (Dwibahasa);3;6;Dewi Kurniawati, S.S., M.Pd.;312
+BISPRO-2C;Senin;13.20 - 14.10;2;Membaca Analitis (Dwibahasa);3;6;Dewi Kurniawati, S.S., M.Pd.;312
 BISPRO-4C;Senin;13.20 - 14.10;4;Menulis Kreatif Bahasa Indonesia;3;6;Eky Erlanda Edel, S.Pd., M.Pd.;105
 BISPRO-4C;Senin;14.10 - 15.00;4;Menulis Kreatif Bahasa Indonesia;3;6;Eky Erlanda Edel, S.Pd., M.Pd.;105
 BISPRO-4C;Senin;15.15 - 16.05;4;Menulis Kreatif Bahasa Indonesia;3;6;Eky Erlanda Edel, S.Pd., M.Pd.;online
@@ -1502,11 +1502,11 @@ BISPRO-2C;Rabu;15.15 - 16.05;2;Menulis Teks Akademik Dasar Bahasa Inggris;3;6;Se
 BISPRO-4C;Rabu;15.15 - 16.05;4;Menulis Kreatif Bahasa Indonesia;3;6;Eky Erlanda Edel, S.Pd., M.Pd.;online
 BISPRO-2C;Kamis;07.30 - 08.20;2;Pendalaman Tata Bahasa Indonesia untuk Penerjemahan;2;4;Taufik Eryadi Abdillah, S.S., M.Hum.;105
 BISPRO-2C;Kamis;08.20 - 09.10;2;Pendalaman Tata Bahasa Indonesia untuk Penerjemahan;2;4;Taufik Eryadi Abdillah, S.S., M.Hum.;105
-BISPRO-2C;Kamis;09.10 - 10.00;2;Membaca Analitis;3;6;Dewi Kurniawati, S.S., M.Pd.;105
+BISPRO-2C;Kamis;09.10 - 10.00;2;Membaca Analitis (Dwibahasa);3;6;Dewi Kurniawati, S.S., M.Pd.;105
 BISPRO-4C;Kamis;09.10 - 10.00;4;Penerjemahan Teks Bisnis Lanjutan;3;6;Taufik Eryadi Abdillah, S.S., M.Hum.;online
-BISPRO-2C;Kamis;10.00 - 10.50;2;Membaca Analitis;3;6;Dewi Kurniawati, S.S., M.Pd.;105
+BISPRO-2C;Kamis;10.00 - 10.50;2;Membaca Analitis (Dwibahasa);3;6;Dewi Kurniawati, S.S., M.Pd.;105
 BISPRO-4C;Kamis;10.00 - 10.50;4;Penerjemahan Teks Bisnis Lanjutan;3;6;Taufik Eryadi Abdillah, S.S., M.Hum.;online
-BISPRO-2C;Kamis;10.50 - 11.40;2;Membaca Analitis;3;6;Dewi Kurniawati, S.S., M.Pd.;105
+BISPRO-2C;Kamis;10.50 - 11.40;2;Membaca Analitis (Dwibahasa);3;6;Dewi Kurniawati, S.S., M.Pd.;105
 BISPRO-4C;Kamis;10.50 - 11.40;4;Penerjemahan Teks Bisnis Lanjutan;3;6;Taufik Eryadi Abdillah, S.S., M.Hum.;online
 BISPRO-4C;Kamis;12.30 - 13.20;4;Penerjemahan Teks Akademik;3;6;Dr. Dra. Ina Sukaesih, Dipl. TESOL, M.M., M.Hum.;online
 BISPRO-4C;Kamis;13.20 - 14.10;4;Penerjemahan Teks Akademik;3;6;Dr. Dra. Ina Sukaesih, Dipl. TESOL, M.M., M.Hum.;online
@@ -1532,10 +1532,10 @@ BISPRO-4C;Jumat;15.15 - 16.05;4;Penerjemahan Teks Akademik;3;6;Dr. Dra. Ina Suka
 BISPRO-2C;Jumat;16.05 - 16.55;2;Menulis Teks Akademik Bahasa Indonesia;2;4;Dr. Drs. Nur Hasyim, M.Si., M.Hum.;105
 BISPRO-4C;Jumat;16.05 - 16.55;4;Penerjemahan Teks Akademik;3;6;Dr. Dra. Ina Sukaesih, Dipl. TESOL, M.M., M.Hum.;online
 MICE DEMAK-2A;Senin;07.30 - 08.20;2;Manajemen Logistik MICE;2;4;Rahmi Fadhella, M.Par.;online
-MICE DEMAK-4A;Senin;07.30 - 08.20;4;Self Management & Interpersonal Skill;2;4;Karina Rizka Mentari, M.M.;B101
+MICE DEMAK-4A;Senin;07.30 - 08.20;4;Self Manajemen dan Interpersonal  Skill;2;4;Karina Rizka Mentari, M.M.;B101
 MICE DEMAK-6A;Senin;07.30 - 08.20;6;Penerapan Manajemen Proyek Pameran/Konvensi;4;8;Mella Narolita, S.Hum., M.A.;online
 MICE DEMAK-2A;Senin;08.20 - 09.10;2;Manajemen Logistik MICE;2;4;Rahmi Fadhella, M.Par.;online
-MICE DEMAK-4A;Senin;08.20 - 09.10;4;Self Management & Interpersonal Skill;2;4;Karina Rizka Mentari, M.M.;B101
+MICE DEMAK-4A;Senin;08.20 - 09.10;4;Self Manajemen dan Interpersonal  Skill;2;4;Karina Rizka Mentari, M.M.;B101
 MICE DEMAK-6A;Senin;08.20 - 09.10;6;Penerapan Manajemen Proyek Pameran/Konvensi;4;8;Mella Narolita, S.Hum., M.A.;online
 MICE DEMAK-2A;Senin;09.10 - 10.00;2;Praktik Perkantoran MICE;2;4;Besya Salsabilla Azani Arif, S.Stat., M.M.;B101
 MICE DEMAK-4A;Senin;09.10 - 10.00;4;Manajemen Keuangan;2;4;Ifta Almazah Suhaya, S.AB., M.A;B101
@@ -1543,10 +1543,10 @@ MICE DEMAK-6A;Senin;09.10 - 10.00;6;Penerapan Manajemen Proyek Pameran/Konvensi;
 MICE DEMAK-2A;Senin;10.00 - 10.50;2;Praktik Perkantoran MICE;2;4;Besya Salsabilla Azani Arif, S.Stat., M.M.;B101
 MICE DEMAK-4A;Senin;10.00 - 10.50;4;Manajemen Keuangan;2;4;Ifta Almazah Suhaya, S.AB., M.A;B101
 MICE DEMAK-6A;Senin;10.00 - 10.50;6;Penerapan Manajemen Proyek Pameran/Konvensi;4;8;Mella Narolita, S.Hum., M.A.;online
-MICE DEMAK-2A;Senin;10.50 - 11.40;2;Dasar-Dasar Akuntansi;2;4;Ifta Almazah Suhaya, S.AB., M.A;B101
+MICE DEMAK-2A;Senin;10.50 - 11.40;2;Dasar-dasar Akuntansi;2;4;Ifta Almazah Suhaya, S.AB., M.A;B101
 MICE DEMAK-4A;Senin;10.50 - 11.40;4;Desain Grafis;2;4;Mulyono, M.Kom.;B101
 MICE DEMAK-6A;Senin;10.50 - 11.40;6;Manajemen Sumber Daya Manusia;2;4;Karina Rizka Mentari, M.M.;online
-MICE DEMAK-2A;Senin;12.30 - 13.20;2;Dasar-Dasar Akuntansi;2;4;Ifta Almazah Suhaya, S.AB., M.A;B101
+MICE DEMAK-2A;Senin;12.30 - 13.20;2;Dasar-dasar Akuntansi;2;4;Ifta Almazah Suhaya, S.AB., M.A;B101
 MICE DEMAK-4A;Senin;12.30 - 13.20;4;Desain Grafis;2;4;Mulyono, M.Kom.;B101
 MICE DEMAK-6A;Senin;12.30 - 13.20;6;Manajemen Sumber Daya Manusia;2;4;Karina Rizka Mentari, M.M.;online
 MICE DEMAK-2A;Senin;13.20 - 14.10;2;Pendidikan Kewarganegaraan;2;4;Hamsar Suci Amalia, S.H., M.H.;B101
@@ -1574,10 +1574,10 @@ MICE DEMAK-4A;Selasa;10.00 - 10.50;4;Bahasa Inggris 4;2;4;Mella Narolita, S.Hum.
 MICE DEMAK-6A;Selasa;10.00 - 10.50;6;Pengelolaan Acara dalam Pameran/Konvensi;2;4;Karina Rizka Mentari, M.M.;online
 MICE DEMAK-6A;Selasa;10.00 - 10.50;6;Kewirausahaan;2;4;Ifta Almazah Suhaya, S.AB., M.A;online
 MICE DEMAK-2A;Selasa;10.50 - 11.40;2;Bahasa Inggris 2;2;4;Mella Narolita, S.Hum., M.A.;B101
-MICE DEMAK-4A;Selasa;10.50 - 11.40;4;Custom Immigration Quarantine (CIQ);2;4;Rahmi Fadhella, M.Par./Besya Salsabilla Azani Arif, S.Stat., M.M.;online
+MICE DEMAK-4A;Selasa;10.50 - 11.40;4;CIQ (Custom Immigration Quarantine);2;4;Rahmi Fadhella, M.Par./Besya Salsabilla Azani Arif, S.Stat., M.M.;online
 MICE DEMAK-6A;Selasa;10.50 - 11.40;6;Manajemen Strategik;2;4;Besya Salsabilla Azani Arif, S.Stat., M.M.;online
 MICE DEMAK-2A;Selasa;12.30 - 13.20;2;Bahasa Inggris 2;2;4;Mella Narolita, S.Hum., M.A.;B101
-MICE DEMAK-4A;Selasa;12.30 - 13.20;4;Custom Immigration Quarantine (CIQ);2;4;Rahmi Fadhella, M.Par./Besya Salsabilla Azani Arif, S.Stat., M.M.;online
+MICE DEMAK-4A;Selasa;12.30 - 13.20;4;CIQ (Custom Immigration Quarantine);2;4;Rahmi Fadhella, M.Par./Besya Salsabilla Azani Arif, S.Stat., M.M.;online
 MICE DEMAK-6A;Selasa;12.30 - 13.20;6;Manajemen Strategik;2;4;Besya Salsabilla Azani Arif, S.Stat., M.M.;online
 MICE DEMAK-2A;Selasa;13.20 - 14.10;2;Pengantar Marketing;2;4;Karina Rizka Mentari, M.M.;B101
 MICE DEMAK-4A;Selasa;13.20 - 14.10;4;Perencanaan Incentive Travel;2;4;Aulia Restu Ariyanto Putri, M.Par.;online
@@ -1594,18 +1594,18 @@ MICE DEMAK-2A;Rabu;08.20 - 09.10;2;Manajemen Logistik MICE;2;4;Rahmi Fadhella, M
 MICE DEMAK-4A;Rabu;08.20 - 09.10;4;Manajemen Keuangan;2;4;Ifta Almazah Suhaya, S.AB., M.A;online
 MICE DEMAK-6A;Rabu;08.20 - 09.10;6;Penyelenggaraan Konvensi (MBKM);2;4;Aulia Restu Ariyanto Putri, M.Par.;online
 MICE DEMAK-2A;Rabu;09.10 - 10.00;2;Pendidikan Kewarganegaraan;2;4;Hamsar Suci Amalia, S.H., M.H.;online
-MICE DEMAK-4A;Rabu;09.10 - 10.00;4;Custom Immigration Quarantine (CIQ);2;4;Rahmi Fadhella, M.Par./Besya Salsabilla Azani Arif, S.Stat., M.M.;online
+MICE DEMAK-4A;Rabu;09.10 - 10.00;4;CIQ (Custom Immigration Quarantine);2;4;Rahmi Fadhella, M.Par./Besya Salsabilla Azani Arif, S.Stat., M.M.;online
 MICE DEMAK-6A;Rabu;09.10 - 10.00;6;Penyelenggaraan Konvensi (MBKM);2;4;Aulia Restu Ariyanto Putri, M.Par.;online
 MICE DEMAK-6A;Rabu;09.10 - 10.00;6;Manajemen Strategik;2;4;Besya Salsabilla Azani Arif, S.Stat., M.M.;online
 MICE DEMAK-2A;Rabu;10.00 - 10.50;2;Pendidikan Kewarganegaraan;2;4;Hamsar Suci Amalia, S.H., M.H.;online
-MICE DEMAK-4A;Rabu;10.00 - 10.50;4;Custom Immigration Quarantine (CIQ);2;4;Rahmi Fadhella, M.Par./Besya Salsabilla Azani Arif, S.Stat., M.M.;online
+MICE DEMAK-4A;Rabu;10.00 - 10.50;4;CIQ (Custom Immigration Quarantine);2;4;Rahmi Fadhella, M.Par./Besya Salsabilla Azani Arif, S.Stat., M.M.;online
 MICE DEMAK-6A;Rabu;10.00 - 10.50;6;Penyelenggaraan Konvensi (MBKM);2;4;Aulia Restu Ariyanto Putri, M.Par.;online
 MICE DEMAK-6A;Rabu;10.00 - 10.50;6;Manajemen Strategik;2;4;Besya Salsabilla Azani Arif, S.Stat., M.M.;online
-MICE DEMAK-2A;Rabu;10.50 - 11.40;2;Dasar-Dasar Akuntansi;2;4;Ifta Almazah Suhaya, S.AB., M.A;online
+MICE DEMAK-2A;Rabu;10.50 - 11.40;2;Dasar-dasar Akuntansi;2;4;Ifta Almazah Suhaya, S.AB., M.A;online
 MICE DEMAK-4A;Rabu;10.50 - 11.40;4;Bahasa Mandarin 1;2;4;Adilla Achmad Syahputri, S.Pd., M.Li.;online
 MICE DEMAK-6A;Rabu;10.50 - 11.40;6;Penyelenggaraan Pameran (MKBM);2;4;Mulyono, M.Kom.;online
 MICE DEMAK-6A;Rabu;10.50 - 11.40;6;Manajemen Strategik;2;4;Besya Salsabilla Azani Arif, S.Stat., M.M.;online
-MICE DEMAK-2A;Rabu;12.30 - 13.20;2;Dasar-Dasar Akuntansi;2;4;Ifta Almazah Suhaya, S.AB., M.A;online
+MICE DEMAK-2A;Rabu;12.30 - 13.20;2;Dasar-dasar Akuntansi;2;4;Ifta Almazah Suhaya, S.AB., M.A;online
 MICE DEMAK-4A;Rabu;12.30 - 13.20;4;Bahasa Mandarin 1;2;4;Adilla Achmad Syahputri, S.Pd., M.Li.;online
 MICE DEMAK-6A;Rabu;12.30 - 13.20;6;Penyelenggaraan Pameran (MKBM);2;4;Mulyono, M.Kom.;online
 MICE DEMAK-6A;Rabu;12.30 - 13.20;6;Manajemen Strategik;2;4;Besya Salsabilla Azani Arif, S.Stat., M.M.;online
@@ -1631,34 +1631,34 @@ MICE DEMAK-6A;Kamis;09.10 - 10.00;6;Pengelolaan Produksi Pameran/Konvensi;2;4;Ra
 MICE DEMAK-2A;Kamis;10.00 - 10.50;2;Pengantar Marketing;2;4;Karina Rizka Mentari, M.M.;online
 MICE DEMAK-4A;Kamis;10.00 - 10.50;4;Bahasa Jepang;2;4;Maria Nino Istia , S.S., M.Si.;online
 MICE DEMAK-6A;Kamis;10.00 - 10.50;6;Pengelolaan Produksi Pameran/Konvensi;2;4;Rahmi Fadhella, M.Par.;online
-MICE DEMAK-2A;Kamis;10.50 - 11.40;2;Etika Profesi dan Bisnis;2;4;Ifta Almazah Suhaya, S.AB., M.A./Besya Salsabilla Azani Arif, S.Stat., M.M.;online
+MICE DEMAK-2A;Kamis;10.50 - 11.40;2;Etika Profesi dan Bisnis;2;4;Ifta Almazah Suhaya, S.AB., M.A/Besya Salsabilla Azani Arif, S.Stat., M.M.;online
 MICE DEMAK-4A;Kamis;10.50 - 11.40;4;Perencanaan Incentive Travel;2;4;Aulia Restu Ariyanto Putri, M.Par.;online
 MICE DEMAK-6A;Kamis;10.50 - 11.40;6;Pengelolaan Kesekretariatan Pameran/Konvensi;2;4;Mella Narolita, S.Hum., M.A.;online
-MICE DEMAK-2A;Kamis;12.30 - 13.20;2;Etika Profesi dan Bisnis;2;4;Ifta Almazah Suhaya, S.AB., M.A./Besya Salsabilla Azani Arif, S.Stat., M.M.;online
+MICE DEMAK-2A;Kamis;12.30 - 13.20;2;Etika Profesi dan Bisnis;2;4;Ifta Almazah Suhaya, S.AB., M.A/Besya Salsabilla Azani Arif, S.Stat., M.M.;online
 MICE DEMAK-4A;Kamis;12.30 - 13.20;4;Perencanaan Incentive Travel;2;4;Aulia Restu Ariyanto Putri, M.Par.;online
 MICE DEMAK-6A;Kamis;12.30 - 13.20;6;Pengelolaan Kesekretariatan Pameran/Konvensi;2;4;Mella Narolita, S.Hum., M.A.;online
 MICE DEMAK-2A;Kamis;13.20 - 14.10;2;Geografi Destinasi Pariwisata;2;4;Aulia Restu Ariyanto Putri, M.Par.;online
-MICE DEMAK-4A;Kamis;13.20 - 14.10;4;Pemrograman Web Dinamis;2;4;Mulyono, M.Kom.;online
+MICE DEMAK-4A;Kamis;13.20 - 14.10;4;Pemprograman Web Dinamis;2;4;Mulyono, M.Kom.;online
 MICE DEMAK-6A;Kamis;13.20 - 14.10;6;Pengelolaan Kesekretariatan Pameran/Konvensi;2;4;Mella Narolita, S.Hum., M.A.;online
 MICE DEMAK-2A;Kamis;14.10 - 15.00;2;Geografi Destinasi Pariwisata;2;4;Aulia Restu Ariyanto Putri, M.Par.;online
-MICE DEMAK-4A;Kamis;14.10 - 15.00;4;Pemrograman Web Dinamis;2;4;Mulyono, M.Kom.;online
+MICE DEMAK-4A;Kamis;14.10 - 15.00;4;Pemprograman Web Dinamis;2;4;Mulyono, M.Kom.;online
 MICE DEMAK-6A;Kamis;14.10 - 15.00;6;Pengelolaan Kesekretariatan Pameran/Konvensi;2;4;Mella Narolita, S.Hum., M.A.;online
-MICE DEMAK-2A;Jumat;07.30 - 08.20;2;Etika Profesi dan Bisnis;2;4;Ifta Almazah Suhaya, S.AB., M.A./Besya Salsabilla Azani Arif, S.Stat., M.M.;online
+MICE DEMAK-2A;Jumat;07.30 - 08.20;2;Etika Profesi dan Bisnis;2;4;Ifta Almazah Suhaya, S.AB., M.A/Besya Salsabilla Azani Arif, S.Stat., M.M.;online
 MICE DEMAK-4A;Jumat;07.30 - 08.20;4;Bahasa Inggris;2;4;Mella Narolita, S.Hum., M.A.;online
-MICE DEMAK-2A;Jumat;08.20 - 09.10;2;Etika Profesi dan Bisnis;2;4;Ifta Almazah Suhaya, S.AB., M.A./Besya Salsabilla Azani Arif, S.Stat., M.M.;online
+MICE DEMAK-2A;Jumat;08.20 - 09.10;2;Etika Profesi dan Bisnis;2;4;Ifta Almazah Suhaya, S.AB., M.A/Besya Salsabilla Azani Arif, S.Stat., M.M.;online
 MICE DEMAK-4A;Jumat;08.20 - 09.10;4;Bahasa Inggris;2;4;Mella Narolita, S.Hum., M.A.;online
 MICE DEMAK-2A;Jumat;09.10 - 10.00;2;Praktik Perkantoran MICE;2;4;Besya Salsabilla Azani Arif, S.Stat., M.M.;online
-MICE DEMAK-4A;Jumat;09.10 - 10.00;4;Self Management & Interpersonal Skill;2;4;Karina Rizka Mentari, M.M.;online
+MICE DEMAK-4A;Jumat;09.10 - 10.00;4;Self Manajemen dan Interpersonal  Skill;2;4;Karina Rizka Mentari, M.M.;online
 MICE DEMAK-2A;Jumat;10.00 - 10.50;2;Praktik Perkantoran MICE;2;4;Besya Salsabilla Azani Arif, S.Stat., M.M.;online
-MICE DEMAK-4A;Jumat;10.00 - 10.50;4;Self Management & Interpersonal Skill;2;4;Karina Rizka Mentari, M.M.;online
+MICE DEMAK-4A;Jumat;10.00 - 10.50;4;Self Manajemen dan Interpersonal  Skill;2;4;Karina Rizka Mentari, M.M.;online
 MICE DEMAK-4A;Jumat;10.50 - 11.40;4;Desain Grafis;2;4;Mulyono, M.Kom.;online
 MICE DEMAK-2A;Jumat;12.30 - 13.20;2;Keprotokolan;2;4;Rahmi Fadhella, M.Par.;online
 MICE DEMAK-4A;Jumat;12.30 - 13.20;4;Desain Grafis;2;4;Mulyono, M.Kom.;online
 MICE DEMAK-2A;Jumat;13.20 - 14.10;2;Keprotokolan;2;4;Rahmi Fadhella, M.Par.;online
-MICE DEMAK-4A;Jumat;13.20 - 14.10;4;Pemrograman Web Dinamis;2;4;Mulyono, M.Kom.;online
+MICE DEMAK-4A;Jumat;13.20 - 14.10;4;Pemprograman Web Dinamis;2;4;Mulyono, M.Kom.;online
 MICE DEMAK-6A;Jumat;13.20 - 14.10;6;Pengelolaan Pemasaran Pameran/Konvensi;2;4;Besya Salsabilla Azani Arif, S.Stat., M.M.;online
 MICE DEMAK-2A;Jumat;14.10 - 15.00;2;Registrasi;2;4;Rahmi Fadhella, M.Par./Karina Rizka Mentari, M.M.;online
-MICE DEMAK-4A;Jumat;14.10 - 15.00;4;Pemrograman Web Dinamis;2;4;Mulyono, M.Kom.;online
+MICE DEMAK-4A;Jumat;14.10 - 15.00;4;Pemprograman Web Dinamis;2;4;Mulyono, M.Kom.;online
 MICE DEMAK-6A;Jumat;14.10 - 15.00;6;Pengelolaan Pemasaran Pameran/Konvensi;2;4;Besya Salsabilla Azani Arif, S.Stat., M.M.;online
 MICE DEMAK-2A;Jumat;15.15 - 16.05;2;Registrasi;2;4;Rahmi Fadhella, M.Par./Karina Rizka Mentari, M.M.;online
 MICE DEMAK-6A;Jumat;15.15 - 16.05;6;Pengelolaan Pemasaran Pameran/Konvensi;2;4;Besya Salsabilla Azani Arif, S.Stat., M.M.;online
