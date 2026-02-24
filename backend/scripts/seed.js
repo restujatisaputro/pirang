@@ -5,8 +5,12 @@ async function run() {
   // buat schema dulu (anggap schema sudah dibuat via init.sql atau manual)
   // seed users
   const users = [
-    { username: "admin", password: "admin", fullName: "Administrator Sistem", role: "ADMIN" },
+    { username: "admin", password: "nimda", fullName: "Administrator Sistem", role: "ADMIN" },
     { username: "restu", password: "restu", fullName: "Restu Jati Saputro", role: "ADMIN" }
+    { username: "d3ab", password: "d3ab", fullName: "Camil", role: "ADMIN" }
+    { username: "d4abt", password: "d4abt", fullName: "Siska", role: "ADMIN" }
+    { username: "d4mice", password: "d4mice", fullName: "Yuli", role: "ADMIN" }
+    { username: "d4bispro", password: "d4bispro", fullName: "Tiwi", role: "ADMIN" }
   ];
 
   // bersihkan isi (opsional)
@@ -445,17 +449,17 @@ async function run() {
 // );
 
   // items
-  await pool.query(
-    "INSERT INTO items(nama_barang, merek, tahun_perolehan, serial_number, kondisi, keterangan, ruang, status_pinjam, user_peminjam, foto) VALUES ?",
-    [[
-      ["Proyektor Epson EB-X500", "Epson", "2023", "EPS-23-001", "Baik", "Aset Prodi AB", "Gedung A", "Tersedia", null,
-        "https://images.unsplash.com/photo-1517436075966-291771146603?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"],
-      ["Kamera DSLR Canon", "Canon", "2022", "CN-22-555", "Baik", "Dokumentasi", "Lab Media", "Dipinjam", "Member",
-        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"],
-      ["Sound System Portable", "Yamaha", "2021", "YM-21-003", "Rusak Ringan", "Mic kadang mati", "Gedung C", "Tersedia", null,
-        "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"]
-    ]]
-  );
+  // await pool.query(
+  //   "INSERT INTO items(nama_barang, merek, tahun_perolehan, serial_number, kondisi, keterangan, ruang, status_pinjam, user_peminjam, foto) VALUES ?",
+  //   [[
+  //     ["Proyektor Epson EB-X500", "Epson", "2023", "EPS-23-001", "Baik", "Aset Prodi AB", "Gedung A", "Tersedia", null,
+  //       "https://images.unsplash.com/photo-1517436075966-291771146603?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"],
+  //     ["Kamera DSLR Canon", "Canon", "2022", "CN-22-555", "Baik", "Dokumentasi", "Lab Media", "Dipinjam", "Member",
+  //       "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"],
+  //     ["Sound System Portable", "Yamaha", "2021", "YM-21-003", "Rusak Ringan", "Mic kadang mati", "Gedung C", "Tersedia", null,
+  //       "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"]
+  //   ]]
+  // );
 
   // bookings (contoh: user mahasiswa id=2 booking room auditorium id=4)
   const today = new Date();
@@ -472,10 +476,10 @@ async function run() {
   const d3 = new Date(today); d3.setDate(today.getDate() + 3);
   const returnDate = d3.toISOString().split("T")[0];
 
-  await pool.query(
-    "INSERT INTO itemBorrowings(userId, itemId, borrowDate, returnDate, purpose, status) VALUES (?,?,?,?,?,?)",
-    [2, 2, borrowDate, returnDate, "Dokumentasi Acara Kampus", "APPROVED"]
-  );
+  // await pool.query(
+  //   "INSERT INTO itemBorrowings(userId, itemId, borrowDate, returnDate, purpose, status) VALUES (?,?,?,?,?,?)",
+  //   [2, 2, borrowDate, returnDate, "Dokumentasi Acara Kampus", "APPROVED"]
+  // );
 
   console.log("✅ Seed selesai.");
   process.exit(0);
